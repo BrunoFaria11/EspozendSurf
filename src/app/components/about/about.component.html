@@ -1,0 +1,45 @@
+<!-- Section About -->
+<section
+  id="about"
+  class="ls ms section-about s-py-90 s-py-xl-160 text-center text-md-left"
+  style='background: url("{{ languageStoreService.Texts.section1.image1 }}") no-repeat center/cover;'
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="text-center text-md-left color-darkgrey mb-1">
+          <span class="line-left">{{ languageStoreService.Texts.section1.title }}</span>
+        </p>
+        <h3
+          class="text-center text-md-left mt-0 mb-2 special-heading color-darkgrey"
+        >
+          <span> {{ languageStoreService.Texts.section1.subTitle }}</span>
+        </h3>
+        <p class="text-center text-md-left color-darkgrey fs-20 fw-500">
+          <span> {{ languageStoreService.Texts.section1.text }}</span>
+        </p>
+        <div class="divider-40 divider-xl-50"></div>
+        <div class="border-left-custom">
+          <p *ngFor="let value of languageStoreService.Texts.section1.texts">
+            {{value}}
+          </p>
+        </div>
+        <div class="divider-40 divider-xl-50"></div>
+
+        <div class="divider-60 divider-lg-0"></div>
+      </div>
+      <div class="col-lg-6 mr--100-xl-with-scale">
+        <div class="post_format-post-format-video">
+          <div class="embed-responsive embed-responsive-3by2">
+            <a
+              href="https://www.youtube.com/embed/mcixldqDIEQ"
+              class="embed-placeholder"
+            >
+              <img src="images/bg-video.jpg" alt="img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

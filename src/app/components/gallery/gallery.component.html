@@ -1,0 +1,29 @@
+<section id="gallery" class="ls ds s-pt-90 s-pb-80 s-pt-xl-160 s-pb-xl-150 c-gutter-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="content-center">
+                    <div class="divider-lg-25 divider-xl-50"></div>
+                    <p class="text-center text-md-left color-main mb-1">
+                        <span class="line-left">{{ languageStoreService.Texts.section7.title }}</span>
+                    </p>
+                    <h3 class="text-center text-md-left mt-0 mb-2 special-heading color-darkgrey">
+                        <span>{{ languageStoreService.Texts.section7.subTitle }}</span>
+                    </h3>
+                    <div class="divider-40 divider-lg-25 divider-xl-50"></div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="row isotope-wrapper masonry-layout c-gutter-30 c-mb-30" data-filters=".gallery-filters">
+                    <div class="col-xl-4 col-sm-6 kites"  *ngFor="let image of languageStoreService.Texts.section7.images">
+                        <div class="vertical-item item-gallery content-absolute ds">
+                            <div class="item-media">
+                                <img [src]="image" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

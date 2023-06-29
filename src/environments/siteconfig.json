@@ -1,0 +1,508 @@
+{
+  "pt": {
+    "navbar": {
+      "home": "Iníco",
+      "about": "Sobre nós",
+      "services": "O que fazemos",
+      "price": "Preços",
+      "classes": "Aulas/Aluguer",
+      "contact": "Contactos",
+      "insta": "https://www.instagram.com/espozendesurfschool/"
+    },
+    "banners":[
+      {
+        "image": "../assets/images_site/banner1.jpg",
+        "text1": "O TEU ENCONTRO COM O MAR",
+        "text2": "ESPOZENDE SURF SCHOOL",
+        "text3": "ESPOSENDE",
+        "btn": "Marcar Aula",
+        "isToShow":true
+      },
+      {
+        "image": "../assets/images_site/banner2.jpg",
+        "text1": "",
+        "text2": "",
+        "text3": "",
+        "btn": "",
+        "isToShow":false
+      },
+      {
+        "image": "../assets/images_site/banner3.jpg",
+        "text1": "",
+        "text2": "",
+        "text3": "",
+        "btn": "",
+        "isToShow":false
+      }
+    ],
+    "section1": {
+      "title": "Sobre nós",
+      "subTitle": "A nossa história",
+      "text": "O que temos para oferecer.",
+      "texts": [
+        "A EspoZende Surf School é uma escola oficial da Federação Portuguesa de Surf, que dispõe de excelentes condições para a aprendizagem de Surf e Bodyboard na Praia Suave Mar em Esposende.",
+        "Tal como o nome indica, Espo”Z”ende com “Z”, pretende fazer a ponte entre o desporto já praticado há mais de 20 anos pelo concelho, quando Esposende ainda se escrevia com “Z” e trazer de volta tão grande tradição."
+      ],
+      "image1": "../assets/images_site/about1.jpg"
+    },
+    "section2": {
+      "title": "Vantagens",
+      "subTitle1": "Por que aprender",
+      "subTitle2": "conosco?",
+      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text2": "e únicos.",
+      "image1": "../assets/images_site/ben.jpg",
+      "lines": [
+        [
+          {
+            "icon": "ico ico-wave",
+            "total": 10,
+            "text": "Lugares seguros"
+          },
+          {
+            "icon": "ico ico-surfboard",
+            "total": 30,
+            "text": "Pranchas de surf"
+          },
+          {
+            "icon": "ico ico-surfer",
+            "total": 12,
+            "text": "Aulas por semana"
+          },
+          {
+            "icon": "ico ico-calm",
+            "total": 12,
+            "text": "Fatos"
+          }
+        ]
+      ]
+    },
+    "section3": {
+      "title": "Serviços",
+      "subTitle1": "Vamos",
+      "subTitle2": "começar!",
+      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text2": "e únicos.",
+      "services": [
+        {
+          "image": "../assets/images_site/services/surf.jpg",
+          "title": "Aulas",
+          "subTitle": "Surf",
+          "text": "",
+          "btn": "Marcar Aulas"
+        },
+        {
+          "image": "../assets/images_site/services/bodyboard.jpg",
+          "title": "Aulas",
+          "subTitle": "Bodyboard",
+          "text": "",
+          "btn": "Marcar Aulas"
+        },
+        {
+          "image": "../assets/images_site/services/surf_board.jpg",
+          "title": "Aluguer",
+          "subTitle": "Surf",
+          "text": "",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/services/bodyboard.jpg",
+          "title": "Aluguer",
+          "subTitle": "Bodyboard",
+          "text": "",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/services/paddleboard.jpg",
+          "title": "Aluguer",
+          "subTitle": "Paddle Surf",
+          "text": "",
+          "btn": "Alugar"
+        }
+      ]
+    },
+    "section4": {
+      "title": "Preços",
+      "subTitle": "Os programas da nossa escola",
+      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text2": "e únicos.",
+      "prices": [
+        {
+          "title": "Aulas Avulso",
+          "subTitle": "SURF",
+          "priceList": ["20€/Aula"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Aulas Avulso",
+          "subTitle": "BODYBOARD",
+          "priceList": ["15€/Aula"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Pack de Aulas",
+          "subTitle": "SURF",
+          "priceList": ["3 Aulas – 50€","5 Aulas – 70€","10 Aulas – 100€"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Pack de Aulas",
+          "subTitle": "BODYBOARD",
+          "priceList": ["3 Aulas – 40€","5 Aulas – 60€","10 Aulas – 100€"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Aula Particular",
+          "subTitle": "SURF",
+          "priceList": ["1 Aula – 30€"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Aula Particular",
+          "subTitle": "BODYBOARD",
+          "priceList": ["1 Aula – 30€"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Aluguer",
+          "subTitle": "SURF/BODYBOARD",
+          "priceList": ["15€"],
+          "btn": "Alugar"
+        },
+        {
+          "title": "Aluguer",
+          "subTitle": "PADDLE SURF",
+          "priceList": ["20€"],
+          "btn": "Alugar"
+        }
+      ]
+    },
+    "section5": {
+      "title": "Aluguer",
+      "subTitle1": "Estás a procura",
+      "subTitle2": "de equipamento?",
+      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text2": "e únicos.",
+      "btn":"Ver mais",
+      "equipments":[
+        {
+          "image":"../assets/images_site/equipments/longboard.png",
+          "title":"Longboard",
+          "text":"Dificuldade",
+          "rate": 20,
+          "price":"15€",
+          "btn":"Alugar"
+        },
+        {
+          "image":"../assets/images_site/equipments/gun.png",
+          "title":"Gun",
+          "text":"Dificuldade",
+          "rate": 35,
+          "price":"15€",
+          "btn":"Alugar"
+        }
+      ]
+    },
+    "section6": {
+      "title": "Quem nos visitou",
+      "subTitle": "O nosso orgulho",
+      "countries": [
+        {
+          "top": "35.5%", 
+          "left": "43.2%", 
+          "title": "PT",
+          "image":"../assets/images_site/flags/pt.png"
+        },
+        {
+          "top": "35.5%", 
+          "left": "50.2%", 
+          "title": "PT",
+          "image":"../assets/images_site/flags/it.png"
+        }
+      ]
+    },
+    "section7": {
+      "title": "Galeria",
+      "subTitle": "Nossas fotos",
+      "images":["../assets/images_site/gallery/bodyboard.jpg","../assets/images_site/gallery/paddle.jpg","../assets/images_site/gallery/paddleboard.jpg","../assets/images_site/gallery/surf.jpg","../assets/images_site/gallery/surf_board.jpg","../assets/images_site/gallery/surf_board.jpg"]
+    },
+    "section8": {
+      "title": "Contacte-nos",
+      "field1": "Nome",
+      "field2": "Email",
+      "field3": "Mensagem",
+      "btn": "Enviar",
+      "title2": "Info",
+      "values": [
+          {
+            "icon":"fa fa-map-pin",
+            "title":"Morada",
+            "value":"Praça 15 de Maio, 4740-287 Esposende, Portugal"
+          },
+          {
+            "icon":"fa fa-at",
+            "title":"Email",
+            "value":"info@espozendesurfschool.com"
+          },
+          {
+            "icon":"fa fa-phone",
+            "title":"Tel",
+            "value":"(+351) 961410360"
+          }
+      ]
+    }
+  },
+  "eng": {
+    "navbar": {
+      "home": "Home",
+      "about": "Sobre nós",
+      "services": "O que fazemos",
+      "price": "Preços",
+      "classes": "Aulas/Aluguer",
+      "contact": "Contactos",
+      "insta": "https://www.instagram.com/espozendesurfschool/"
+    },
+    "banners":[
+      {
+        "image": "../assets/images_site/banner1.jpg",
+        "text1": "O TEU ENCONTRO COM O MAR",
+        "text2": "ESPOZENDE SURF SCHOOL",
+        "text3": "ESPOSENDE",
+        "btn": "Marcar Aula",
+        "isToShow":true
+      },
+      {
+        "image": "../assets/images_site/banner2.jpg",
+        "text1": "",
+        "text2": "",
+        "text3": "",
+        "btn": "",
+        "isToShow":false
+      },
+      {
+        "image": "../assets/images_site/banner3.jpg",
+        "text1": "",
+        "text2": "",
+        "text3": "",
+        "btn": "",
+        "isToShow":false
+      }
+    ],
+    "section1": {
+      "title": "Sobre nós",
+      "subTitle": "A nossa história",
+      "text": "O que temos para oferecer.",
+      "texts": [
+        "A EspoZende Surf School é uma escola oficial da Federação Portuguesa de Surf, que dispõe de excelentes condições para a aprendizagem de Surf e Bodyboard na Praia Suave Mar em Esposende.",
+        "Tal como o nome indica, Espo”Z”ende com “Z”, pretende fazer a ponte entre o desporto já praticado há mais de 20 anos pelo concelho, quando Esposende ainda se escrevia com “Z” e trazer de volta tão grande tradição."
+      ],
+      "image1": "../assets/images_site/about1.jpg"
+    },
+    "section2": {
+      "title": "Vantagens",
+      "subTitle1": "Por que aprender",
+      "subTitle2": "conosco?",
+      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text2": "e únicos.",
+      "image1": "../assets/images_site/ben.jpg",
+      "lines": [
+        [
+          {
+            "icon": "ico ico-wave",
+            "total": 10,
+            "text": "Lugares seguros"
+          },
+          {
+            "icon": "ico ico-surfboard",
+            "total": 30,
+            "text": "Pranchas de surf"
+          },
+          {
+            "icon": "ico ico-surfer",
+            "total": 12,
+            "text": "Aulas por semana"
+          },
+          {
+            "icon": "ico ico-calm",
+            "total": 12,
+            "text": "Fatos"
+          }
+        ]
+      ]
+    },
+    "section3": {
+      "title": "Serviços",
+      "subTitle1": "Vamos",
+      "subTitle2": "começar!",
+      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text2": "e únicos.",
+      "services": [
+        {
+          "image": "../assets/images_site/services/surf.jpg",
+          "title": "Aulas",
+          "subTitle": "Surf",
+          "text": "",
+          "btn": "Marcar Aulas"
+        },
+        {
+          "image": "../assets/images_site/services/bodyboard.jpg",
+          "title": "Aulas",
+          "subTitle": "Bodyboard",
+          "text": "",
+          "btn": "Marcar Aulas"
+        },
+        {
+          "image": "../assets/images_site/services/surf_board.jpg",
+          "title": "Aluguer",
+          "subTitle": "Surf",
+          "text": "",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/services/bodyboard.jpg",
+          "title": "Aluguer",
+          "subTitle": "Bodyboard",
+          "text": "",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/services/paddleboard.jpg",
+          "title": "Aluguer",
+          "subTitle": "Paddle Surf",
+          "text": "",
+          "btn": "Alugar"
+        }
+      ]
+    },
+    "section4": {
+      "title": "Preços",
+      "subTitle": "Os programas da nossa escola",
+      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text2": "e únicos.",
+      "prices": [
+        {
+          "title": "Aulas Avulso",
+          "subTitle": "SURF",
+          "priceList": ["20€/Aula"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Aulas Avulso",
+          "subTitle": "BODYBOARD",
+          "priceList": ["15€/Aula"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Pack de Aulas",
+          "subTitle": "SURF",
+          "priceList": ["3 Aulas – 50€","5 Aulas – 70€","10 Aulas – 100€"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Pack de Aulas",
+          "subTitle": "BODYBOARD",
+          "priceList": ["3 Aulas – 40€","5 Aulas – 60€","10 Aulas – 100€"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Aula Particular",
+          "subTitle": "SURF",
+          "priceList": ["1 Aula – 30€"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Aula Particular",
+          "subTitle": "BODYBOARD",
+          "priceList": ["1 Aula – 30€"],
+          "btn": "Marcar Aulas"
+        },
+        {
+          "title": "Aluguer",
+          "subTitle": "SURF/BODYBOARD",
+          "priceList": ["15€"],
+          "btn": "Alugar"
+        },
+        {
+          "title": "Aluguer",
+          "subTitle": "PADDLE SURF",
+          "priceList": ["20€"],
+          "btn": "Alugar"
+        }
+      ]
+    },
+    "section5": {
+      "title": "Aluguer",
+      "subTitle1": "Estás a procura",
+      "subTitle2": "de equipamento?",
+      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text2": "e únicos.",
+      "btn":"Ver mais",
+      "equipments":[
+        {
+          "image":"../assets/images_site/equipments/longboard.png",
+          "title":"Longboard",
+          "text":"Dificuldade",
+          "rate": 20,
+          "price":"15€",
+          "btn":"Alugar"
+        },
+        {
+          "image":"../assets/images_site/equipments/gun.png",
+          "title":"Gun",
+          "text":"Dificuldade",
+          "rate": 35,
+          "price":"15€",
+          "btn":"Alugar"
+        }
+      ]
+    },
+    "section6": {
+      "title": "Quem nos visitou",
+      "subTitle": "O nosso orgulho",
+      "countries": [
+        {
+          "top": "35.5%", 
+          "left": "43.2%", 
+          "title": "PT",
+          "image":"../assets/images_site/flags/pt.png"
+        },
+        {
+          "top": "35.5%", 
+          "left": "50.2%", 
+          "title": "PT",
+          "image":"../assets/images_site/flags/it.png"
+        }
+      ]
+    },
+    "section7": {
+      "title": "Galeria",
+      "subTitle": "Nossas fotos",
+      "images":["../assets/images_site/gallery/bodyboard.jpg","../assets/images_site/gallery/paddle.jpg","../assets/images_site/gallery/paddleboard.jpg","../assets/images_site/gallery/surf.jpg","../assets/images_site/gallery/surf_board.jpg","../assets/images_site/gallery/surf_board.jpg"]
+    },
+    "section8": {
+      "title": "Contacte-nos",
+      "field1": "Nome",
+      "field2": "Email",
+      "field3": "Mensagem",
+      "btn": "Enviar",
+      "title2": "Info",
+      "values": [
+          {
+            "icon":"fa fa-map-pin",
+            "title":"Morada",
+            "value":"Praça 15 de Maio, 4740-287 Esposende, Portugal"
+          },
+          {
+            "icon":"fa fa-at",
+            "title":"Email",
+            "value":"info@espozendesurfschool.com"
+          },
+          {
+            "icon":"fa fa-phone",
+            "title":"Tel",
+            "value":"(+351) 961410360"
+          }
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+<section id="shop" class="ls ms s-pt-90 s-pb-60 s-pt-xl-160 s-pb-xl-130">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xl-4 text-center text-md-left">
+        <div class="divider-0 divider-lg-200 divider-xl-150"></div>
+        <p class="text-center text-md-left color-darkgrey mb-1">
+          <span class="line-left">
+            {{ languageStoreService.Texts.section5.title }}
+          </span>
+        </p>
+        <h3
+          class="text-center text-md-left mt-0 mb-2 special-heading color-darkgrey"
+        >
+          <span
+            >{{ languageStoreService.Texts.section5.subTitle1 }}<br />{{
+              languageStoreService.Texts.section5.subTitle2
+            }}</span
+          >
+        </h3>
+        <p class="text-center text-md-left color-darkgrey fs-20 fw-500">
+          <span
+            >{{ languageStoreService.Texts.section5.text1 }} <br />{{
+              languageStoreService.Texts.section5.text2
+            }}
+          </span>
+        </p>
+        <div class="divider-30 divider-xl-40"></div>
+        <!-- <a href="shop-left.html" class="btn btn-maincolor">{{ languageStoreService.Texts.section5.btn }}</a>
+                <div class="divider-60 divider-lg-0"></div> -->
+      </div>
+      <div class="col-lg-6 col-xl-8">
+        <ul
+          class="owl-carousel products"
+          data-responsive-lg="2"
+          data-responsive-md="1"
+          data-responsive-sm="2"
+          data-responsive-xs="1"
+          data-nav="false"
+          data-margin="0"
+          data-loop="true"
+          data-autoplay="true"
+        >
+          <li
+            class="product"
+            *ngFor="
+              let equipment of languageStoreService.Texts.section5.equipments
+            "
+          >
+            <div class="product-inner">
+              <a href="shop-product-left.html">
+                <img [src]="equipment.image" alt="img" />
+              </a>
+
+              <div class="product-wrap">
+                <h2 class="woocommerce-loop-product__title">
+                  <a href="shop-product-left.html">{{ equipment.title }}</a>
+                </h2>
+                <div class="rate">
+                  <span>{{ equipment.text }}</span>
+                </div>
+                <div class="star-rating">
+                  <span [style]="'width:' + equipment.rate + '%'"
+                    >Rated
+                    <strong class="rating"> {{ equipment.rate }} </strong> out
+                    of 5</span
+                  >
+                </div>
+                <div class="price-wrap">
+                  <span class="price">
+                    <span>
+                      <span>{{ equipment.price }}</span>
+                    </span>
+                  </span>
+                  <div class="plan-button">
+                    <a href="#open-modal" class="btn btn-maincolor btn-slider btn-medium">{{
+                        equipment.btn
+                    }}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

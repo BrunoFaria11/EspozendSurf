@@ -1,0 +1,62 @@
+<!-- Section Counter -->
+<section
+  id="features"
+  class="ls section-counter s-overlay mobile-overlay s-py-90 s-py-xl-160 c-gutter-40"
+  style="
+    background: url('{{ languageStoreService.Texts.section2.image1 }}') no-repeat center/cover;
+  "
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6"></div>
+      <div class="col-lg-6">
+        <p class="text-center text-md-left color-darkgrey mb-1">
+          <span class="line-left"
+            >{{ languageStoreService.Texts.section2.title }}
+          </span>
+        </p>
+        <h3
+          class="text-center text-md-left mt-0 mb-2 special-heading color-darkgrey"
+        >
+          <span
+            >{{ languageStoreService.Texts.section2.subTitle1 }} <br />{{
+              languageStoreService.Texts.section2.subTitle2
+            }}
+          </span>
+        </h3>
+        <p class="text-center text-md-left color-darkgrey fs-20 fw-500">
+          <span
+            >{{ languageStoreService.Texts.section2.text1 }} <br />
+            {{ languageStoreService.Texts.section2.text2 }}
+          </span>
+        </p>
+        <div class="divider-60 divider-xl-90"></div>
+        <div
+          class="row"
+          *ngFor="let line of languageStoreService.Texts.section2.lines"
+        >
+          <div class="col-md-3" *ngFor="let benefit of line">
+            <div class="icon-box text-center text-md-left">
+              <div class="icon-styled color-darkgrey fs-50">
+                <i [ngClass]="benefit.icon"></i>
+              </div>
+              <h3
+                class="special-heading text-uppercase counter-wrap color-main mt-2 mb-3"
+              >
+                <span
+                  class="counter"
+                  data-from="0"
+                  [attr.data-to]="benefit.total"
+                  data-speed="1500"
+                  >0</span
+                >
+              </h3>
+              <p>{{ benefit.text }}</p>
+            </div>
+            <div class="divider-30 divider-lg-0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
