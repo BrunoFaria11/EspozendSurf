@@ -18,6 +18,9 @@ import { ErrorComponent } from './containers/error/error.component';
 import { HomeComponent } from './containers/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BuildFormComponent } from './containers/build-form/build-form.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +37,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     ContactComponent,
     FilterBannerPipe,
     ErrorComponent,
-    HomeComponent
+    HomeComponent,
+    BuildFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     FontAwesomeModule,
     CarouselModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

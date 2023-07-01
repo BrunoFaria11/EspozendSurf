@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, ParamMap, Router } from '@angular/router';
 import { LanguageStoreService } from 'src/core/services/stores/language-store.service';
+
+declare function do_(): any;
 
 @Component({
   selector: 'app-root',
@@ -11,11 +13,29 @@ export class AppComponent {
   title = 'Espozende Surf';
 
   constructor(
-    private route: ActivatedRoute,
+    private router: Router,
     private languageStoreService: LanguageStoreService
   ) {}
 
   ngOnInit() {
-    this.languageStoreService.change("pt");
+ 
+    const websiteLang = localStorage.getItem('websiteLang');
+    
+    if (websiteLang == undefined) {
+      this.languageStoreService.change("pt");
+    }
+    else{
+      this.languageStoreService.change(websiteLang);
+    }
+
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        do_();
+      }
+    });
   }
 }
+function saveAs(file: Blob, arg1: string) {
+  throw new Error('Function not implemented.');
+}
+

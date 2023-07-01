@@ -26,5 +26,17 @@ export class HeaderComponent implements OnInit {
     this.languageStoreService.change(this.value);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const websiteLang = localStorage.getItem('websiteLang');
+
+    if (websiteLang == undefined) {
+      this.selectImage = '../../../assets/images_site/flags/pt.png';
+    } else {
+      if (websiteLang == 'eng') {
+        this.selectImage = '../../../assets/images_site/flags/gb-eng.png';
+      } else {
+        this.selectImage = '../../../assets/images_site/flags/pt.png';
+      }
+    }
+  }
 }

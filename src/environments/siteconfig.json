@@ -1,22 +1,23 @@
 {
   "pt": {
     "navbar": {
-      "home": "Iníco",
+      "home": "Iníco2",
       "about": "Sobre nós",
       "services": "O que fazemos",
       "price": "Preços",
       "classes": "Aulas/Aluguer",
       "contact": "Contactos",
+      "logo": "../assets/images/logo.png",
       "insta": "https://www.instagram.com/espozendesurfschool/"
     },
-    "banners":[
+    "banners": [
       {
         "image": "../assets/images_site/banner1.jpg",
         "text1": "O TEU ENCONTRO COM O MAR",
         "text2": "ESPOZENDE SURF SCHOOL",
         "text3": "ESPOSENDE",
         "btn": "Marcar Aula",
-        "isToShow":true
+        "isToShow": true
       },
       {
         "image": "../assets/images_site/banner2.jpg",
@@ -24,7 +25,7 @@
         "text2": "",
         "text3": "",
         "btn": "",
-        "isToShow":false
+        "isToShow": false
       },
       {
         "image": "../assets/images_site/banner3.jpg",
@@ -32,7 +33,7 @@
         "text2": "",
         "text3": "",
         "btn": "",
-        "isToShow":false
+        "isToShow": false
       }
     ],
     "section1": {
@@ -43,7 +44,8 @@
         "A EspoZende Surf School é uma escola oficial da Federação Portuguesa de Surf, que dispõe de excelentes condições para a aprendizagem de Surf e Bodyboard na Praia Suave Mar em Esposende.",
         "Tal como o nome indica, Espo”Z”ende com “Z”, pretende fazer a ponte entre o desporto já praticado há mais de 20 anos pelo concelho, quando Esposende ainda se escrevia com “Z” e trazer de volta tão grande tradição."
       ],
-      "image1": "../assets/images_site/about1.jpg"
+      "image1": "../assets/images_site/about1.jpg",
+      "image2": "../assets/images_site/about1.jpg"
     },
     "section2": {
       "title": "Vantagens",
@@ -142,13 +144,13 @@
         {
           "title": "Pack de Aulas",
           "subTitle": "SURF",
-          "priceList": ["3 Aulas – 50€","5 Aulas – 70€","10 Aulas – 100€"],
+          "priceList": ["3 Aulas – 50€", "5 Aulas – 70€", "10 Aulas – 100€"],
           "btn": "Marcar Aulas"
         },
         {
           "title": "Pack de Aulas",
           "subTitle": "BODYBOARD",
-          "priceList": ["3 Aulas – 40€","5 Aulas – 60€","10 Aulas – 100€"],
+          "priceList": ["3 Aulas – 40€", "5 Aulas – 60€", "10 Aulas – 100€"],
           "btn": "Marcar Aulas"
         },
         {
@@ -183,23 +185,23 @@
       "subTitle2": "de equipamento?",
       "text1": "Queremos que nossos clientes se sintam incríveis",
       "text2": "e únicos.",
-      "btn":"Ver mais",
-      "equipments":[
+      "btn": "Ver mais",
+      "equipments": [
         {
-          "image":"../assets/images_site/equipments/longboard.png",
-          "title":"Longboard",
-          "text":"Dificuldade",
+          "image": "../assets/images_site/equipments/longboard.png",
+          "title": "Longboard",
+          "text": "Dificuldade",
           "rate": 20,
-          "price":"15€",
-          "btn":"Alugar"
+          "price": "15€",
+          "btn": "Alugar"
         },
         {
-          "image":"../assets/images_site/equipments/gun.png",
-          "title":"Gun",
-          "text":"Dificuldade",
+          "image": "../assets/images_site/equipments/gun.png",
+          "title": "Gun",
+          "text": "Dificuldade",
           "rate": 35,
-          "price":"15€",
-          "btn":"Alugar"
+          "price": "15€",
+          "btn": "Alugar"
         }
       ]
     },
@@ -208,23 +210,30 @@
       "subTitle": "O nosso orgulho",
       "countries": [
         {
-          "top": "35.5%", 
-          "left": "43.2%", 
+          "top": "35.5%",
+          "left": "43.2%",
           "title": "PT",
-          "image":"../assets/images_site/flags/pt.png"
+          "image": "../assets/images_site/flags/pt.png"
         },
         {
-          "top": "35.5%", 
-          "left": "50.2%", 
+          "top": "35.5%",
+          "left": "50.2%",
           "title": "PT",
-          "image":"../assets/images_site/flags/it.png"
+          "image": "../assets/images_site/flags/it.png"
         }
       ]
     },
     "section7": {
       "title": "Galeria",
       "subTitle": "Nossas fotos",
-      "images":["../assets/images_site/gallery/bodyboard.jpg","../assets/images_site/gallery/paddle.jpg","../assets/images_site/gallery/paddleboard.jpg","../assets/images_site/gallery/surf.jpg","../assets/images_site/gallery/surf_board.jpg","../assets/images_site/gallery/surf_board.jpg"]
+      "images": [
+        "../assets/images_site/gallery/bodyboard.jpg",
+        "../assets/images_site/gallery/paddle.jpg",
+        "../assets/images_site/gallery/paddleboard.jpg",
+        "../assets/images_site/gallery/surf.jpg",
+        "../assets/images_site/gallery/surf_board.jpg",
+        "../assets/images_site/gallery/surf_board.jpg"
+      ]
     },
     "section8": {
       "title": "Contacte-nos",
@@ -234,21 +243,65 @@
       "btn": "Enviar",
       "title2": "Info",
       "values": [
-          {
-            "icon":"fa fa-map-pin",
-            "title":"Morada",
-            "value":"Praça 15 de Maio, 4740-287 Esposende, Portugal"
-          },
-          {
-            "icon":"fa fa-at",
-            "title":"Email",
-            "value":"info@espozendesurfschool.com"
-          },
-          {
-            "icon":"fa fa-phone",
-            "title":"Tel",
-            "value":"(+351) 961410360"
-          }
+        {
+          "icon": "fa fa-map-pin",
+          "title": "Morada",
+          "value": "Praça 15 de Maio, 4740-287 Esposende, Portugal"
+        },
+        {
+          "icon": "fa fa-at",
+          "title": "Email",
+          "value": "info@espozendesurfschool.com"
+        },
+        {
+          "icon": "fa fa-phone",
+          "title": "Tel",
+          "value": "(+351) 961410360"
+        }
+      ]
+    },
+    "section9": {
+      "closeBtn": "X",
+      "title": "Aulas/Alugar",
+      "field1": "Nome",
+      "field2": "Número de CC/BI",
+      "field3": "Data de Nascimento",
+      "field4": "E-mail",
+      "field5": "Contacto Telefónico (Indicador)",
+      "field6": "Localidade",
+      "field7": "Data da Aula ou Aluguer",
+      "field8": "Tipo",
+      "field9": "Horário da Aula ou Aluguer",
+      "field10": "Observações",
+      "btn": "Enviar",
+      "time": {
+        "morning": "Manhã",
+        "afternoon": "Tarde"
+      },
+      "types": [
+        {
+          "type": "Aulas Avulso",
+          "values": ["Aula Avulso Surf (20€)", "Aula Avulso Bodyboard (15€)"]
+        },
+        {
+          "type": "Packs de Aulas (Sujeito a um mínimo de 3 pessoas. Validade: 2 meses.)",
+          "values": [
+            "Pack 3 aulas Surf (50€)", 
+            "Pack 3 aulas Bodyboard (40€)",
+            "Pack 5 aulas Surf (70€)",
+            "Pack 5 aulas Bodyboard (60€)",
+            "Pack 10 aulas Surf (100€)",
+            "Pack 10 aulas Bodyboard (100€)"
+          ]
+        },
+        {
+          "type": "Aulas Particulares (Aguardar resposta de disponibilidade da escola.)",
+          "values": ["1 aula Surf (30€)", "1 aula Bodyboard (30€)"]
+        },
+        {
+          "type": "Aluguer (Aguardar resposta de disponibilidade da escola.)",
+          "values": ["Surf (15€)", "Paddle Surf (20€)","Bodyboard (15€)"]
+        }
       ]
     }
   },
@@ -260,16 +313,17 @@
       "price": "Preços",
       "classes": "Aulas/Aluguer",
       "contact": "Contactos",
+      "logo": "../assets/images/logo.png",
       "insta": "https://www.instagram.com/espozendesurfschool/"
     },
-    "banners":[
+    "banners": [
       {
         "image": "../assets/images_site/banner1.jpg",
-        "text1": "O TEU ENCONTRO COM O MAR",
+        "text1": "O TEU ENCONTRO COM O MAR2",
         "text2": "ESPOZENDE SURF SCHOOL",
         "text3": "ESPOSENDE",
         "btn": "Marcar Aula",
-        "isToShow":true
+        "isToShow": true
       },
       {
         "image": "../assets/images_site/banner2.jpg",
@@ -277,7 +331,7 @@
         "text2": "",
         "text3": "",
         "btn": "",
-        "isToShow":false
+        "isToShow": false
       },
       {
         "image": "../assets/images_site/banner3.jpg",
@@ -285,7 +339,7 @@
         "text2": "",
         "text3": "",
         "btn": "",
-        "isToShow":false
+        "isToShow": false
       }
     ],
     "section1": {
@@ -296,7 +350,8 @@
         "A EspoZende Surf School é uma escola oficial da Federação Portuguesa de Surf, que dispõe de excelentes condições para a aprendizagem de Surf e Bodyboard na Praia Suave Mar em Esposende.",
         "Tal como o nome indica, Espo”Z”ende com “Z”, pretende fazer a ponte entre o desporto já praticado há mais de 20 anos pelo concelho, quando Esposende ainda se escrevia com “Z” e trazer de volta tão grande tradição."
       ],
-      "image1": "../assets/images_site/about1.jpg"
+      "image1": "../assets/images_site/about1.jpg",
+      "image2": "../assets/images_site/about1.jpg"
     },
     "section2": {
       "title": "Vantagens",
@@ -395,13 +450,13 @@
         {
           "title": "Pack de Aulas",
           "subTitle": "SURF",
-          "priceList": ["3 Aulas – 50€","5 Aulas – 70€","10 Aulas – 100€"],
+          "priceList": ["3 Aulas – 50€", "5 Aulas – 70€", "10 Aulas – 100€"],
           "btn": "Marcar Aulas"
         },
         {
           "title": "Pack de Aulas",
           "subTitle": "BODYBOARD",
-          "priceList": ["3 Aulas – 40€","5 Aulas – 60€","10 Aulas – 100€"],
+          "priceList": ["3 Aulas – 40€", "5 Aulas – 60€", "10 Aulas – 100€"],
           "btn": "Marcar Aulas"
         },
         {
@@ -436,23 +491,23 @@
       "subTitle2": "de equipamento?",
       "text1": "Queremos que nossos clientes se sintam incríveis",
       "text2": "e únicos.",
-      "btn":"Ver mais",
-      "equipments":[
+      "btn": "Ver mais",
+      "equipments": [
         {
-          "image":"../assets/images_site/equipments/longboard.png",
-          "title":"Longboard",
-          "text":"Dificuldade",
+          "image": "../assets/images_site/equipments/longboard.png",
+          "title": "Longboard",
+          "text": "Dificuldade",
           "rate": 20,
-          "price":"15€",
-          "btn":"Alugar"
+          "price": "15€",
+          "btn": "Alugar"
         },
         {
-          "image":"../assets/images_site/equipments/gun.png",
-          "title":"Gun",
-          "text":"Dificuldade",
+          "image": "../assets/images_site/equipments/gun.png",
+          "title": "Gun",
+          "text": "Dificuldade",
           "rate": 35,
-          "price":"15€",
-          "btn":"Alugar"
+          "price": "15€",
+          "btn": "Alugar"
         }
       ]
     },
@@ -461,23 +516,30 @@
       "subTitle": "O nosso orgulho",
       "countries": [
         {
-          "top": "35.5%", 
-          "left": "43.2%", 
+          "top": "35.5%",
+          "left": "43.2%",
           "title": "PT",
-          "image":"../assets/images_site/flags/pt.png"
+          "image": "../assets/images_site/flags/pt.png"
         },
         {
-          "top": "35.5%", 
-          "left": "50.2%", 
+          "top": "35.5%",
+          "left": "50.2%",
           "title": "PT",
-          "image":"../assets/images_site/flags/it.png"
+          "image": "../assets/images_site/flags/it.png"
         }
       ]
     },
     "section7": {
       "title": "Galeria",
       "subTitle": "Nossas fotos",
-      "images":["../assets/images_site/gallery/bodyboard.jpg","../assets/images_site/gallery/paddle.jpg","../assets/images_site/gallery/paddleboard.jpg","../assets/images_site/gallery/surf.jpg","../assets/images_site/gallery/surf_board.jpg","../assets/images_site/gallery/surf_board.jpg"]
+      "images": [
+        "../assets/images_site/gallery/bodyboard.jpg",
+        "../assets/images_site/gallery/paddle.jpg",
+        "../assets/images_site/gallery/paddleboard.jpg",
+        "../assets/images_site/gallery/surf.jpg",
+        "../assets/images_site/gallery/surf_board.jpg",
+        "../assets/images_site/gallery/surf_board.jpg"
+      ]
     },
     "section8": {
       "title": "Contacte-nos",
@@ -487,21 +549,65 @@
       "btn": "Enviar",
       "title2": "Info",
       "values": [
-          {
-            "icon":"fa fa-map-pin",
-            "title":"Morada",
-            "value":"Praça 15 de Maio, 4740-287 Esposende, Portugal"
-          },
-          {
-            "icon":"fa fa-at",
-            "title":"Email",
-            "value":"info@espozendesurfschool.com"
-          },
-          {
-            "icon":"fa fa-phone",
-            "title":"Tel",
-            "value":"(+351) 961410360"
-          }
+        {
+          "icon": "fa fa-map-pin",
+          "title": "Morada",
+          "value": "Praça 15 de Maio, 4740-287 Esposende, Portugal"
+        },
+        {
+          "icon": "fa fa-at",
+          "title": "Email",
+          "value": "info@espozendesurfschool.com"
+        },
+        {
+          "icon": "fa fa-phone",
+          "title": "Tel",
+          "value": "(+351) 961410360"
+        }
+      ]
+    },
+    "section9": {
+      "closeBtn": "X",
+      "title": "Aulas/Alugar",
+      "field1": "Nome",
+      "field2": "Número de CC/BI",
+      "field3": "Data de Nascimento",
+      "field4": "E-mail",
+      "field5": "Contacto Telefónico (Indicador)",
+      "field6": "Localidade",
+      "field7": "Data da Aula ou Aluguer",
+      "field8": "Tipo",
+      "field9": "Horário da Aula ou Aluguer",
+      "field10": "Observações",
+      "btn": "Enviar",
+      "time": {
+        "morning": "Manhã",
+        "afternoon": "Tarde"
+      },
+      "types": [
+        {
+          "type": "Aulas Avulso",
+          "values": ["Aula Avulso Surf (20€)", "Aula Avulso Bodyboard (15€)"]
+        },
+        {
+          "type": "Packs de Aulas (Sujeito a um mínimo de 3 pessoas. Validade: 2 meses.)",
+          "values": [
+            "Pack 3 aulas Surf (50€)", 
+            "Pack 3 aulas Bodyboard (40€)",
+            "Pack 5 aulas Surf (70€)",
+            "Pack 5 aulas Bodyboard (60€)",
+            "Pack 10 aulas Surf (100€)",
+            "Pack 10 aulas Bodyboard (100€)"
+          ]
+        },
+        {
+          "type": "Aulas Particulares (Aguardar resposta de disponibilidade da escola.)",
+          "values": ["1 aula Surf (30€)", "1 aula Bodyboard (30€)"]
+        },
+        {
+          "type": "Aluguer (Aguardar resposta de disponibilidade da escola.)",
+          "values": ["Surf (15€)", "Paddle Surf (20€)","Bodyboard (15€)"]
+        }
       ]
     }
   }

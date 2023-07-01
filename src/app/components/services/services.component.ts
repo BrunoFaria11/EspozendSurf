@@ -9,8 +9,6 @@ import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements OnInit {
-  @Input() props: any ;
-
   
   icons = {
     faChevronRight_: faChevronRight,
@@ -25,6 +23,7 @@ export class ServicesComponent implements OnInit {
     dots: false,
     navSpeed: 700,
     navText: ['&#8249', '&#8250;'],
+    items: 3,
     responsive: {
       0: {
         items: 1
@@ -33,10 +32,10 @@ export class ServicesComponent implements OnInit {
         items: 1
       },
       767: {
-        items: 1
+        items: 2
       },
       1024: {
-        items: 1
+        items: 2
       }
     },
     nav: false

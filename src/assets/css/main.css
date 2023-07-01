@@ -1139,7 +1139,7 @@ input[type="radio"]:disabled + label:before {
 
 .select_container select {
 	border: none;
-	color: #9DB0A3;
+	color: #ccc;
 	font-weight: 300;
 	padding-left: 30px;
 }
@@ -1709,7 +1709,7 @@ td .media-body {
 	object-fit: cover;
 	position: absolute;
 	top: 0;
-	width: auto;
+	width: 100%;
 }
 
 .embed-responsive-16by9 {
@@ -9312,21 +9312,21 @@ body.boxed {
 }
 
 .ds * .ds {
-	background-color: #0a3248;
+	background-color: #907159;
 }
 
 /* dark background section - .ds.ms */
 .ds.ms {
-	background-color: #062637;
+	background-color: #907159;
 }
 
 .ds.ms .ds.ms {
-	background-color: #072c40;
+	background-color: #907159;
 }
 
 /* dark section blue - .ds.bs */
 .ds.bs {
-	background-color: #2f3e47;
+	background-color: #907159;
 }
 
 .ds a:not(.btn) {

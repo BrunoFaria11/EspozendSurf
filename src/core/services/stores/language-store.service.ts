@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, of } from 'rxjs';
-import data from "../../../environments/siteconfig.json";
+import data from '../../../environments/siteconfig.json';
+
+declare function do_(): any;
 
 @Injectable({ providedIn: 'root' })
 export class LanguageStoreService {
-  constructor() { }
-
+  constructor() {}
 
   _texts = new BehaviorSubject<any>([]);
   texts$ = this._texts.asObservable();
-
 
   get Texts(): any {
     return this._texts.getValue();
@@ -20,11 +20,19 @@ export class LanguageStoreService {
   }
 
   change(language: string) {
-    if(language == "pt"){
+    debugger;
+    if (language == 'pt') {
       this.Texts = data.pt;
-    }
-    else if(language == "eng"){
+    } else if (language == 'eng') {
       this.Texts = data.eng;
     }
+
+    localStorage.setItem(
+      'websiteLang',
+      language
+    );
+    setTimeout(() => {
+      do_();
+    }, 300);
   }
 }

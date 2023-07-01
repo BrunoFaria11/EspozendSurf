@@ -2,7 +2,7 @@
   <div class="flexslider">
     <ul class="slides">
       <li
-        class="ds cover-image text-center text-lg-left"
+        class="ds cover-image text-center text-lg-left" style=" width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"
         *ngFor="let banner of languageStoreService.Texts.banners | filterBanner"
       >
         <img [src]="banner.image" alt="img" />

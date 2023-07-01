@@ -1,0 +1,57 @@
+{
+  "schema": {
+      "pt": {
+        "type": "object",
+        "title": "Pt",
+        "properties": {
+          "navbar": {
+            "type": "object",
+            "title": "navbar",
+            "properties": {
+              "home": {
+                "type": "string",
+                "title": "home",
+                "default": "Iníco"
+              },
+              "about":{
+                "type": "string",
+                "title": "about",
+                "default": "Sobre nós"
+              },
+              "services":{
+                "type": "string",
+                "title": "hservicesome",
+                "default": "O que fazemos"
+              },
+              "price": {
+                "type": "string",
+                "title": "price",
+                "default": "Preços"
+              },
+              "classes": {
+                "type": "string",
+                "title": "classes",
+                "default": "Aulas/Aluguer"
+              } ,
+              "contact": {
+                "type": "string",
+                "title": "contact",
+                "default": "Contactos"
+              },
+              "logo": {
+                "type": "string",
+                "title": "logo",
+                "default": "../assets/images/logo.png"
+              } ,
+              "insta": {
+                "type": "string",
+                "title": "insta",
+                "default": "https://www.instagram.com/espozendesurfschool/"
+              } 
+            }
+          }
+        }
+      }
+    }
+}
+

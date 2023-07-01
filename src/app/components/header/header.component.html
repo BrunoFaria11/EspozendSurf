@@ -20,7 +20,7 @@
         <div class="logo_wrapper">
           <a href="./" class="logo">
             <img
-              src="../assets/images/logo.png"
+              [src]="languageStoreService.Texts.navbar.logo"
               alt="img"
               style="filter: brightness(0) invert(1)"
             />
@@ -29,7 +29,7 @@
         <nav class="top-nav">
           <ul class="nav sf-menu">
             <li>
-              <a href="#home" class="active">{{
+              <a href="#home" >{{
                 languageStoreService.Texts.navbar.home
               }}</a>
             </li>

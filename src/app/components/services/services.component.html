@@ -1,151 +1,75 @@
 <!-- Section Services -->
-<section id="services" class="ls ms s-py-90 s-py-xl-160">
-  <div class="container-fluid">
+<section id="services" class="ls ms s-pt-90 s-pb-60 s-pt-xl-160 s-pb-xl-130">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-xl-3 section-special small-section">
-        <div>
-          <div class="content-center">
-            <p class="text-center text-lg-left color-darkgrey mb-1">
-              <span class="line-left">{{
-                languageStoreService.Texts.section3.title
-              }}</span>
-            </p>
-            <h3
-              class="text-center text-lg-left mt-0 mb-2 special-heading color-darkgrey"
-            >
-              <span
-                >{{ languageStoreService.Texts.section3.subTitle1 }} <br />{{
-                  languageStoreService.Texts.section3.subTitle2
-                }}</span
-              >
-            </h3>
-            <p class="text-center text-lg-left color-darkgrey fs-20 fw-500">
-              <span
-                >{{ languageStoreService.Texts.section3.text1 }} <br />{{
-                  languageStoreService.Texts.section3.text2
-                }}
-              </span>
-            </p>
-            <div class="divider-35"></div>
-            <div class="navs">
-              <div class="prev" (click)="owlCar.prev()">
-                <fa-icon
-                  [icon]="icons.faChevronLeft_"
-                  style="font-size: 14px"
-                ></fa-icon>
-              </div>
-              <div class="next" (click)="owlCar.next()">
-                <fa-icon
-                  [icon]="icons.faChevronRight_"
-                  style="font-size: 14px"
-                ></fa-icon>
-              </div>
-            </div>
-            <!-- <div class="owl-custom-nav hidden-below-lg">
-              <a href="#" class="owl-prev"
-                ><i class="fa fa-chevron-left"></i
-              ></a>
-              <a href="#" class="owl-next"
-                ><i class="fa fa-chevron-right"></i
-              ></a>
-            </div> -->
-          </div>
+      <div class="col-lg-6 col-xl-4 text-center text-md-left">
+        <div class="divider-0 divider-lg-200 divider-xl-150"></div>
+        <p class="text-center text-lg-left color-darkgrey mb-1">
+          <span class="line-left">{{
+            languageStoreService.Texts.section3.title
+          }}</span>
+        </p>
+        <h3
+          class="text-center text-lg-left mt-0 mb-2 special-heading color-darkgrey"
+        >
+          <span
+            >{{ languageStoreService.Texts.section3.subTitle1 }} <br />{{
+              languageStoreService.Texts.section3.subTitle2
+            }}</span
+          >
+        </h3>
+        <p class="text-center text-lg-left color-darkgrey fs-20 fw-500">
+          <span
+            >{{ languageStoreService.Texts.section3.text1 }} <br />{{
+              languageStoreService.Texts.section3.text2
+            }}
+          </span>
+        </p>
+        <div class="owl-custom-nav hidden-below-lg">
+          <a href="#" class="owl-prev" (click)="owlCar.prev()"
+            ><i class="fa fa-chevron-left"></i
+          ></a>
+          <a href="#" class="owl-next" (click)="owlCar.next()"
+            ><i class="fa fa-chevron-right"></i
+          ></a>
         </div>
+        <div class="divider-30 divider-xl-40"></div>
       </div>
-      <div class="col-lg-6 col-xl-9">
+      <div class="col-lg-6 col-xl-8">
         <owl-carousel-o [options]="owlOptions" #owlCar>
-          <ng-container *ngFor="let data of props.items">
+          <ng-container
+            *ngFor="let service of languageStoreService.Texts.section3.services"
+          >
             <ng-template carouselSlide>
-              <div class="col-12 item">
-                <div class="card hx-354 hx-md-300 hx-sm-180">
-                  <a href="/project/master">
-                    <div class="position-absolute w-100 hx-354 hx-md-300 hx-sm-180">
-                      <div class="br-8 project-layer layer layer-primary w-100 hx-354
-                        hx-md-300
-                        hx-sm-180"></div>
-                      <img class="br-8 w-100 hx-354 hx-md-300 hx-sm-180 object-cover
-                        left-0
-                        right-0"
-                        src="{{data.image}}">
-                    </div>
-                    <div class="pt-32 pb-32 pr-32 pl-32 position-absolute w-100 hx-354
-                      hx-md-300
-                      hx-sm-180 z-10">
-                      <div class="project-reference-description">
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="position-absolute project-card-title">
-                              <h3 class="text-white text-left">{{data.title}}</h3>
-                              <div class="mt-8 text-left">
-                                <h6 class="text-white font-weight-normal pr-196">{{data.type}}</h6>
-                              </div>
-                            </div>
-      
-                            <div class="mt-242 project-card-footer">
-                              <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 pt-12">
-                                  <h6 class="text-white">{{data.tags}}</h6>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mt-120 mt-sm-50 project-card-footer-sm">
-                              <div class="row">
-      
-                                <div class="col-12 pt-12">
-                                  <h3 class="text-white font-weight-800 text-left">{{data.title}}</h3>
-                                  <h6 class="text-white mt-6">{{data.tags}}</h6>
-                                </div>
-      
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+              <div class="vertical-item service-layout-1 ls">
+                <div class="item-media">
+                  <img [src]="service.image" alt="img" />
+                  <div class="media-links"></div>
+                </div>
+                <div class="item-content">
+                  <div class="item-content-wrap">
+                    <span class="cat-links">
+                      <span class="screen-reader-text">{{
+                        service.title
+                      }}</span>
+                      <span class="category"> {{ service.title }} </span>
+                    </span>
+                    <h5 class="mt-1">
+                      <span>{{ service.subTitle }} </span>
+                    </h5>
+                    <p>{{ service.text }}</p>
+                  </div>
+                  <a href="#open-modal" class="btn-booking">{{
+                    service.btn
+                  }}</a>
                 </div>
               </div>
             </ng-template>
           </ng-container>
-      
         </owl-carousel-o>
-        <!-- <div
-          class="quote-carousel owl-carousel"
-          data-margin="50"
-          data-responsive-xl="4"
-          data-responsive-ml="3"
-          data-responsive-lg="2"
-          data-responsive-md="1"
-          data-responsive-sm="2"
-          data-responsive-xs="1"
-          data-dots="false"
-          data-loop="true"
-          data-autoplay="true"
-        >
-          <div
-            class="vertical-item service-layout-1 ls"
-            *ngFor="let service of languageStoreService.Texts.section3.services"
-          >
-            <div class="item-media">
-              <img [src]="service.image" alt="img" />
-              <div class="media-links"></div>
-            </div>
-            <div class="item-content">
-              <div class="item-content-wrap">
-                <span class="cat-links">
-                  <span class="screen-reader-text">{{ service.title }}</span>
-                  <span class="category"> {{ service.title }} </span>
-                </span>
-                <h5 class="mt-1">
-                  <span>{{ service.subTitle }} </span>
-                </h5>
-                <p>{{ service.text }}</p>
-              </div>
-              <a href="#open-modal" class="btn-booking">{{ service.btn }}</a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
 </section>
+
+

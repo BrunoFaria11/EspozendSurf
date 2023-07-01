@@ -25,62 +25,55 @@
           </span>
         </p>
         <div class="divider-30 divider-xl-40"></div>
-        <!-- <a href="shop-left.html" class="btn btn-maincolor">{{ languageStoreService.Texts.section5.btn }}</a>
-                <div class="divider-60 divider-lg-0"></div> -->
       </div>
       <div class="col-lg-6 col-xl-8">
-        <ul
-          class="owl-carousel products"
-          data-responsive-lg="2"
-          data-responsive-md="1"
-          data-responsive-sm="2"
-          data-responsive-xs="1"
-          data-nav="false"
-          data-margin="0"
-          data-loop="true"
-          data-autoplay="true"
-        >
-          <li
-            class="product"
+        <owl-carousel-o [options]="owlOptions" #owlCar>
+          <ng-container
             *ngFor="
               let equipment of languageStoreService.Texts.section5.equipments
             "
           >
-            <div class="product-inner">
-              <a href="shop-product-left.html">
-                <img [src]="equipment.image" alt="img" />
-              </a>
+            <ng-template carouselSlide>
+              <div class="product">
+                <div class="product-inner">
+                  <a href="shop-product-left.html">
+                    <img [src]="equipment.image" alt="img" />
+                  </a>
 
-              <div class="product-wrap">
-                <h2 class="woocommerce-loop-product__title">
-                  <a href="shop-product-left.html">{{ equipment.title }}</a>
-                </h2>
-                <div class="rate">
-                  <span>{{ equipment.text }}</span>
-                </div>
-                <div class="star-rating">
-                  <span [style]="'width:' + equipment.rate + '%'"
-                    >Rated
-                    <strong class="rating"> {{ equipment.rate }} </strong> out
-                    of 5</span
-                  >
-                </div>
-                <div class="price-wrap">
-                  <span class="price">
-                    <span>
-                      <span>{{ equipment.price }}</span>
-                    </span>
-                  </span>
-                  <div class="plan-button">
-                    <a href="#open-modal" class="btn btn-maincolor btn-slider btn-medium">{{
-                        equipment.btn
-                    }}</a>
+                  <div class="product-wrap">
+                    <h2 class="woocommerce-loop-product__title">
+                      <a href="shop-product-left.html">{{ equipment.title }}</a>
+                    </h2>
+                    <div class="rate">
+                      <span>{{ equipment.text }}</span>
+                    </div>
+                    <div class="star-rating">
+                      <span [style]="'width:' + equipment.rate + '%'"
+                        >Rated
+                        <strong class="rating"> {{ equipment.rate }} </strong>
+                        out of 5</span
+                      >
+                    </div>
+                    <div class="price-wrap">
+                      <span class="price">
+                        <span>
+                          <span>{{ equipment.price }}</span>
+                        </span>
+                      </span>
+                      <div class="plan-button">
+                        <a
+                          href="#open-modal"
+                          class="btn btn-maincolor btn-slider btn-medium"
+                          >{{ equipment.btn }}</a
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
       </div>
     </div>
   </div>
