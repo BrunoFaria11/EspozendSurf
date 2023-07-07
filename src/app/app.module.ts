@@ -1,26 +1,43 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { BannerComponent } from './components/banner/banner.component';
-import { AboutComponent } from './components/about/about.component';
-import { BenefitsComponent } from './components/benefits/benefits.component';
-import { ServicesComponent } from './components/services/services.component';
-import { PricingComponent } from './components/pricing/pricing.component';
-import { EquipmentComponent } from './components/equipment/equipment.component';
-import { MapComponent } from './components/map/map.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { HeaderComponent } from './components/front-end/header/header.component';
+import { BannerComponent } from './components/front-end/banner/banner.component';
+import { AboutComponent } from './components/front-end/about/about.component';
+import { BenefitsComponent } from './components/front-end/benefits/benefits.component';
+import { ServicesComponent } from './components/front-end/services/services.component';
+import { PricingComponent } from './components/front-end/pricing/pricing.component';
+import { EquipmentComponent } from './components/front-end/equipment/equipment.component';
+import { MapComponent } from './components/front-end/map/map.component';
+import { GalleryComponent } from './components/front-end/gallery/gallery.component';
+import { ContactComponent } from './components/front-end/contact/contact.component';
 import { FilterBannerPipe } from 'src/core/pipe/banners';
 import { ErrorComponent } from './containers/error/error.component';
-import { HomeComponent } from './containers/home/home.component';
+import { HomeComponent } from './containers/front-end/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BuildFormComponent } from './containers/build-form/build-form.component';
+import { HomeBackComponent } from './containers/back-end/home-back/home-back.component';
+import { CalendarComponent } from './components/back-end/calendar/calendar.component';
+import { CalendarModule, DateAdapter, MOMENT } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { SchedulerModule } from 'angular-calendar-scheduler';
+import { AppService } from 'src/core/services/app-service';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { MailBoxComponent } from './components/back-end/mail-box/mail-box.component';
+import { DailyCalendarComponent } from './components/back-end/daily-calendar/daily-calendar.component';
+import { NavBarComponent } from './components/back-end/nav-bar/nav-bar.component';
+import { DashboardComponent } from './containers/back-end/dashboard/dashboard.component';
+import { CalendarBackComponent } from './containers/back-end/calendar/calendar.component';
+import { EmailService } from 'src/core/services/email-service';
+import { LoginComponent } from './containers/back-end/login/login.component';
+import { AuthHttpInterceptor, AuthModule } from '@auth0/auth0-angular';
+import { auth } from '../environments/auth';
 
 @NgModule({
   declarations: [
@@ -38,7 +55,14 @@ import { BuildFormComponent } from './containers/build-form/build-form.component
     FilterBannerPipe,
     ErrorComponent,
     HomeComponent,
-    BuildFormComponent
+    HomeBackComponent,
+    CalendarComponent,
+    MailBoxComponent,
+    DailyCalendarComponent,
+    NavBarComponent,
+    DashboardComponent,
+    CalendarBackComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -47,8 +71,31 @@ import { BuildFormComponent } from './containers/build-form/build-form.component
     FontAwesomeModule,
     CarouselModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    NgbModalModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
+    AuthModule.forRoot({
+      ...auth.auth,
+      httpInterceptor: {
+        ...auth.httpInterceptor,
+      },
+      useRefreshTokens: true
+    }),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    AppService,
+    EmailService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthHttpInterceptor,
+      multi: true,
+    },
+    { provide: LOCALE_ID, useValue: 'en-US' },
+    { provide: MOMENT, useValue: MOMENT },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,118 @@
+<div class="card">
+  <div class="d-flex align-items-end row">
+    <div class="col-sm-12">
+      <div class="card-body">
+        <ng-template #content let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Marcação</h4>
+            <button
+              type="button"
+              class="btn-close"
+              aria-label="Close"
+              (click)="modal.dismiss('Cross click')"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form (ngSubmit)="onSubmit($event)" [formGroup]="angForm">
+              <div class="mb-3">
+                <div class="divider">
+                  <div class="divider-text">{{ item.name }}</div>
+                </div>
+                <div class="divider">
+                  <div class="divider-text">{{ item.address }}</div>
+                </div>
+
+                <div class="divider">
+                  <div class="divider-text">{{ item.phone }}</div>
+                </div>
+
+                <div class="divider">
+                  <div class="divider-text">{{ item.cardNumber }}</div>
+                </div>
+
+                <div class="divider">
+                  <div class="divider-text">{{ item.birthDay }}</div>
+                </div>
+
+                <div class="divider">
+                  <div class="divider-text">{{ item.email }}</div>
+                </div>
+
+                <div class="divider">
+                  <div class="divider-text">{{ item.comments }}</div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label
+                  for="html5-datetime-local-input"
+                  class="col-md-2 col-form-label"
+                  >Data</label
+                >
+                <div class="col-md-10">
+                  <input
+                    class="form-control"
+                    type="date"
+                    min="{{minDate}}"
+                    value="{{ item.classDate }}"
+                    name="date"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label
+                  for="html5-datetime-local-input"
+                  class="col-md-3 col-form-label"
+                  >Confirmar</label
+                >
+                <div class="col-md-9">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="confirmed"
+                      id="inlineRadio1"
+                      value="true"
+                      [checked]="item.confirmed == true"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">Sim</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="confirmed"
+                      id="inlineRadio2"
+                      value="false"
+                      [checked]="item.confirmed == false || item.confirmed == undefined "
+                    />
+                    <label class="form-check-label" for="inlineRadio2">Não</label>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+          <div class="modal-footer"></div>
+        </ng-template>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h3>{{ viewDate | calendarDate : view + "ViewTitle" : "en" }}</h3>
+          </div>
+        </div>
+        <br />
+        <div [ngSwitch]="view">
+          <mwl-calendar-day-view
+            *ngSwitchCase="CalendarView.Day"
+            [viewDate]="viewDate"
+            [events]="events"
+            [refresh]="refresh"
+            (eventClicked)="open(content, $event)"
+            (eventTimesChanged)="eventTimesChanged($event)"
+          >
+          </mwl-calendar-day-view>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

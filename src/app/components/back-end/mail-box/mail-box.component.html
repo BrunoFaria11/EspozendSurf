@@ -1,0 +1,22 @@
+  <div class="card">
+    <div class="d-flex align-items-end row">
+      <div class="col-sm-12">
+        <h5 class="card-header m-0 me-2 pb-3">Emails</h5>
+        <div class="card-body">
+          <section id="listview">
+            <div id="content">
+              <div class="item active" *ngFor="let item of emails">
+                <div class="desc">
+                  <h5>{{ item.name }}</h5>
+                  <h6>{{ item.email }}</h6>
+                  <p>
+                    {{ item.message }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>

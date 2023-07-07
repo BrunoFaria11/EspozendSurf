@@ -1,0 +1,60 @@
+<!-- Section Price -->
+<section id="price" class="ls s-pb-90 s-pt-85 s-pb-xl-160 s-pt-xl-155">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center color-darkgrey mb-1">
+          <span class="line-left">{{
+            languageStoreService.Texts.section4.title
+          }}</span>
+        </p>
+        <h3 class="text-center mt-0 mb-2 special-heading color-darkgrey">
+          <span>{{ languageStoreService.Texts.section4.subTitle }}</span>
+        </h3>
+        <p class="text-center color-darkgrey fs-20 fw-500">
+          <span
+            >{{ languageStoreService.Texts.section4.text1 }}<br />
+            {{ languageStoreService.Texts.section4.text2 }}</span
+          >
+        </p>
+        <div class="divider-60 divider-xl-60"></div>
+      </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="row">
+          <div
+            class="col-lg-6 col-md-6"
+            *ngFor="let item of languageStoreService.Texts.section4.prices"
+            style="margin-top: 10px"
+          >
+            <div class="pricing-plan price-layout-1">
+              <div class="price-bg s-overlay cs"  style="
+              background: url('{{ item.image }}') no-repeat center/cover;
+            ">
+                <div class="price-wrap">
+                  <h3 class="plan-price">{{ item.title }}</h3>
+                </div>
+                <div class="plan-name">
+                  <h3>{{ item.subTitle }}</h3>
+                </div>
+              </div>
+              <div class="pricing-body hero-bg">
+                <div class="plan-features text-center">
+                  <ul class="list-bordered">
+                    <li *ngFor="let price of item.priceList">{{ price }}</li>
+                  </ul>
+                </div>
+                <div class="plan-button">
+                  <a href="#open-modal" class="btn btn-maincolor btn-slider btn-medium">{{
+                    item.btn
+                  }}</a>
+                </div>
+              </div>
+            </div>
+            <div class="divider-60 divider-lg-0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -20,7 +20,7 @@ export class LanguageStoreService {
   }
 
   change(language: string) {
-    debugger;
+    
     if (language == 'pt') {
       this.Texts = data.pt;
     } else if (language == 'eng') {
@@ -31,8 +31,9 @@ export class LanguageStoreService {
       'websiteLang',
       language
     );
+    
     setTimeout(() => {
       do_();
-    }, 300);
+    }, 3000);
   }
 }

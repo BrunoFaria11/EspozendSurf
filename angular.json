@@ -26,31 +26,28 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "allowedCommonJsDependencies": ["lodash","ajv","ajv-formats"],
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/css/bootstrap.min.css",
-              "src/assets/css/animations.css",
-              "src/assets/css/font-awesome.css",
-              "src/assets/css/icomoon.css",
-              "src/assets/css/main.css",
-              "src/assets/css/shop.css",
+              "src/assets/front-end/css/bootstrap.min.css",
+              "src/assets/front-end/css/animations.css",
+              "src/assets/front-end/css/font-awesome.css",
+              "src/assets/front-end/css/icomoon.css",
+              "src/assets/back-end/css/calendar/dx-common.css",
+              "src/assets/back-end/css/calendar/dx-light.css",
+
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css"
             ],
             "scripts": [
-              "src/assets/js/vendor/modernizr-2.6.2.min.js",
-              "src/assets/js/compressed.js",
-              "src/assets/js/main.js",
-
-              "src/assets/jsonform/deps/jquery.min.js",
-              "src/assets/jsonform/deps/underscore.js",
-              "src/assets/jsonform/deps/opt/jsv.js",
-              "src/assets/jsonform/lib/jsonform.js",
-              "src/assets/jsonform/main.js"
+              "src/assets/front-end/js/vendor/modernizr-2.6.2.min.js",
+              "src/assets/front-end/js/compressed.js",
+              "src/assets/front-end/js/main.js",
+              "src/assets/front-end/js/whatsapp.js"
             ]
           },
           "configurations": {

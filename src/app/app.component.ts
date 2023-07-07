@@ -35,7 +35,5 @@ export class AppComponent {
     });
   }
 }
-function saveAs(file: Blob, arg1: string) {
-  throw new Error('Function not implemented.');
-}
+
 

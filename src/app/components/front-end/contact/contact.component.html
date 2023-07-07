@@ -1,0 +1,151 @@
+<section class="ls s-py-90 s-py-xl-160" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 animate" data-animation="scaleAppear">
+        <div class="hero-bg p-60">
+          <form
+            class="c-mb-15 c-gutter-15"
+            [formGroup]="angForm"
+            (ngSubmit)="onClickSubmit(angForm.value)"
+          >
+            <div class="row">
+              <div class="col-12">
+                <h4>{{ languageStoreService.Texts.section8.title }}</h4>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group has-placeholder">
+                  <label for="name"
+                    >{{ languageStoreService.Texts.section8.field1 }}
+                  </label>
+                  <input
+                    [ngClass]="[
+                                    angForm.controls?.['name']?.status == 'INVALID' || (
+                                    angForm.controls['name'].invalid &&
+                                    (angForm.controls['name'].dirty ||
+                                      angForm.controls['name'].touched))
+                                      ? 'req'
+                                      : ''
+                                  ]"
+                    class="form-control"
+                    placeholder="{{
+                      languageStoreService.Texts.section8.field1
+                    }}"
+                    formControlName="name"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group has-placeholder">
+                  <label for="email">{{
+                    languageStoreService.Texts.section8.field2
+                  }}</label>
+                  <input
+                    [ngClass]="[
+                                    angForm.controls?.['email']?.status == 'INVALID' || (
+                                      angForm.controls['email'].invalid &&
+                                      (angForm.controls['email'].dirty ||
+                                        angForm.controls['email'].touched))
+                                        ? 'req'
+                                        : ''
+                                    ]"
+                    class="form-control"
+                    placeholder="{{
+                      languageStoreService.Texts.section8.field2
+                    }}"
+                    formControlName="email"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group has-placeholder">
+                  <label for="message">{{
+                    languageStoreService.Texts.section8.field3
+                  }}</label>
+                  <textarea
+                    [ngClass]="[
+                                    angForm.controls?.['message']?.status == 'INVALID' || (
+                                      angForm.controls['message'].invalid &&
+                                      (angForm.controls['message'].dirty ||
+                                        angForm.controls['message'].touched))
+                                        ? 'req'
+                                        : ''
+                                    ]"
+                    aria-required="true"
+                    rows="5"
+                    cols="45"
+                    formControlName="message"
+                    placeholder="{{
+                      languageStoreService.Texts.section8.field3
+                    }}"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-20 mt-xl-40">
+              <div class="col-sm-12">
+                <div class="form-group has-placeholder">
+                  <button type="submit" class="btn btn-maincolor">
+                    {{ languageStoreService.Texts.section8.btn }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="divider-60 divider-lg-0"></div>
+      </div>
+      <!--.col-* -->
+
+      <div class="col-lg-4 animate" data-animation="scaleAppear">
+        <div class="hero-bg p-60">
+          <h4>{{ languageStoreService.Texts.section8.title2 }}</h4>
+
+          <div
+            class="media mb-20"
+            *ngFor="let item of languageStoreService.Texts.section8.values"
+          >
+            <div class="icon-styled color-main fs-20">
+              <i [ngClass]="item.icon"></i>
+            </div>
+
+            <div class="media-body">
+              <h6 class="mt-0">
+                {{ item.title }}
+              </h6>
+              <p>
+                {{ item.value }}
+              </p>
+            </div>
+          </div>
+
+          <div class="divider-30 divider-xl-50"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div
+  class="col-md-6 col-xl-4"
+  [style]="
+    showResponse == false
+      ? 'display: none;position: fixed;top: 25%;left: 33%;z-index: 9999'
+      : 'position: fixed;top: 25%;left: 33%;z-index: 9999'
+  "
+>
+<div
+class="col-md-6 col-xl-4"
+[style]="showResponse == false ? 'display: none;position: fixed;top: 25%;left: 33%;z-index: 9999' : 'position: fixed;top: 25%;left: 33%;z-index: 9999' "
+>
+<div class="card  text-white mb-3" [class]="isError ? 'bg-danger' : 'bg-success'">
+  <div class="card-body">
+    <h5 class="card-title text-white">{{isError ? languageStoreService.Texts.config.error.title : languageStoreService.Texts.config.success.title}}</h5>
+    <p class="card-text">
+      {{isError ? languageStoreService.Texts.config.error.text : languageStoreService.Texts.config.success.text}}          </p>
+  </div>
+</div>
+</div>

@@ -1,0 +1,9 @@
+@import '../../../../assets/front-end/css/main.css';
+@import '../../../../assets/front-end/css/shop.css';
+.response, .color-main {
+    border-color: #ffff;
+    color: #ffff !important;
+}
+.ds .line-left::before {
+    background-color: #ffff;
+}

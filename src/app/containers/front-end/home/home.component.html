@@ -1,0 +1,263 @@
+<div id="canvas">
+  <div id="box_wrapper">
+    <app-header></app-header>
+    <app-banner></app-banner>
+    <app-about></app-about>
+    <app-benefits></app-benefits>
+    <app-map></app-map>
+    <app-services></app-services>
+    <app-pricing></app-pricing>
+    <app-equipment></app-equipment>
+    <app-contact></app-contact>
+    <app-gallery></app-gallery>
+    <div id="open-modal" class="modal-window">
+      <div class="t-100 t-xl-50">
+        <a href="#close" title="Close" class="modal-close">{{
+          languageStoreService.Texts.section9.closeBtn
+        }}</a>
+
+        <h5 style="margin-top: 10px; margin-bottom: 50px">
+          {{ languageStoreService.Texts.section9.title }}
+        </h5>
+        <form [formGroup]="angForm" (ngSubmit)="onClickSubmit(angForm.value)">
+          <div class="row">
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field1 }}
+                  <span
+                    [ngClass]="[
+                      angForm.controls?.['name']?.status == 'INVALID' || (
+                      angForm.controls['name'].invalid &&
+                      (angForm.controls['name'].dirty ||
+                        angForm.controls['name'].touched))
+                        ? 'req'
+                        : ''
+                    ]"
+                    >*</span
+                  >
+                </p>
+                <input class="form-style" formControlName="name" />
+              </div>
+            </div>
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field2 }}
+                  <span
+                    [ngClass]="[
+                    angForm.controls?.['cardNumber']?.status == 'INVALID' || (
+                      angForm.controls['cardNumber'].invalid &&
+                      (angForm.controls['cardNumber'].dirty ||
+                        angForm.controls['cardNumber'].touched))
+                        ? 'req'
+                        : ''
+                    ]"
+                    >*</span
+                  >
+                </p>
+                <input class="form-style" formControlName="cardNumber" />
+              </div>
+            </div>
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field3 }}
+                  <span
+                    [ngClass]="[
+                    angForm.controls?.['birthDay']?.status == 'INVALID' || (
+                      angForm.controls['birthDay'].invalid &&
+                      (angForm.controls['birthDay'].dirty ||
+                        angForm.controls['birthDay'].touched))
+                        ? 'req'
+                        : ''
+                    ]"
+                    >*</span
+                  >
+                </p>
+                <input
+                  class="form-style"
+                  type="date"
+                  formControlName="birthDay"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field4 }}
+                  <span
+                    [ngClass]="[
+                    angForm.controls?.['email']?.status == 'INVALID' || (
+                      angForm.controls['email'].invalid &&
+                      (angForm.controls['email'].dirty ||
+                        angForm.controls['email'].touched))
+                        ? 'req'
+                        : ''
+                    ]"
+                    >*</span
+                  >
+                </p>
+                <input class="form-style" formControlName="email" />
+              </div>
+            </div>
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field5 }}
+                  <span
+                    [ngClass]="[
+                    angForm.controls?.['phone']?.status == 'INVALID' || (
+                      angForm.controls['phone'].invalid &&
+                      (angForm.controls['phone'].dirty ||
+                        angForm.controls['phone'].touched))
+                        ? 'req'
+                        : ''
+                    ]"
+                    >*</span
+                  >
+                </p>
+                <input class="form-style" formControlName="phone" />
+              </div>
+            </div>
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field6 }}
+                </p>
+                <input class="form-style" formControlName="address" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field7 }}
+                  <span
+                    [ngClass]="[
+                    angForm.controls?.['classDate']?.status == 'INVALID' || (
+                      angForm.controls['classDate'].invalid &&
+                      (angForm.controls['classDate'].dirty ||
+                        angForm.controls['classDate'].touched))
+                        ? 'req'
+                        : ''
+                    ]"
+                    >*</span
+                  >
+                </p>
+                <input
+                  class="form-style"
+                  type="date"
+                  formControlName="classDate"
+                  min="{{minDate}}"
+                />
+              </div>
+            </div>
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field8 }}
+                  <span
+                    [ngClass]="[
+                    angForm.controls?.['type']?.status == 'INVALID' || (
+                      angForm.controls['type'].invalid &&
+                      (angForm.controls['type'].dirty ||
+                        angForm.controls['type'].touched))
+                        ? 'req'
+                        : ''
+                    ]"
+                    >*</span
+                  >
+                </p>
+                <div class="selectWrapper">
+                  <select class="selectBox" formControlName="type">
+                    <optgroup
+                      *ngFor="
+                        let type of languageStoreService.Texts.section9.types
+                      "
+                      label="{{ type.type }}"
+                    >
+                      <option *ngFor="let value of type.values" [value]="value">
+                        {{ value }}
+                      </option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field9 }} *
+                </p>
+                <div class="row" style="padding-top: 9px">
+                  <div class="col-4">
+                    <input
+                      type="radio"
+                      id="morning"
+                      name="type"
+                      value="morning"
+                      checked
+                      (change)="changeTime($event)"
+                    />
+                    <label style="color: #8a8a8a" for="morning">{{
+                      languageStoreService.Texts.section9.time.morning
+                    }}</label>
+                  </div>
+                  <div class="col-6" style="text-align: left">
+                    <input
+                      type="radio"
+                      id="afternoon"
+                      name="type"
+                      value="afternoon"
+                      (change)="changeTime($event)"
+                    />
+                    <label style="color: #8a8a8a" for="afternoon">{{
+                      languageStoreService.Texts.section9.time.afternoon
+                    }}</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-item">
+                <p class="formLabel">
+                  {{ languageStoreService.Texts.section9.field10 }}
+                </p>
+                <input class="form-style" formControlName="comments" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <button
+                type="submit"
+                class="btn btn-maincolor btn-slider btn-medium"
+              >
+                {{ languageStoreService.Texts.section9.btn }}
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div
+      class="col-md-6 col-xl-4"
+      [style]="showResponse == false ? 'display: none;position: fixed;top: 25%;left: 33%;z-index: 9999' : 'position: fixed;top: 25%;left: 33%;z-index: 9999' "
+    >
+      <div class="card  text-white mb-3" [class]="isError ? 'bg-danger' : 'bg-success'">
+        <div class="card-body">
+          <h5 class="card-title text-white">{{isError ? languageStoreService.Texts.config.error.title : languageStoreService.Texts.config.success.title}}</h5>
+          <p class="card-text">
+            {{isError ? languageStoreService.Texts.config.error.text : languageStoreService.Texts.config.success.text}}          </p>
+        </div>
+      </div>
+    </div>
+    <div class="elfsight-app-12db9a4c-de6c-4cd5-ba4b-1c61ea93796c"></div>
+  </div>
+</div>

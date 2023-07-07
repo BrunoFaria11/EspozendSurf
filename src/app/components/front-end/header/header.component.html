@@ -1,0 +1,140 @@
+<!-- header with logo in center of navigation (centered with scripts) - three Bootstrap columns - left includes, navigation and right includes-->
+<header class="page_header header_logo_center ds">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-xl-1 d-none d-xl-block">
+        <ul class="top-includes">
+          <li>
+            <span class="social-icons">
+              <a
+                href="{{ languageStoreService.Texts.navbar.insta }}"
+                class="fa fa-instagram insta"
+                target="_blank"
+                title="instagram"
+              ></a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xl-10 col-12 text-lg-center text-left">
+        <div class="logo_wrapper d-block d-xl-none" >
+          <a href="./" class="logo">
+            <img
+              [src]="languageStoreService.Texts.navbar.logo"
+              alt="img"
+              style="filter: brightness(0) invert(1)"
+            />
+          </a>
+        </div>
+        <nav class="top-nav">
+          <ul class="nav sf-menu">
+            <li>
+              <a href="#home">{{ languageStoreService.Texts.navbar.home }}</a>
+            </li>
+            <li>
+              <a href="#about">{{ languageStoreService.Texts.navbar.about }}</a>
+            </li>
+            <li>
+              <a href="#services">{{
+                languageStoreService.Texts.navbar.services
+              }}</a>
+            </li>
+            <li >
+              <a href="./" class="logo d-none d-xl-block">
+                <img
+                  [src]="languageStoreService.Texts.navbar.logo"
+                  alt="img"
+                  style="filter: brightness(0) invert(1)"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#price">{{ languageStoreService.Texts.navbar.price }}</a>
+            </li>
+            <li>
+              <a href="#price">
+                {{ languageStoreService.Texts.navbar.classes }}
+              </a>
+            </li>
+            <li>
+              <a href="#contact">{{
+                languageStoreService.Texts.navbar.contact
+              }}</a>
+            </li>
+            <div class="dropdown d-block d-xl-none">
+              <button
+                class="btn btn-success dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  [src]="selectImage"
+                  width="20"
+                  height="15"
+                  style="margin-right: 5px"
+                />
+              </button>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li class="dropdown-item text-center" (click)="changeLanguage('pt')">
+                  <img
+                    src="../../../assets/images_site/flags/pt.png"
+                    width="20"
+                    height="15"
+                  />
+                </li>
+                <li class="dropdown-item text-center" (click)="changeLanguage('eng')">
+                  <img
+                    src="../../../assets/images_site/flags/gb-eng.png"
+                    width="20"
+                    height="15"
+                  />
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xl-1 d-none d-xl-block">
+        <div class="dropdown">
+          <button
+            class="btn btn-success dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img
+              [src]="selectImage"
+              width="20"
+              height="15"
+              style="margin-right: 5px"
+            />
+          </button>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item text-center" (click)="changeLanguage('pt')">
+              <img
+                src="../../../assets/images_site/flags/pt.png"
+                width="20"
+                height="15"
+              />
+            </li>
+            <li class="dropdown-item text-center" (click)="changeLanguage('eng')">
+              <img
+                src="../../../assets/images_site/flags/gb-eng.png"
+                width="20"
+                height="15"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="toggle_menu"><span></span></span>
+</header>

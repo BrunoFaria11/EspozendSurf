@@ -1,0 +1,200 @@
+{
+  "schema": {
+    "navbar": {
+      "type": "object",
+      "title": "Barra de navegação",
+      "properties": {
+        "home": {
+          "type": "string",
+          "title": "Texto Iníco",
+          "default": "Iníco"
+        },
+        "about": {
+          "type": "string",
+          "title": "Sobre nós",
+          "default": "Sobre nós"
+        },
+        "services": {
+          "type": "string",
+          "title": "Serviços",
+          "default": "O que fazemos"
+        },
+        "price": {
+          "type": "string",
+          "title": "Preços",
+          "default": "Preços"
+        },
+        "classes": {
+          "type": "string",
+          "title": "Aulas",
+          "default": "Aulas/Aluguer"
+        },
+        "contact": {
+          "type": "string",
+          "title": "Contactos",
+          "default": "Contactos"
+        },
+        "logo": {
+          "type": "string",
+          "title": "Logo",
+          "default": "../assets/images/logo.png"
+        },
+        "insta": {
+          "type": "string",
+          "title": "Insta",
+          "default": "https://www.instagram.com/espozendesurfschool/"
+        }
+      }
+    },
+    "section1": {
+      "type": "object",
+      "title": "Sobre nos",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Título",
+          "default": "Sobre nós"
+        },
+        "subTitle": {
+          "type": "string",
+          "title": "Título 2",
+          "default": "O que temos para oferecer."
+        },
+        "texts": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "title": "Texto",
+              "default": "A EspoZende Surf School é uma escola oficial da Federação Portuguesa de Surf, que dispõe de excelentes condições para a aprendizagem de Surf e Bodyboard na Praia Suave Mar em Esposende."
+            },
+            {
+              "type": "string",
+              "title": "Texto",
+              "default": "Tal como o nome indica, Espo”Z”ende com “Z”, pretende fazer a ponte entre o desporto já praticado há mais de 20 anos pelo concelho, quando Esposende ainda se escrevia com “Z” e trazer de volta tão grande tradição."
+            }
+          ]
+        },
+        "image1": {
+          "type": "file",
+          "title": "Imagem1",
+          "default": "../assets/images_site/about1.jpg"
+        },
+        "image2": {
+          "type": "file",
+          "title": "Imagem2",
+          "default": "../assets/images_site/about2.jpg"
+        }
+      }
+    },
+    "navbareng": {
+      "type": "object",
+      "title": "Barra de navegação",
+      "properties": {
+        "home": {
+          "type": "string",
+          "title": "Texto Iníco",
+          "default": "Iníco"
+        },
+        "about": {
+          "type": "string",
+          "title": "about",
+          "default": "Sobre nós"
+        },
+        "services": {
+          "type": "string",
+          "title": "hservicesome",
+          "default": "O que fazemos"
+        },
+        "price": {
+          "type": "string",
+          "title": "price",
+          "default": "Preços"
+        },
+        "classes": {
+          "type": "string",
+          "title": "classes",
+          "default": "Aulas/Aluguer"
+        },
+        "contact": {
+          "type": "string",
+          "title": "contact",
+          "default": "Contactos"
+        },
+        "logo": {
+          "type": "string",
+          "title": "logo",
+          "default": "../assets/images/logo.png"
+        },
+        "insta": {
+          "type": "string",
+          "title": "insta",
+          "default": "https://www.instagram.com/espozendesurfschool/"
+        }
+      }
+    }
+  },
+  "form": [
+    {
+      "type": "tabs",
+      "id": "pt",
+      "title": "pt",
+      "items": [
+        {
+          "title": "pt",
+          "type": "tabs",
+          "id": "pt",
+          "items": [
+            {
+              "title": "navbar",
+              "type": "tab",
+              "id": "pt",
+              "key": "navbar"
+            },
+            {
+              "title": "section1",
+              "type": "tab",
+              "id": "pt",
+              "key": "section1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tabs",
+      "id": "eng",
+      "title": "eng",
+      "items": [
+        {
+          "title": "eng",
+          "type": "tabs",
+          "id": "eng",
+          "items": [
+            {
+              "title": "navbareng",
+              "type": "tab",
+              "id": "pt",
+              "key": "navbar"
+            },
+            {
+              "title": "section1",
+              "type": "tab",
+              "id": "pt",
+              "key": "section1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "actions",
+      "items": [
+        {
+          "type": "submit",
+          "value": "Submit"
+        }
+      ]
+    }
+  ]
+}
