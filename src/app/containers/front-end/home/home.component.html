@@ -180,8 +180,8 @@
                       "
                       label="{{ type.type }}"
                     >
-                      <option *ngFor="let value of type.values" [value]="value">
-                        {{ value }}
+                      <option *ngFor="let value of type.values" [value]="convertJSON(value)">
+                        {{ value.type }}
                       </option>
                     </optgroup>
                   </select>

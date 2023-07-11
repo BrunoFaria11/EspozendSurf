@@ -9,13 +9,13 @@ import { Injectable } from '@angular/core';
 export class EmailService {
   constructor(private http: HttpClient) {}
 
-  sendEmail(subject: string,fromEmail: string, body: string) {
+  sendEmail(subject: string, fromEmail: string, toEmail: string, body: string) {
     let email = new Email(
-      environment.fromEmail,
+      fromEmail,
       fromEmail,
       subject,
       fromEmail,
-      environment.toEmail,
+      toEmail,
       'surf',
       body
     );

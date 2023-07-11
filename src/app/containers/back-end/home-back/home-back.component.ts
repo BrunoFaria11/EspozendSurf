@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { AuthService } from '@auth0/auth0-angular';
+
 
 @Component({
   selector: 'app-home-back',
@@ -8,12 +10,9 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class HomeBackComponent {
   myScriptElement: HTMLScriptElement | undefined;
-  isDashboard: boolean = true;
-  isCalendar: boolean = false;
-
-  constructor(private auth: AuthService) {
+  menuOpned: boolean = false;
+  constructor(private auth: AuthService, private router: Router) {
     const scripts = [
-      '../../../assets/back-end/jsonform/main.js',
       '../../../assets/back-end/vendor/js/helpers.js',
       '../../../assets/back-end/js/config.js',
       '../../../assets/back-end/vendor/libs/jquery/jquery.js',
@@ -32,24 +31,23 @@ export class HomeBackComponent {
     });
   }
 
-  nav(menu: string) {
-    switch (menu) {
-      case 'dashboard':
-        this.isDashboard = true;
-        this.isCalendar = false;
-        break;
-      case 'calendar':
-          this.isDashboard = false;
-          this.isCalendar = true;
-          break;
-      default:
-        break;
+  logOut() {
+    this.auth.logout({ logoutParams: { returnTo: document.location.origin } });
+  }
+
+  openMenu(){
+    this.menuOpned = true;
+  }
+
+  getRoute(route: string) {
+    if(this.router.url.toString().includes(route)){
+      return true;
+    }
+    else{
+      return false;
     }
   }
 
-  logOut(){
-    this.auth.logout({ logoutParams: { returnTo: document.location.origin } });
-  }
   ngOnInit(): void {
   }
 }

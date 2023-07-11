@@ -18,8 +18,8 @@ export class ServicesComponent implements OnInit {
   owlOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: false,
-    pullDrag: false,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
     navSpeed: 700,
     navText: ['&#8249', '&#8250;'],

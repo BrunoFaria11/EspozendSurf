@@ -272,38 +272,92 @@
       "types": [
         {
           "type": "Aulas Avulso",
-          "values": ["Aula Avulso Surf (20€)", "Aula Avulso Bodyboard (15€)"]
+          "values": [
+            {
+              "type": "Aula Avulso Surf (20€)",
+              "isPack": false
+            },
+            {
+              "type":  "Aula Avulso Bodyboard (15€)",
+              "isPack": false
+            }
+          ]
         },
         {
           "type": "Packs de Aulas (Sujeito a um mínimo de 3 pessoas. Validade: 2 meses.)",
           "values": [
-            "Pack 3 aulas Surf (50€)",
-            "Pack 3 aulas Bodyboard (40€)",
-            "Pack 5 aulas Surf (70€)",
-            "Pack 5 aulas Bodyboard (60€)",
-            "Pack 10 aulas Surf (100€)",
-            "Pack 10 aulas Bodyboard (100€)"
+            {
+              "type": "Pack 3 aulas Surf (50€)",
+              "isPack": true,
+              "max": 3
+            },
+            {
+              "type": "Pack 3 aulas Bodyboard (40€)",
+              "isPack": true,
+              "max": 3
+            },
+            {
+              "type": "Pack 5 aulas Surf (70€)",
+              "isPack": true,
+              "max": 5
+            },
+            {
+              "type": "Pack 5 aulas Bodyboard (60€)",
+              "isPack": true,
+              "max": 5
+            },
+            {
+              "type": "Pack 10 aulas Surf (100€)",
+              "isPack": true,
+              "max": 10
+            },
+            {
+              "type": "Pack 10 aulas Bodyboard (100€)",
+              "isPack": true,
+              "max": 10
+            }
           ]
         },
         {
           "type": "Aulas Particulares (Aguardar resposta de disponibilidade da escola.)",
-          "values": ["1 aula Surf (30€)", "1 aula Bodyboard (30€)"]
+          "values": [
+            {
+              "type": "1 aula Surf (30€)",
+              "isPack": false
+            },
+            {
+              "type": "1 aula Bodyboard (30€)",
+              "isPack": false
+            }
+          ]
         },
         {
           "type": "Aluguer (Aguardar resposta de disponibilidade da escola.)",
-          "values": ["Surf (15€)", "Paddle Surf (20€)", "Bodyboard (15€)"]
+          "values": [
+            {
+              "type": "Surf (15€)",
+              "isPack": false
+            },
+            {
+              "type": "Paddle Surf (20€)",
+              "isPack": false
+            },
+            {
+              "type": "Bodyboard (15€)",
+              "isPack": false
+            }
+          ]
         }
       ]
     },
     "config": {
-      "success":{
+      "success": {
         "title": "Sucesso",
         "text": "O seu pedido foi enviado com sucesso, por favor aguarde por uma resposta"
       },
-      "error":{
+      "error": {
         "title": "Erro",
         "text": "O seu pedido não foi enviado, pode contactar-nos por telefone ou por whatsapp"
-
       }
     }
   },
@@ -604,14 +658,13 @@
       ]
     },
     "config": {
-      "success":{
+      "success": {
         "title": "Sucesso",
         "text": "O seu pedido foi enviado com sucesso, por favor aguarde por uma resposta"
       },
-      "error":{
+      "error": {
         "title": "Erro",
         "text": "O seu pedido não foi enviado, pode contactar-nos por telefone ou por whatsapp"
-
       }
     }
   }

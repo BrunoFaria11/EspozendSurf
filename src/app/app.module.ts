@@ -38,6 +38,10 @@ import { EmailService } from 'src/core/services/email-service';
 import { LoginComponent } from './containers/back-end/login/login.component';
 import { AuthHttpInterceptor, AuthModule } from '@auth0/auth0-angular';
 import { auth } from '../environments/auth';
+import { ReservationsComponent } from './containers/back-end/reservations/reservations.component';
+import { ReservationHeaderComponent } from './components/back-end/reservation-header/reservation-header.component';
+import { ResponseComponent } from './components/back-end/response/response.component';
+import { UpdateReservationComponent } from './components/back-end/update-reservation/update-reservation.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +66,11 @@ import { auth } from '../environments/auth';
     NavBarComponent,
     DashboardComponent,
     CalendarBackComponent,
-    LoginComponent
+    LoginComponent,
+    ReservationsComponent,
+    ReservationHeaderComponent,
+    ResponseComponent,
+    UpdateReservationComponent
   ],
   imports: [
     BrowserModule,

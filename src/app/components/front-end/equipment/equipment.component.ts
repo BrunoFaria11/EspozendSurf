@@ -13,9 +13,9 @@ export class EquipmentComponent implements OnInit {
   owlOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
     navSpeed: 700,
     navText: ['&#8249', '&#8250;'],
     items: 3,
