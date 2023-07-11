@@ -1,4 +1,191 @@
+<h4 class="fw-bold py-3 mb-4">
+  <span class="text-muted fw-light"></span> Calendário
+</h4>
 <div class="row">
+  <div class="col-12" style="margin-bottom: 10px">
+    <button (click)="openModal(content)" class="btn btn-primary">+</button>
+  </div>
   <app-calendar class="col-lg-12 mb-4 order-0"></app-calendar>
   <div class="content-backdrop fade"></div>
+  <app-response [prop]="responseModal"></app-response>
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Marcação</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <form (ngSubmit)="onClickSubmit($event)" [formGroup]="angForm">
+      <div class="mb-3 row">
+        <div class="col-md-12">
+          <label
+            for="html5-datetime-local-input"
+            class="col-md-12 col-form-label"
+            >Nome
+            <span
+              [ngClass]="[
+              angForm.controls?.['name']?.status == 'INVALID' || (
+              angForm.controls['name'].invalid &&
+              (angForm.controls['name'].dirty ||
+                angForm.controls['name'].touched))
+                ? 'req'
+                : ''
+            ]"
+              >*</span
+            ></label
+          >
+        </div>
+        <div class="col-md-12">
+          <input class="form-control" formControlName="name" type="string" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="col-md-12">
+          <label
+            for="html5-datetime-local-input"
+            class="col-md-12 col-form-label"
+            >E-mail
+            <span
+              [ngClass]="[
+              angForm.controls?.['email']?.status == 'INVALID' || (
+              angForm.controls['email'].invalid &&
+              (angForm.controls['email'].dirty ||
+                angForm.controls['email'].touched))
+                ? 'req'
+                : ''
+            ]"
+              >*</span
+            ></label
+          >
+        </div>
+        <div class="col-md-12">
+          <input class="form-control" formControlName="email" type="string" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="col-md-12">
+          <label
+            for="html5-datetime-local-input"
+            class="col-md-12 col-form-label"
+            >Contacto Telefónico
+            <span
+              [ngClass]="[
+            angForm.controls?.['phone']?.status == 'INVALID' || (
+            angForm.controls['phone'].invalid &&
+            (angForm.controls['phone'].dirty ||
+              angForm.controls['phone'].touched))
+              ? 'req'
+              : ''
+          ]"
+              >*</span
+            ></label
+          >
+        </div>
+        <div class="col-md-12">
+          <input class="form-control" formControlName="phone" type="string" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="col-md-12">
+          <label
+            for="html5-datetime-local-input"
+            class="col-md-12 col-form-label"
+            >Tipo
+            <span
+              [ngClass]="[
+            angForm.controls?.['type']?.status == 'INVALID' || (
+            angForm.controls['type'].invalid &&
+            (angForm.controls['type'].dirty ||
+              angForm.controls['type'].touched))
+              ? 'req'
+              : ''
+          ]"
+              >*</span
+            ></label
+          >
+        </div>
+        <div class="col-md-12">
+          <select class="form-select" formControlName="type">
+            <optgroup
+              *ngFor="let type of languageStoreService.Texts.section9.types"
+              label="{{ type.type }}"
+            >
+              <option
+                *ngFor="let value of type.values"
+                [value]="convertJSON(value)"
+              >
+                {{ value.type }}
+              </option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="col-md-12">
+          <label
+            for="html5-datetime-local-input"
+            class="col-md-12 col-form-label"
+            >Data da Aula ou Aluguer
+            <span
+              [ngClass]="[
+            angForm.controls?.['classDate']?.status == 'INVALID' || (
+            angForm.controls['classDate'].invalid &&
+            (angForm.controls['classDate'].dirty ||
+              angForm.controls['classDate'].touched))
+              ? 'req'
+              : ''
+          ]"
+              >*</span
+            ></label
+          >
+        </div>
+        <div class="col-md-12">
+          <input class="form-control" type="date" formControlName="classDate" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="col-md-12">
+          <label
+            for="html5-datetime-local-input"
+            class="col-md-12 col-form-label"
+            >Horário da Aula ou Aluguer</label
+          >
+        </div>
+
+        <div class="col-md-12">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="confirmed"
+              id="inlineRadio1"
+              value="true"
+              (change)="changeTime($event)"
+              checked
+            />
+            <label class="form-check-label" for="inlineRadio1">Manhã</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="confirmed"
+              id="inlineRadio2"
+              (change)="changeTime($event)"
+              value="false"
+            />
+            <label class="form-check-label" for="inlineRadio2">Tarde</label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Inserir</button>
+    </form>
+  </div>
+  <div class="modal-footer"></div>
+</ng-template>

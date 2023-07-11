@@ -50,15 +50,15 @@ export class DailyCalendarComponent {
 
   closeResult = '';
 
-  minDate: string = this.formatDate(new Date());
-
-  angForm = new FormGroup({
-    date: new FormControl(''),
-    confirmed: new FormControl(''),
-  });
 
   constructor(public appService: AppService, private modal: NgbModal) {
-    this.appService.getModel('reservations').subscribe((response: any) => {
+    this.getReservations();
+  }
+
+  ngOnInit(): void {}
+
+  getReservations() {
+    this.appService.getModel('reservation').subscribe((response: any) => {
       var x = response.data.sort((a, b) => {
         return JSON.parse(a.value).time <= JSON.parse(b.value).time ? 1 : -1;
       });
@@ -105,7 +105,7 @@ export class DailyCalendarComponent {
         };
         this.events.push(item);
       });
-      
+
       var date = new Date();
       this.dayClicked({ date: date, events: this.events });
       this.dayClicked({ date: date, events: this.events });
@@ -157,29 +157,4 @@ export class DailyCalendarComponent {
     this.activeDayIsOpen = false;
   }
 
-  padTo2Digits(num: number) {
-    return num.toString().padStart(2, '0');
-  }
-
-  formatDate(date: Date) {
-    return [
-      date.getFullYear(),
-      this.padTo2Digits(date.getMonth() + 1),
-      this.padTo2Digits(date.getDate() + 1),
-    ].join('-');
-  }
-
-  onSubmit(event: any) {
-    
-    let model: any = {};
-    this.item.classDate = event.target.date.value;
-    this.item.confirmed = event.target.confirmed.value;
-    model.id = this.activeId;
-    model.value = JSON.stringify(this.item)
-    this.appService.updateModel(model).subscribe((response)=>{
-      window.location.reload()
-    });
-  }
-
-  ngOnInit(): void {}
 }

@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   showResponse: boolean = false;
   isError: boolean = false;
   minDate: string = this.formatDate(new Date());
-
+  time: string = 'morning';
   constructor(
     public languageStoreService: LanguageStoreService,
     public appService: AppService,
@@ -53,11 +53,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
 
   changeTime(e: any) {
-    this.angForm.value.time = e.target.value;
+    this.time = e.target.value;
   }
 
   onClickSubmit(data: any) {
-    debugger;
     if (
       data.name != '' &&
       data.cardNumber != '' &&
@@ -69,37 +68,98 @@ export class HomeComponent implements OnInit {
     ) {
       let model = this.angForm.value;
       model.confirmed = false;
-      this.appService
-        .addModel('reservations', JSON.stringify(model))
-        .subscribe((response: any) => {
-          if (!response.succeeded) {
-            this.isError = true;
-          }
-          if (response.succeeded) {
-            let email = environment.classEmail;
-            email = email.replace('#name', this.angForm.value.name);
-            email = email.replace('#cardNumber', this.angForm.value.cardNumber);
-            email = email.replace('#birthDay', this.angForm.value.birthDay);
-            email = email.replace('#email', this.angForm.value.email);
-            email = email.replace('#phone', this.angForm.value.phone);
-            email = email.replace('#address', this.angForm.value.address);
-            email = email.replace('#classDate', this.angForm.value.classDate);
-            email = email.replace('#type', this.angForm.value.type);
-            email = email.replace('#time', this.angForm.value.time);
-            email = email.replace('#comments', this.angForm.value.comments);
-
-            this.emailService
-              .sendEmail('Site - Marcação', this.angForm.value.email ,email)
-              .subscribe((response: any) => {
-                this.cleanInputs();
-                this.showResponse = true;
-                setTimeout(() => {
-                  window.location.reload();
-                }, 2000);
-              });
-          }
-        });
+      let _type = JSON.parse(model.type);
+      let isPack = _type.isPack;
+      model.type = _type.type;
+      model.time = this.time;
+      if (isPack) {
+        model.max = _type.max;
+        this.addPack(model);
+      } else {
+        this.addRequest(model);
+      }
     }
+  }
+
+  addRequest(model: any) {
+    this.appService
+      .addModel('reservation', JSON.stringify(model))
+      .subscribe((response: any) => {
+        if (!response.succeeded) {
+          this.isError = true;
+        }
+        if (response.succeeded) {
+          let email = environment.classEmail;
+          email = email.replace('#name', this.angForm.value.name);
+          email = email.replace('#cardNumber', this.angForm.value.cardNumber);
+          email = email.replace('#birthDay', this.angForm.value.birthDay);
+          email = email.replace('#email', this.angForm.value.email);
+          email = email.replace('#phone', this.angForm.value.phone);
+          email = email.replace('#address', this.angForm.value.address);
+          email = email.replace('#classDate', this.angForm.value.classDate);
+          email = email.replace('#type', this.angForm.value.type);
+          email = email.replace('#time', this.angForm.value.time);
+          email = email.replace('#comments', this.angForm.value.comments);
+
+          this.emailService
+            .sendEmail(
+              'Site - Marcação',
+              environment.fromEmail,
+              environment.toEmail,
+              email
+            )
+            .subscribe((response: any) => {
+              this.cleanInputs();
+              this.showResponse = true;
+              setTimeout(() => {
+                window.location.reload();
+              }, 2000);
+            });
+        }
+      });
+  }
+
+  addPack(model: any) {
+    model.count = 0;
+    this.appService
+      .addModel('reservation-pack', JSON.stringify(model))
+      .subscribe((response: any) => {
+        if (!response.succeeded) {
+          this.isError = true;
+        }
+        if (response.succeeded) {
+          let email = environment.classEmail;
+          email = email.replace('#name', this.angForm.value.name);
+          email = email.replace('#cardNumber', this.angForm.value.cardNumber);
+          email = email.replace('#birthDay', this.angForm.value.birthDay);
+          email = email.replace('#email', this.angForm.value.email);
+          email = email.replace('#phone', this.angForm.value.phone);
+          email = email.replace('#address', this.angForm.value.address);
+          email = email.replace('#classDate', this.angForm.value.classDate);
+          email = email.replace('#type', this.angForm.value.type);
+          email = email.replace('#time', this.angForm.value.time);
+          email = email.replace('#comments', this.angForm.value.comments);
+
+          this.emailService
+            .sendEmail(
+              'Site - Pack',
+              environment.fromEmail,
+              environment.toEmail,
+              email
+            )
+            .subscribe((response: any) => {
+              this.cleanInputs();
+              this.showResponse = true;
+              setTimeout(() => {
+                window.location.reload();
+              }, 2000);
+            });
+        }
+      });
+  }
+
+  convertJSON(data: any) {
+    return JSON.stringify(data);
   }
 
   cleanInputs() {

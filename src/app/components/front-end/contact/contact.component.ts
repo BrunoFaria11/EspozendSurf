@@ -51,7 +51,12 @@ export class ContactComponent implements OnInit {
             email = email.replace('#email', data.email);
             email = email.replace('#body', data.message);
             this.emailService
-              .sendEmail('Site - Normal Email', data.email, email)
+              .sendEmail(
+                'Site - Normal Email',
+                environment.fromEmail,
+                environment.toEmail,
+                email
+              )
               .subscribe((response: any) => {
                 this.showResponse = true;
                 setTimeout(() => {
