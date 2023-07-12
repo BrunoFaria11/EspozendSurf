@@ -34,6 +34,13 @@ export class HomeComponent implements OnInit {
       this.myScriptElement.src = element;
       document.body.appendChild(this.myScriptElement);
     });
+    debugger;
+    if (!localStorage.getItem('reload')) { 
+      localStorage.setItem('reload', 'no reload') 
+      location.reload() 
+    } else {
+      localStorage.removeItem('reload') 
+    }
     this.createForm();
   }
 
