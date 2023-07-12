@@ -1,5 +1,5 @@
 "use strict";
-function do_() {
+
   var $body = $("body");
   var $window = $(window);
 
@@ -1589,6 +1589,5 @@ function do_() {
       }
     }
   });
-}
-jQuery;
+
 //end of IIFE function

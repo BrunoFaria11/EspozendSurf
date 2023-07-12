@@ -6,8 +6,6 @@ import { AppService } from 'src/core/services/app-service';
 import { environment } from 'src/environments/environment';
 import { EmailService } from 'src/core/services/email-service';
 
-declare function do_(): any;
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -37,7 +35,6 @@ export class HomeComponent implements OnInit {
       document.body.appendChild(this.myScriptElement);
     });
     this.createForm();
-    do_();
   }
 
   createForm() {
