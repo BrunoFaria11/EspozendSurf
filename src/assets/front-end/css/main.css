@@ -19135,4 +19135,13 @@ img.absolute_image {
 	background-size: cover;
 }
 
-
+@media (min-width: 1800px) {
+	.section-counter {
+		background-attachment: fixed!important;
+		background-position: -1906px 50%!important;
+	}
+	.section-about {
+		background-attachment: fixed!important;
+		background-position: 1906px 50%!important;
+	}
+}

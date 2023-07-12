@@ -8,8 +8,8 @@
 >
   <div class="container">
     <div class="row">
-      <div class="col-lg-6"></div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 "></div>
+      <div class="col-lg-6 ml-xl-46">
         <p class="text-center text-md-left color-darkgrey mb-1">
           <span class="line-left"
             >{{ languageStoreService.Texts.section2.title }}
@@ -44,11 +44,11 @@
                 class="special-heading text-uppercase counter-wrap color-main mt-2 mb-3"
               >
                 <span
-                  class="counter"
+                  class=""
                   data-from="0"
                   [attr.data-to]="benefit.total"
                   data-speed="1500"
-                  >0</span
+                  >{{benefit.total}}</span
                 >
               </h3>
               <p>{{ benefit.text }}</p>
