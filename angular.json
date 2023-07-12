@@ -29,7 +29,8 @@
             "allowedCommonJsDependencies": ["lodash","ajv","ajv-formats"],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/images_site/logo.png"
             ],
             "styles": [
               "src/styles.scss",

@@ -183,6 +183,18 @@
             <label class="form-check-label" for="inlineRadio2">Tarde</label>
           </div>
         </div>
+        <div class="col-md-12">
+          <label for="html5-datetime-local-input" class="col-md-2 col-form-label"
+            >Hora</label
+          >
+          <div class="col-md-10">
+          <select class="form-select" name="hour">
+              <option *ngFor="let value of hours" >
+                {{ value }}
+              </option>
+          </select>
+          </div>
+        </div>
       </div>
       <button type="submit" class="btn btn-primary">Inserir</button>
     </form>

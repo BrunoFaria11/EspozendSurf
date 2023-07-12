@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from 'src/core/services/email-service';
 import { AppService } from 'src/core/services/app-service';
 import { LanguageStoreService } from 'src/core/services/stores/language-store.service';
-import * as fs from 'fs';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -15,7 +14,8 @@ export class ContactComponent implements OnInit {
   angForm!: FormGroup;
   showResponse: boolean = false;
   isError: boolean = false;
-
+  isBtnDisabled: boolean = false;
+  
   constructor(
     private fb: FormBuilder,
     public appService: AppService,
@@ -36,12 +36,12 @@ export class ContactComponent implements OnInit {
   }
 
   onClickSubmit(data: any) {
+    this.isBtnDisabled = true;
     if (data.name != '' && data.message != '' && data.email != '') {
+      this.cleanInputs();
       this.appService
         .addModel('emails', JSON.stringify(this.angForm.value))
         .subscribe((response: any) => {
-          this.cleanInputs();
-
           if (!response.succeeded) {
             this.isError = true;
           }
@@ -62,6 +62,7 @@ export class ContactComponent implements OnInit {
                 setTimeout(() => {
                   this.showResponse = false;
                 }, 2000);
+                this.isBtnDisabled = true;
               });
           }
         });

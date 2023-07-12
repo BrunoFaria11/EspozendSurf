@@ -38,14 +38,23 @@
               <td>
                 {{ request.type }}
               </td>
+              <td>{{ request.count }} / {{ request.max }}</td>
               <td>
-                {{ request.count }} / {{ request.max }}
-              </td>
-              <td>
-                <span class="badge bg-label-success me-1" *ngIf="request.count == 0">Novo</span>
-                <span class="badge bg-label-primary me-1" *ngIf="request.count > 0 && request.count < request.max">Ativo</span>
-                <span class="badge bg-label-warning me-1" *ngIf="request.count >= request.max">Completo</span>
-
+                <span
+                  class="badge bg-label-success me-1"
+                  *ngIf="request.count == 0"
+                  >Novo</span
+                >
+                <span
+                  class="badge bg-label-primary me-1"
+                  *ngIf="request.count > 0 && request.count < request.max"
+                  >Ativo</span
+                >
+                <span
+                  class="badge bg-label-warning me-1"
+                  *ngIf="request.count >= request.max"
+                  >Completo</span
+                >
               </td>
             </tr>
           </tbody>
@@ -83,6 +92,7 @@
           />
         </div>
       </div>
+
       <div class="mb-3 row">
         <label for="html5-datetime-local-input" class="col-md-3 col-form-label"
           >Horário</label
@@ -95,7 +105,8 @@
               name="time"
               id="inlineRadio1"
               value="morning"
-              [checked]="item.time == 'morning'"
+              (change)="changeTime($event)"
+              [checked]="time == 'morning'"
             />
             <label class="form-check-label" for="inlineRadio1">Manhã</label>
           </div>
@@ -106,13 +117,29 @@
               name="time"
               id="inlineRadio2"
               value="afternoon"
-              [checked]="item.time != 'morning'"
+              [checked]="time != 'morning'"
+              (change)="changeTime($event)"
             />
             <label class="form-check-label" for="inlineRadio2">Tarde</label>
           </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Inserir</button>
+      <div class="mb-3 row">
+        <label for="html5-datetime-local-input" class="col-md-2 col-form-label"
+          >Hora</label
+        >
+        <div class="col-md-10">
+          <select class="form-select" name="hour">
+            <option
+              *ngFor="let value of hours"
+              [selected]="value == item?.hour"
+            >
+              {{ value }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="isBtnDisabled">Inserir</button>
     </form>
   </div>
   <div class="modal-footer"></div>

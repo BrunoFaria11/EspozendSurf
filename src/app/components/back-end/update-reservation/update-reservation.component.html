@@ -17,18 +17,6 @@
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="html5-datetime-local-input" class="col-md-2 col-form-label"
-      >Hora</label
-    >
-    <div class="col-md-10">
-    <select class="form-select" name="hour">
-        <option *ngFor="let value of hours" selected="{{value == item?.hour}}" >
-          {{ value }}
-        </option>
-    </select>
-    </div>
-  </div>
-  <div class="mb-3 row">
     <label for="html5-datetime-local-input" class="col-md-3 col-form-label"
       >Horário</label
     >
@@ -41,7 +29,7 @@
           id="inlineRadio1"
           value="morning"
           (change)="changeTime($event)"
-          [checked]="item.time == 'morning'"
+          [checked]="time == 'morning'"
         />
         <label class="form-check-label" for="inlineRadio1">Manhã</label>
       </div>
@@ -52,11 +40,23 @@
           name="time"
           id="inlineRadio2"
           value="afternoon"
-          [checked]="item.time != 'morning'"
+          [checked]="time != 'morning'"
           (change)="changeTime($event)"
         />
         <label class="form-check-label" for="inlineRadio2">Tarde</label>
       </div>
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="html5-datetime-local-input" class="col-md-2 col-form-label"
+      >Hora</label
+    >
+    <div class="col-md-10">
+    <select class="form-select" name="hour" >
+        <option *ngFor="let value of hours" [selected]="value == item?.hour" >
+          {{ value }}
+        </option>
+    </select>
     </div>
   </div>
   <div
@@ -91,6 +91,6 @@
       </div>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Send</button>
+  <button type="submit" class="btn btn-primary"  [disabled]="isBtnDisabled" >Inserir</button>
 </form>
 <app-response [prop]="responseModal"></app-response>

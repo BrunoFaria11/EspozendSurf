@@ -14,14 +14,19 @@ export class CalendarBackComponent {
   angForm!: FormGroup;
   time: string = 'morning';
   responseModal: any;
+  hours: string[] = [];
 
   constructor(
     public appService: AppService,
     private fb: FormBuilder,
     private modal: NgbModal,
-    public languageStoreService: LanguageStoreService,
+    public languageStoreService: LanguageStoreService
   ) {
     this.createForm();
+  }
+
+  ngOnInit(): void {
+    this.hours = ['08:00', '09:00', '10:00', '11:00', '12:00'];
   }
 
   createForm() {
@@ -46,7 +51,7 @@ export class CalendarBackComponent {
       model.confirmed = true;
       let _type = JSON.parse(model.type);
       let isPack = _type.isPack;
-      model.type = _type.type + " - " + "1";
+      model.type = _type.type + ' - ' + '1';
       model.time = this.time;
       if (isPack) {
         model.max = _type.max;
@@ -66,19 +71,19 @@ export class CalendarBackComponent {
           this.responseModal = {
             showResponse: true,
             isError: true,
-            title: "Erro",
-            text: "Erro ao inserir a aula/aluguer",
-            left: 70
-          }
+            title: 'Erro',
+            text: 'Erro ao inserir a aula/aluguer',
+            left: 70,
+          };
         }
         if (response.succeeded) {
           this.responseModal = {
             showResponse: true,
             isError: false,
-            title: "Sucesso",
-            text: "Aula marcada com sucesso",
-            left: 70
-          }
+            title: 'Sucesso',
+            text: 'Aula marcada com sucesso',
+            left: 70,
+          };
           setTimeout(() => {
             window.location.reload();
             this.modal.dismissAll();
@@ -96,9 +101,9 @@ export class CalendarBackComponent {
           this.responseModal = {
             showResponse: true,
             isError: true,
-            title: "Erro",
-            text: "Erro ao inserir o pack"
-          }
+            title: 'Erro',
+            text: 'Erro ao inserir o pack',
+          };
         }
         if (response.succeeded) {
           this.addRequest(model);
@@ -108,6 +113,7 @@ export class CalendarBackComponent {
 
   changeTime(e: any) {
     this.time = e.target.value;
+    this.hours = this.time  == 'morning' ? ["08:00","09:00","10:00","11:00","12:00"] : ["13:00","14:00","15:00","16:00","17:00","18:00","19:00"]
   }
 
   openModal(content) {

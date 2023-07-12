@@ -89,3 +89,9 @@
 .nav .sf-logo-li {
     display: none!important
 }
+
+.page_header_wrapper{
+    position:fixed;
+    width:100%;
+    z-index: 9999;
+}

@@ -4,6 +4,6 @@
     "authorizationParams": {
     },
     "apiUri": "http://localhost:3001",
-    "appUri": "https://apuliasurfschool.com",
+    "appUri": "http://localhost:4200",
     "errorPath": "/error"
   }

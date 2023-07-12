@@ -12,35 +12,34 @@ import { environment } from 'src/environments/environment';
 })
 export class UpdateReservationComponent {
   @Input() item: any;
-
   @Input() activeId!: number;
 
   responseModal: any;
+  minDate: string = this.formatDate(new Date());
+  time: string = 'morning';
+  hours: string[] = [];
+  isBtnDisabled: boolean = false;
 
   angForm = new FormGroup({
     date: new FormControl(''),
     confirmed: new FormControl(''),
   });
 
-  minDate: string = this.formatDate(new Date());
-
-  time: string = 'morning';
-
-  hours: string[] = [];
-
   constructor(
     public appService: AppService,
-    private modal: NgbModal,
     public emailService: EmailService
-  ) {
-   
-  }
+  ) {}
 
   ngOnInit(): void {
-    this.hours = this.item.time  == 'morning' ? ["08:00","09:00","10:00","11:00","12:00"] : ["13:00","14:00","15:00","16:00","17:00","18:00","19:00"]
+    this.time = this.item.time;
+    this.hours =
+      this.item.time == 'morning'
+        ? ['08:00', '09:00', '10:00', '11:00', '12:00']
+        : ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00'];
   }
 
   onSubmit(event: any) {
+    this.isBtnDisabled = true;
     let model: any = {};
     this.item.classDate = event.target.date.value;
     if (!this.item.confirmed) {
@@ -60,6 +59,7 @@ export class UpdateReservationComponent {
           title: 'Erro',
           text: 'Erro ao editar a aula/aluguer',
         };
+        this.isBtnDisabled = false;
       }
       if (response.succeeded) {
         if (this.item?.email.length > 4) {
@@ -69,9 +69,15 @@ export class UpdateReservationComponent {
           email = email.replace('#Date_eng', this.item.classDate);
           email = email.replace('#Hour', this.item.hour);
           email = email.replace('#Hour_eng', this.item.hour);
-          email = email.replace('#Time', this.item.time == 'morning' ? 'Manhã' : 'Tarde');
+          email = email.replace(
+            '#Time',
+            this.item.time == 'morning' ? 'Manhã' : 'Tarde'
+          );
           email = email.replace('#text_eng', 'Your class has been scheduled');
-          email = email.replace('#Time_eng', this.item.time == 'morning' ? 'Morning' : 'Afternoon');
+          email = email.replace(
+            '#Time_eng',
+            this.item.time == 'morning' ? 'Morning' : 'Afternoon'
+          );
 
           this.emailService
             .sendEmail(
@@ -89,6 +95,7 @@ export class UpdateReservationComponent {
                   text: 'Erro ao enviar o email',
                   left: 110,
                 };
+                this.isBtnDisabled = false;
               }
               if (response.succeeded) {
                 this.responseModal = {
@@ -132,7 +139,10 @@ export class UpdateReservationComponent {
   }
 
   changeTime(e: any) {
-    this.item.time = e.target.value;
-    this.hours = this.item.time  == 'morning' ? ["08:00","09:00","10:00","11:00","12:00"] : ["13:00","14:00","15:00","16:00","17:00","18:00","19:00"]
+    this.time = e.target.value;
+    this.hours =
+      this.time == 'morning'
+        ? ['08:00', '09:00', '10:00', '11:00', '12:00']
+        : ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00'];
   }
 }

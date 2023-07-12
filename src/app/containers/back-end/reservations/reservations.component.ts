@@ -14,13 +14,15 @@ export class ReservationsComponent {
   array: any[] = [];
   item: any;
   responseModal: any;
+  hours: string[] = [];
+  time: string = 'morning';
+  isBtnDisabled: boolean = false;
+  minDate: string = this.formatDate(new Date());
 
   angForm = new FormGroup({
     date: new FormControl(''),
     confirmed: new FormControl(''),
   });
-
-  minDate: string = this.formatDate(new Date());
 
   constructor(
     public appService: AppService,
@@ -28,6 +30,14 @@ export class ReservationsComponent {
     public emailService: EmailService
   ) {
     this.getReservations();
+  }
+
+  ngOnInit() {
+    this.time = this.item?.time;
+    this.hours =
+      this.item?.time == 'morning'
+        ? ['08:00', '09:00', '10:00', '11:00', '12:00']
+        : ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00'];
   }
 
   getReservations() {
@@ -54,9 +64,11 @@ export class ReservationsComponent {
   }
 
   onSubmit(event: any) {
+    this.isBtnDisabled = true;
     let model: any = {};
     this.item.classDate = event.target.date.value;
     this.item.confirmed = true;
+    this.item.time = this.time;
     model.id = this.item.id;
     this.item.count = this.item.count + 1;
 
@@ -78,16 +90,29 @@ export class ReservationsComponent {
                 title: 'Erro',
                 text: 'Erro ao inserir a aula/aluguer',
               };
+              this.isBtnDisabled = false;
             }
             if (response.succeeded) {
               if (this.item?.email.length > 4) {
                 let email = environment.confirmationEmail;
-                email = email.replace('#text', 'A sua aula número ' + this.item.count + ' do pack foi agendada.');
+                email = email.replace('#text', 'A sua aula foi agendada.');
                 email = email.replace('#Date', this.item.classDate);
                 email = email.replace('#Date_eng', this.item.classDate);
-                email = email.replace('#Time', this.item.time == 'morning' ? 'Manhã' : 'Tarde');
-                email = email.replace('#text_eng', 'Your class number ' + this.item.count +' of the pack has been scheduled');
-                email = email.replace('#Time_eng', this.item.time == 'morning' ? 'Morning' : 'Afternoon');
+                email = email.replace('#Hour', this.item.hour);
+                email = email.replace('#Hour_eng', this.item.hour);
+                email = email.replace(
+                  '#Time',
+                  this.item.time == 'morning' ? 'Manhã' : 'Tarde'
+                );
+                email = email.replace(
+                  '#text_eng',
+                  'Your class has been scheduled'
+                );
+                email = email.replace(
+                  '#Time_eng',
+                  this.item.time == 'morning' ? 'Morning' : 'Afternoon'
+                );
+
                 this.emailService
                   .sendEmail(
                     'Apúlia Surf School',
@@ -103,6 +128,7 @@ export class ReservationsComponent {
                         title: 'Erro',
                         text: 'Erro ao enviar o email',
                       };
+                      this.isBtnDisabled = false;
                     }
                     if (response.succeeded) {
                       this.responseModal = {
@@ -111,10 +137,9 @@ export class ReservationsComponent {
                         title: 'Sucesso',
                         text: 'Aula marcada com sucesso',
                       };
-                      setTimeout(() => {
-                        this.modal.dismissAll();
-                        this.getReservations();
-                      }, 3000);
+                      this.isBtnDisabled = false;
+                      this.modal.dismissAll();
+                      this.getReservations();
                     }
                   });
               } else {
@@ -124,10 +149,9 @@ export class ReservationsComponent {
                   title: 'Sucesso',
                   text: 'Aula marcada com sucesso',
                 };
-                setTimeout(() => {
-                  this.modal.dismissAll();
-                  this.getReservations();
-                }, 3000);
+                this.isBtnDisabled = false;
+                this.modal.dismissAll();
+                this.getReservations();
               }
             }
           });
@@ -138,6 +162,7 @@ export class ReservationsComponent {
           title: 'Erro',
           text: 'Erro ao editar o pack',
         };
+        this.isBtnDisabled = false;
       }
     });
   }
@@ -152,5 +177,13 @@ export class ReservationsComponent {
       this.padTo2Digits(date.getMonth() + 1),
       this.padTo2Digits(date.getDate() + 1),
     ].join('-');
+  }
+
+  changeTime(e: any) {
+    this.time = e.target.value;
+    this.hours =
+      this.time == 'morning'
+        ? ['08:00', '09:00', '10:00', '11:00', '12:00']
+        : ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00'];
   }
 }

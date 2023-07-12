@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   isError: boolean = false;
   minDate: string = this.formatDate(new Date());
   time: string = 'morning';
+  isBtnDisabled: boolean = false;
 
   constructor(
     public languageStoreService: LanguageStoreService,
@@ -25,10 +26,7 @@ export class HomeComponent implements OnInit {
     private fb: FormBuilder,
     public emailService: EmailService
   ) {
-    const scripts = [
-      '../../../assets/front-end/js/main.js',
-
-    ];
+    const scripts = ['../../../assets/front-end/js/main.js'];
     scripts.forEach((element) => {
       this.myScriptElement = document.createElement('script');
       this.myScriptElement.src = element;
@@ -68,7 +66,7 @@ export class HomeComponent implements OnInit {
   }
 
   onClickSubmit(data: any) {
-    debugger;
+    this.isBtnDisabled = true;
     if (
       data.name != '' &&
       data.cardNumber != '' &&
@@ -129,6 +127,7 @@ export class HomeComponent implements OnInit {
               this.showResponse = true;
               setTimeout(() => {
                 window.location.reload();
+                this.isBtnDisabled = false;
               }, 2000);
             });
         }
@@ -166,6 +165,7 @@ export class HomeComponent implements OnInit {
             .subscribe((response: any) => {
               this.cleanInputs();
               this.showResponse = true;
+              this.isBtnDisabled = false;
               setTimeout(() => {
                 window.location.reload();
               }, 2000);
