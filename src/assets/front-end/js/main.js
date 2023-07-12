@@ -251,13 +251,7 @@ function initPhotoSwipe() {
           ".photoswipe-container, .isotope-wrapper, .owl-carousel, .flickr_ul, .images"
         );
         var $links = $linksParentContainer.find(gallerySelectors);
-        //for cloned owl-carousel items - continue to prevent duplicating - moved to EACH loop
-        //start index does not work with owl-carousel loop enabled
-        // if ($linksParentContainer.is('.owl-carousel')) {
-        // 	$links = $links.filter(function (index) {
-        // 		return !($(this).closest('.cloned').length);
-        // 	});
-        // }
+    
         //if no container only adding this link
         if (!$links.length) {
           $links.push($link);
@@ -746,10 +740,6 @@ function documentReadyInit() {
   //adding .form-control class for search widgets
   $('[type="search"]').addClass("form-control");
 
-  //bootstrap carousel
-  if ($().carousel) {
-    $(".carousel").carousel();
-  }
   //bootstrap tab - show first tab
   $(".nav-tabs").each(function () {
     $(this).find("a").first().tab("show");
@@ -1043,128 +1033,6 @@ function windowLoadInit() {
       });
     });
   }
-
-  // ////////////////
-  // //owl carousel//
-  // ////////////////
-  // if ($().owlCarousel) {
-  // 	$('.owl-carousel').each(function() {
-  // 		var $carousel = $(this);
-  // 		$carousel.find('> *').each(function (i) {
-  // 			$(this).attr('data-index', i);
-  // 		});
-  // 		var data = $carousel.data();
-
-  // 		var loop = data.loop ? data.loop : false,
-  // 			margin = (data.margin || data.margin === 0) ? data.margin : 30,
-  // 			nav = data.nav ? data.nav : false,
-  // 			navPrev = data.navPrev ? data.navPrev : '<i class="fa fa-chevron-left">',
-  // 			navNext = data.navNext ? data.navNext : '<i class="fa fa-chevron-right">',
-  // 			dots = data.dots ? data.dots : false,
-  // 			themeClass = data.themeclass ? data.themeclass : 'owl-theme',
-  // 			center = data.center ? data.center : false,
-  // 			items = data.items ? data.items : 4,
-  // 			autoplay = data.autoplay ? data.autoplay : false,
-  // 			responsiveXs = data.responsiveXs ? data.responsiveXs : 1,
-  // 			responsiveSm = data.responsiveSm ? data.responsiveSm : 2,
-  // 			responsiveMd = data.responsiveMd ? data.responsiveMd : 3,
-  // 			responsiveLg = data.responsiveLg ? data.responsiveLg : 4,
-  // 			responsiveMl = data.responsiveMl ? data.responsiveMl : responsiveLg,
-  // 			responsiveXl = data.responsiveXl ? data.responsiveXl : responsiveLg,
-  // 			draggable = (data.draggable === false) ? data.draggable : true,
-  // 			syncedClass = (data.syncedClass) ? data.syncedClass : false,
-  // 			filters = data.filters ? data.filters : false;
-
-  // 		if (filters) {
-  // 			$carousel.after($carousel.clone().addClass('owl-carousel-filter-cloned'));
-  // 			$(filters).on('click', 'a', function( e ) {
-  // 				//processing filter link
-  // 				e.preventDefault();
-  // 				if ($(this).hasClass('selected')) {
-  // 					return;
-  // 				}
-  // 				var filterValue = $( this ).attr('data-filter');
-  // 				$(this).siblings().removeClass('selected active');
-  // 				$(this).addClass('selected active');
-
-  // 				//removing old items
-  // 				for (var i = $carousel.find('.owl-item').length - 1; i >= 0; i--) {
-  // 					$carousel.trigger('remove.owl.carousel', [1]);
-  // 				};
-
-  // 				//adding new items
-  // 				var $filteredItems = $($carousel.next().find(' > ' +filterValue).clone());
-  // 				$filteredItems.each(function() {
-  // 					$carousel.trigger('add.owl.carousel', $(this));
-  // 					$(this).addClass('scaleAppear');
-  // 				});
-
-  // 				$carousel.trigger('refresh.owl.carousel');
-
-  // 				//reinit prettyPhoto in filtered OWL carousel
-  // 				if ($().prettyPhoto) {
-  // 					$carousel.find("a[data-gal^='prettyPhoto']").prettyPhoto({
-  // 						hook: 'data-gal',
-  // 						theme: 'facebook' /* light_rounded / dark_rounded / light_square / dark_square / facebook / pp_default*/
-  // 					});
-  // 				}
-  // 			});
-
-  // 		} //filters
-
-  // 		$carousel.owlCarousel({
-  // 			loop: loop,
-  // 			margin: margin,
-  // 			nav: nav,
-  // 			autoplay: autoplay,
-  // 			dots: dots,
-  // 			themeClass: themeClass,
-  // 			center: center,
-  // 			navText: [navPrev,navNext],
-  // 			mouseDrag: draggable,
-  // 			touchDrag: draggable,
-  // 			items: items,
-  // 			responsive: {
-  // 				0:{
-  // 					items: responsiveXs
-  // 				},
-  // 				767:{
-  // 					items: responsiveSm
-  // 				},
-  // 				992:{
-  // 					items: responsiveMd
-  // 				},
-  // 				1200:{
-  // 					items: responsiveLg
-  // 				},
-  // 				1400:{
-  // 					items: responsiveMl
-  // 				},
-  // 				1860:{
-  // 					items: responsiveXl
-  // 				}
-  // 			},
-  // 		})
-  // 		.addClass(themeClass);
-  // 		if(center) {
-  // 			$carousel.addClass('owl-center');
-  // 		}
-
-  // 		$window.on('resize', function() {
-  // 			$carousel.trigger('refresh.owl.carousel');
-  // 		});
-
-  // 		//topline two synced carousels
-  // 		if($carousel.hasClass('owl-news-slider-items') && syncedClass) {
-  // 			$carousel.on('changed.owl.carousel', function(e) {
-  // 				var indexTo = loop ? e.item.index+1 : e.item.index;
-  // 				$(syncedClass).trigger('to.owl.carousel', [indexTo]);
-  // 			})
-  // 		}
-
-  // 	});
-
-  // } //eof owl-carousel
 
   ////////////////////
   //header processing/
@@ -1473,21 +1341,6 @@ function windowLoadInit() {
     window.history.back();
   });
 
-  let $carouseCustom = $(".owl-custom-nav");
-  let $carouseCustomSection = $carouseCustom.closest("section");
-  $carouseCustomSection
-    .find(".owl-custom-nav .owl-prev")
-    .on("click", function (e) {
-      e.preventDefault();
-      $carouseCustomSection.find(".owl-carousel").trigger("prev.owl");
-    });
-  $carouseCustomSection
-    .find(".owl-custom-nav .owl-next")
-    .on("click", function (e) {
-      e.preventDefault();
-      $carouseCustomSection.find(".owl-carousel").trigger("next.owl");
-    });
-
   /////////
   //SHOP///
   /////////
@@ -1637,36 +1490,6 @@ function windowLoadInit() {
   }
 
   //woocommerce related products, upsells products
-  $(
-    ".related.products ul.products, .upsells.products ul.products, .cross-sells ul.products"
-  )
-    .addClass("owl-carousel top-right-nav")
-    .owlCarousel({
-      loop: true,
-      autoplay: true,
-      margin: 30,
-      nav: true,
-      dots: false,
-      items: 3,
-      navText: [
-        '<i class="fa fa-chevron-left"></i>',
-        '<i class="fa fa-chevron-right"></i>',
-      ],
-      responsive: {
-        0: {
-          items: 1,
-        },
-        767: {
-          items: 2,
-        },
-        992: {
-          items: 2,
-        },
-        1200: {
-          items: 3,
-        },
-      },
-    });
 
   //color filter
   $(".color-filters")
