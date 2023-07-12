@@ -251,7 +251,7 @@ function initPhotoSwipe() {
           ".photoswipe-container, .isotope-wrapper, .owl-carousel, .flickr_ul, .images"
         );
         var $links = $linksParentContainer.find(gallerySelectors);
-    
+
         //if no container only adding this link
         if (!$links.length) {
           $links.push($link);
@@ -469,37 +469,40 @@ function documentReadyInit() {
     });
   }
 
- 	//toggle mobile menu
-   $(".page_header .toggle_menu, .page_toplogo .toggle_menu").unbind("click").click(function(event){
-    debugger
-    $(this)
-			.toggleClass('mobile-active')
-			.closest('.page_header')
-			.toggleClass('mobile-active')
-			.end()
-			.closest('.page_toplogo')
-			.next()
-			.find('.page_header')
-			.toggleClass('mobile-active');
-	});
+  //toggle mobile menu
+  $(".page_header .toggle_menu, .page_toplogo .toggle_menu")
+    .unbind("click")
+    .click(function (event) {
+      debugger;
+      $(this)
+        .toggleClass("mobile-active")
+        .closest(".page_header")
+        .toggleClass("mobile-active")
+        .end()
+        .closest(".page_toplogo")
+        .next()
+        .find(".page_header")
+        .toggleClass("mobile-active");
+    });
 
-
-  $(".sf-menu a").unbind("click").click(function(event){
-    event.preventDefault();
-    var $this = $(this);
-    //If this is a local link or item with sumbenu - not toggling menu
-    if (
-      $this.hasClass("sf-with-ul") ||
-      !($this.attr("href").charAt(0) === "#")
-    ) {
-      return;
-    }
-    $this
-      .closest(".page_header")
-      .toggleClass("mobile-active")
-      .find(".toggle_menu")
-      .toggleClass("mobile-active");
-  });
+  $(".sf-menu a")
+    .unbind("click")
+    .click(function (event) {
+      event.preventDefault();
+      var $this = $(this);
+      //If this is a local link or item with sumbenu - not toggling menu
+      if (
+        $this.hasClass("sf-with-ul") ||
+        !($this.attr("href").charAt(0) === "#")
+      ) {
+        return;
+      }
+      $this
+        .closest(".page_header")
+        .toggleClass("mobile-active")
+        .find(".toggle_menu")
+        .toggleClass("mobile-active");
+    });
 
   //side header processing
   var $sideHeader = $(".page_header_side");
@@ -1523,6 +1526,14 @@ $(document).ready(function () {
 $window.on("load", function () {
   debugger;
   windowLoadInit();
+  var today = new Date();
+  var lastMonth = new Date().getMonth() - 1;
+  var picker = new Pikaday({
+    field: document.getElementsByClassName("datepicker")[0],
+    minDate: today,
+    position: "top left",
+    reposition: false,
+  });
 }); //end of "window load" event
 
 $window.on("resize", function () {
