@@ -4,6 +4,7 @@ const {
   domain,
   clientId,
   authorizationParams: { audience },
+  appUri,
   apiUri,
   errorPath,
 } = config as {
@@ -12,6 +13,7 @@ const {
   authorizationParams: {
     audience?: string;
   };
+  appUri: string;
   apiUri: string;
   errorPath: string;
 };
@@ -23,7 +25,7 @@ export const auth = {
     clientId,
     authorizationParams: {
       ...(audience && audience !== 'YOUR_API_IDENTIFIER' ? { audience } : null),
-      redirect_uri: "http://localhost:4200/back-office",
+      redirect_uri: config.appUri + "/back-office",
     },
     errorPath,
   },
