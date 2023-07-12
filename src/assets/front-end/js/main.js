@@ -1527,11 +1527,18 @@ $window.on("load", function () {
   debugger;
   windowLoadInit();
   var today = new Date();
-  var lastMonth = new Date().getMonth() - 1;
-  var picker = new Pikaday({
+  var tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate()+1);
+  tomorrow.toLocaleDateString(); 
+  new Pikaday({
     field: document.getElementsByClassName("datepicker")[0],
-    minDate: today,
-    position: "top left",
+    minDate: tomorrow,
+    position: "bottom left",
+    reposition: false,
+  });
+  new Pikaday({
+    field: document.getElementsByClassName("datepicker2")[0],
+    position: "bottom left",
     reposition: false,
   });
 }); //end of "window load" event
