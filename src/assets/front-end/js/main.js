@@ -473,7 +473,6 @@ function documentReadyInit() {
   $(".page_header .toggle_menu, .page_toplogo .toggle_menu")
     .unbind("click")
     .click(function (event) {
-      debugger;
       $(this)
         .toggleClass("mobile-active")
         .closest(".page_header")
@@ -1175,7 +1174,6 @@ function windowLoadInit() {
 
     //counters init on scroll
     if ($().countTo) {
-      debugger;
       var $counter = $(".counter");
       $counter.appear();
 
@@ -1524,7 +1522,6 @@ $(document).ready(function () {
 });
 
 $window.on("load", function () {
-  debugger;
   windowLoadInit();
   var today = new Date();
   var tomorrow = new Date(today);

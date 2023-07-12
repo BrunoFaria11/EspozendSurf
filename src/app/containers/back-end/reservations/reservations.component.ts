@@ -50,7 +50,6 @@ export class ReservationsComponent {
 
   openRequest(content, id: number) {
     this.item = this.array.filter((x) => x.id == id)[0];
-    debugger;
     this.modal.open(content, { ariaLabelledBy: 'modal-basic-title' });
   }
 
