@@ -7,7 +7,6 @@ import {
 } from '@angular/router';
 import { LanguageStoreService } from 'src/core/services/stores/language-store.service';
 
-// declare function do_(): any;
 
 @Component({
   selector: 'app-root',
@@ -21,7 +20,7 @@ export class AppComponent {
     private router: Router,
     private languageStoreService: LanguageStoreService
   ) {
-    // do_();
+  
   }
 
   ngOnInit() {
@@ -32,14 +31,6 @@ export class AppComponent {
     } else {
       this.languageStoreService.change(websiteLang);
     }
-
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        // setTimeout(() => {
-        //   do_();
-        // }, 500);
-      }
-    });
   }
 
 }
