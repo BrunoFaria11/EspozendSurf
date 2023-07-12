@@ -19138,10 +19138,10 @@ img.absolute_image {
 @media (min-width: 1800px) {
 	.section-counter {
 		background-attachment: fixed!important;
-		background-position: -1906px 50%!important;
+		background-position: -1256px 50%!important;
 	}
 	.section-about {
 		background-attachment: fixed!important;
-		background-position: 1906px 50%!important;
+		background-position: 1256px 50%!important;
 	}
 }
