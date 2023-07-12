@@ -204,6 +204,10 @@ select{
 	margin-top:16px;
 }
 
-.form-style{
-  width: 100% !important;;
+input[type="date"]
+{
+    display:block !important;
+    -webkit-appearance: textfield !important;
+    -moz-appearance: textfield !important;
+    min-height: 1.2em !important;
 }
