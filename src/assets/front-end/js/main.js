@@ -1303,6 +1303,7 @@ function windowLoadInit() {
 
     //counters init on scroll
     if ($().countTo) {
+      debugger;
       var $counter = $(".counter");
       $counter.appear();
 
