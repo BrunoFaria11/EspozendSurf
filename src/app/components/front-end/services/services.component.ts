@@ -23,7 +23,7 @@ export class ServicesComponent implements OnInit {
     dots: false,
     navSpeed: 700,
     navText: ['&#8249', '&#8250;'],
-    items: 3,
+    items: 1,
     responsive: {
       0: {
         items: 1
