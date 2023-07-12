@@ -475,36 +475,20 @@ function documentReadyInit() {
     });
   }
 
-  var x = false;
-  //toggle mobile menu
-  $(".page_header .toggle_menu, .page_toplogo .toggle_menu").on(
-    "click",
-    function () {
-      if (x == false) {
-        x = true;
-        $(this)
-          .removeClass("mobile-active")
-          .closest(".page_header")
-          .removeClass("mobile-active")
-          .end()
-          .closest(".page_toplogo")
-          .next()
-          .find(".page_header")
-          .removeClass("mobile-active");
-      } else {
-        x = false;
-        $(this)
-          .toggleClass("mobile-active")
-          .closest(".page_header")
-          .toggleClass("mobile-active")
-          .end()
-          .closest(".page_toplogo")
-          .next()
-          .find(".page_header")
-          .toggleClass("mobile-active");
-      }
-    }
-  );
+ 	//toggle mobile menu
+   $(".page_header .toggle_menu, .page_toplogo .toggle_menu").unbind("click").click(function(event){
+    event.preventDefault();
+    debugger
+    $(this)
+			.toggleClass('mobile-active')
+			.closest('.page_header')
+			.toggleClass('mobile-active')
+			.end()
+			.closest('.page_toplogo')
+			.next()
+			.find('.page_header')
+			.toggleClass('mobile-active');
+	});
 
   $(".sf-menu a").on("click", function () {
     var $this = $(this);
