@@ -477,7 +477,6 @@ function documentReadyInit() {
 
  	//toggle mobile menu
    $(".page_header .toggle_menu, .page_toplogo .toggle_menu").unbind("click").click(function(event){
-    event.preventDefault();
     debugger
     $(this)
 			.toggleClass('mobile-active')
@@ -490,7 +489,9 @@ function documentReadyInit() {
 			.toggleClass('mobile-active');
 	});
 
-  $(".sf-menu a").on("click", function () {
+
+  $(".sf-menu a").unbind("click").click(function(event){
+    event.preventDefault();
     var $this = $(this);
     //If this is a local link or item with sumbenu - not toggling menu
     if (
