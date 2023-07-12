@@ -206,6 +206,7 @@ select{
 
 input[type="date"]
 {
+  min-width: 90%;
     display:block !important;
     -webkit-appearance: textfield !important;
     -moz-appearance: textfield !important;
