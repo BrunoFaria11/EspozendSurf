@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, of } from 'rxjs';
 import data from '../../../environments/siteconfig.json';
 
-declare function do_(): any;
+// declare function do_(): any;
 
 @Injectable({ providedIn: 'root' })
 export class LanguageStoreService {
@@ -32,8 +32,8 @@ export class LanguageStoreService {
       language
     );
     
-    setTimeout(() => {
-      do_();
-    }, 3000);
+    // setTimeout(() => {
+    //   do_();
+    // }, 3000);
   }
 }

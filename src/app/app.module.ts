@@ -31,7 +31,6 @@ import { AppService } from 'src/core/services/app-service';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { MailBoxComponent } from './components/back-end/mail-box/mail-box.component';
 import { DailyCalendarComponent } from './components/back-end/daily-calendar/daily-calendar.component';
-import { NavBarComponent } from './components/back-end/nav-bar/nav-bar.component';
 import { DashboardComponent } from './containers/back-end/dashboard/dashboard.component';
 import { CalendarBackComponent } from './containers/back-end/calendar/calendar.component';
 import { EmailService } from 'src/core/services/email-service';
@@ -63,7 +62,6 @@ import { UpdateReservationComponent } from './components/back-end/update-reserva
     CalendarComponent,
     MailBoxComponent,
     DailyCalendarComponent,
-    NavBarComponent,
     DashboardComponent,
     CalendarBackComponent,
     LoginComponent,

@@ -12,17 +12,28 @@ import { EmailService } from 'src/core/services/email-service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  myScriptElement: HTMLScriptElement | undefined;
   angForm!: FormGroup;
   showResponse: boolean = false;
   isError: boolean = false;
   minDate: string = this.formatDate(new Date());
   time: string = 'morning';
+
   constructor(
     public languageStoreService: LanguageStoreService,
     public appService: AppService,
     private fb: FormBuilder,
     public emailService: EmailService
   ) {
+    const scripts = [
+      '../../../assets/front-end/js/main.js',
+
+    ];
+    scripts.forEach((element) => {
+      this.myScriptElement = document.createElement('script');
+      this.myScriptElement.src = element;
+      document.body.appendChild(this.myScriptElement);
+    });
     this.createForm();
   }
 
