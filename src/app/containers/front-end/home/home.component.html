@@ -76,8 +76,8 @@
                   >
                 </p>
                 <input
-                class="form-style datepicker2"
-                type="text"
+                  class="form-style"
+                  type="date"
                   formControlName="birthDay"
                 />
               </div>
@@ -149,9 +149,10 @@
                   >
                 </p>
                 <input
-                  class="form-style datepicker"
-                  type="text"
+                  class="form-style"
+                  type="date"
                   formControlName="classDate"
+                  min="{{minDate}}"
                 />
               </div>
             </div>

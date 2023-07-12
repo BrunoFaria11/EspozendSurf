@@ -37,7 +37,6 @@
               "src/assets/front-end/css/animations.css",
               "src/assets/front-end/css/font-awesome.css",
               "src/assets/front-end/css/icomoon.css",
-              "src/assets/front-end/css/pickaday.css",
 
               "src/assets/back-end/css/calendar/dx-common.css",
               "src/assets/back-end/css/calendar/dx-light.css",
@@ -49,7 +48,6 @@
               "src/assets/front-end/js/vendor/modernizr-2.6.2.min.js",
               "src/assets/front-end/js/compressed.js",
               "src/assets/front-end/js/main.js",
-              "src/assets/front-end/js/pikaday.js",
               "src/assets/front-end/js/whatsapp.js"
             ]
           },

@@ -68,6 +68,7 @@ export class HomeComponent implements OnInit {
   }
 
   onClickSubmit(data: any) {
+    debugger;
     if (
       data.name != '' &&
       data.cardNumber != '' &&
@@ -90,6 +91,10 @@ export class HomeComponent implements OnInit {
         this.addRequest(model);
       }
     }
+  }
+
+  onSearchChange(e: any) {
+    console.log(e.target.classDate.value);
   }
 
   addRequest(model: any) {

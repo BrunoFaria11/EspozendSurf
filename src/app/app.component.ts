@@ -1,14 +1,4 @@
 import { Component } from '@angular/core';
-import {
-  ActivatedRoute,
-  NavigationCancel,
-  NavigationEnd,
-  NavigationError,
-  NavigationStart,
-  ParamMap,
-  Router,
-  RouterEvent,
-} from '@angular/router';
 import { LanguageStoreService } from 'src/core/services/stores/language-store.service';
 
 @Component({
@@ -19,14 +9,7 @@ import { LanguageStoreService } from 'src/core/services/stores/language-store.se
 export class AppComponent {
   title = 'Espozende Surf';
 
-  public showOverlay = true;
-
-  constructor(
-    private router: Router,
-    private languageStoreService: LanguageStoreService
-  ) {
-   
-  }
+  constructor(private languageStoreService: LanguageStoreService) {}
 
   // Shows and hides the loading spinner during RouterEvent changes
   ngOnInit() {
@@ -36,13 +19,6 @@ export class AppComponent {
       this.languageStoreService.change('pt');
     } else {
       this.languageStoreService.change(websiteLang);
-    }
-    if (!localStorage.getItem('reload')) {
-      localStorage.setItem('reload', 'no reload');
-      location.reload();
-    } else {
-      localStorage.removeItem('reload');
-      this.showOverlay = false;
     }
   }
 }
