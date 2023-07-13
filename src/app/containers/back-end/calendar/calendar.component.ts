@@ -51,13 +51,13 @@ export class CalendarBackComponent {
       model.confirmed = true;
       let _type = JSON.parse(model.type);
       let isPack = _type.isPack;
-      model.type = _type.type + ' - ' + '1';
       model.time = this.time;
       if (isPack) {
         model.max = _type.max;
         model.count = _type.max;
-        this.addPack(model);
+        this.addPack(model, _type.type);
       } else {
+        model.type = _type.type;
         this.addRequest(model);
       }
     }
@@ -92,7 +92,8 @@ export class CalendarBackComponent {
       });
   }
 
-  addPack(model: any) {
+  addPack(model: any, type: string) {
+    model.type = type;
     model.count = 1;
     this.appService
       .addModel('reservation-pack', JSON.stringify(model))
@@ -106,6 +107,7 @@ export class CalendarBackComponent {
           };
         }
         if (response.succeeded) {
+          model.type = type + ' - ' + '1';
           this.addRequest(model);
         }
       });

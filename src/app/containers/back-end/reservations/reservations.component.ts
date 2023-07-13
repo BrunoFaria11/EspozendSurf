@@ -95,23 +95,14 @@ export class ReservationsComponent {
             if (response.succeeded) {
               if (this.item?.email.length > 4) {
                 let email = environment.confirmationEmail;
-                email = email.replace('#text', 'A sua aula foi agendada.');
+                email = email.replace('#text', this.item.type + ' foi agendada.');
                 email = email.replace('#Date', this.item.classDate);
                 email = email.replace('#Date_eng', this.item.classDate);
                 email = email.replace('#Hour', this.item.hour);
                 email = email.replace('#Hour_eng', this.item.hour);
-                email = email.replace(
-                  '#Time',
-                  this.item.time == 'morning' ? 'Manhã' : 'Tarde'
-                );
-                email = email.replace(
-                  '#text_eng',
-                  'Your class has been scheduled'
-                );
-                email = email.replace(
-                  '#Time_eng',
-                  this.item.time == 'morning' ? 'Morning' : 'Afternoon'
-                );
+                email = email.replace('#Time', this.item.time == 'morning' ? 'Manhã' : 'Tarde');
+                email = email.replace('#text_eng', this.item.type + ' has been scheduled');
+                email = email.replace('#Time_eng', this.item.time == 'morning' ? 'Morning' : 'Afternoon');
 
                 this.emailService
                   .sendEmail(

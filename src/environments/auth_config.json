@@ -3,7 +3,7 @@
     "clientId": "7O7XcrcT9miZXF3lsZh8N7Lm4QUmtx0T",
     "authorizationParams": {
     },
-    "apiUri": "http://localhost:3001",
-    "appUri": "http://localhost:4200",
+    "apiUri": "http://brunofaria1112-001-site2.dtempurl.com",
+    "appUri": "https://apuliasurfschool.com",
     "errorPath": "/error"
   }

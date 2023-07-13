@@ -655,12 +655,16 @@ address:last-child {
 	margin-bottom: 0;
 }
 
-.owl-custom-nav a + a {
+.owl-custom-nav span + spans {
 	margin-left: 10px;
 }
 
 .owl-custom-nav i {
-	font-size: 14px;
+	font-size: 18px;
+}
+
+.owl-next{
+	margin-left: 13px;
 }
 
 mark {
@@ -1912,7 +1916,7 @@ progressbar*/
 	background-color: #f4f4f5;
 }
 
-.owl-custom-nav a:hover {
+.owl-custom-nav span:hover {
 	color: initial;
 	opacity: .4;
 }
