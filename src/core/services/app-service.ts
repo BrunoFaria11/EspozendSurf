@@ -2,7 +2,7 @@ import { Http, Response } from '@angular/http';
 import { environment } from '../../environments/environment';
 import { Feature } from '../models/feature';
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -25,7 +25,18 @@ export class AppService {
         '/api/Model/GetAllModels?ApplicationId=' +
         environment.applicationId +
         '&Name=' +
-        name
+        name,
+        {
+          headers:
+            new HttpHeaders(
+              {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest',
+                'MyClientCert': '',        // This is empty
+                'MyToken': ''              // This is empty
+              }
+            )
+        }
     );
   }
 }
