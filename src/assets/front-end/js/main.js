@@ -1531,21 +1531,6 @@
 
   $window.on("load", function () {
     windowLoadInit();
-    var today = new Date();
-    var tomorrow = new Date(today);
-    tomorrow.setDate(today.getDate() + 1);
-    tomorrow.toLocaleDateString();
-    new Pikaday({
-      field: document.getElementsByClassName("datepicker")[0],
-      minDate: tomorrow,
-      position: "bottom left",
-      reposition: false,
-    });
-    new Pikaday({
-      field: document.getElementsByClassName("datepicker2")[0],
-      position: "bottom left",
-      reposition: false,
-    });
   }); //end of "window load" event
 
   $window.on("resize", function () {
