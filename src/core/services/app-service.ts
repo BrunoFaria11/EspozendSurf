@@ -8,6 +8,15 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root',
 })
 export class AppService {
+  headers = {
+    headers: new HttpHeaders({
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, DELETE',
+      'Access-Control-Allow-Headers': 'origin, x-requested-with',
+    }),
+  };
+
   constructor(private http: HttpClient) {}
 
   addModel(name: string, value: string) {
@@ -26,17 +35,7 @@ export class AppService {
         environment.applicationId +
         '&Name=' +
         name,
-        {
-          headers:
-            new HttpHeaders(
-              {
-                'Content-Type': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest',
-                'MyClientCert': '',        // This is empty
-                'MyToken': ''              // This is empty
-              }
-            )
-        }
+      this.headers
     );
   }
 }
