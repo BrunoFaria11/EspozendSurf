@@ -118,7 +118,7 @@ export class HomeComponent implements OnInit {
 
           this.emailService
             .sendEmail(
-              'Site - Marcação',
+              'Site - Marcação - ' + this.angForm.value.email,
               environment.fromEmail,
               environment.toEmail,
               email
@@ -158,7 +158,7 @@ export class HomeComponent implements OnInit {
 
           this.emailService
             .sendEmail(
-              'Site - Pack',
+              'Site - Pack - ' + this.angForm.value.email,
               environment.fromEmail,
               environment.toEmail,
               email

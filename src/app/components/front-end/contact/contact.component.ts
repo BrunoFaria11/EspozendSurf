@@ -52,7 +52,7 @@ export class ContactComponent implements OnInit {
             email = email.replace('#body', data.message);
             this.emailService
               .sendEmail(
-                'Site - Normal Email',
+                'Site - Normal Email - ' +  data.email,
                 environment.fromEmail,
                 environment.toEmail,
                 email
