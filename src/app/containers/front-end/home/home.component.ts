@@ -66,6 +66,7 @@ export class HomeComponent implements OnInit {
   }
 
   onClickSubmit(data: any) {
+    debugger
     this.isBtnDisabled = true;
     if (
       data.name != '' &&

@@ -94,11 +94,11 @@ import { UpdateReservationComponent } from './components/back-end/update-reserva
   providers: [
     AppService,
     EmailService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthHttpInterceptor,
-      multi: true,
-    },
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: AuthHttpInterceptor,
+    //   multi: true,
+    // },
     { provide: LOCALE_ID, useValue: 'en-US' },
     { provide: MOMENT, useValue: MOMENT },
   ],

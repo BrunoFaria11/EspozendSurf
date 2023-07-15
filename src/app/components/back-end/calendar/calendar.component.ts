@@ -55,7 +55,8 @@ export class CalendarComponent {
   ngOnInit(): void {}
 
   getReservations() {
-    this.appService.getModel('reservation').subscribe((response: any) => {
+    this.appService.getModel('reservation').subscribe(
+      (response: any) => {
       var x = response.data.sort((a, b) => {
         return JSON.parse(a.value).time <= JSON.parse(b.value).time ? 1 : -1;
       });
@@ -106,7 +107,12 @@ export class CalendarComponent {
       var date = new Date();
       this.dayClicked({ date: date, events: this.events });
       this.dayClicked({ date: date, events: this.events });
-    });
+    },
+    err => {
+        let error = (() => { try { return JSON.parse(err._body) } catch (something) { return err }})()
+        console.log(error);
+    })
+    ;
   }
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {

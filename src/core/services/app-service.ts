@@ -4,20 +4,24 @@ import { Feature } from '../models/feature';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+
+
 @Injectable({
   providedIn: 'root',
 })
 export class AppService {
-  headers = {
-    headers: new HttpHeaders({
-      'Access-Control-Allow-Origin': '*',
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, DELETE',
-      'Access-Control-Allow-Headers': 'origin, x-requested-with',
-    }),
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
-  constructor(private http: HttpClient) {}
+
+
+  constructor(private http: HttpClient) {
+    this.httpOptions.headers.append('Access-Control-Allow-Origin', 'http://localhost:4200');
+    this.httpOptions.headers.append('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    this.httpOptions.headers.append('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    this.httpOptions.headers.append('Access-Control-Allow-Credentials', 'true');
+  }
 
   addModel(name: string, value: string) {
     let feature = new Feature(environment.applicationId, name, value);
@@ -29,13 +33,14 @@ export class AppService {
   }
 
   getModel(name: string) {
+    debugger
     return this.http.get(
       environment.cm +
         '/api/Model/GetAllModels?ApplicationId=' +
         environment.applicationId +
         '&Name=' +
         name,
-      this.headers
+        this.httpOptions
     );
   }
 }
