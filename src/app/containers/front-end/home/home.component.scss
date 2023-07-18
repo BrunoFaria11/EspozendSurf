@@ -325,7 +325,7 @@ input[type="date"]
   min-width: 100%;
   height: 100%;
   flex-shrink: 0;
-  background-size: cover;
+  background-size: cover !important;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -336,6 +336,7 @@ input[type="date"]
   position: absolute;
   content: "";
   overflow: hidden;
+  background-size: cover;
 }
 .whatsapp-background {
   padding: 20px 20px 20px 10px;
@@ -648,4 +649,7 @@ input[type="date"]
   animation-duration: 0.5s;
   transform: scale(1);
   opacity: 1;
+}
+.whatsapp-reply-time{
+  font-size: 10px;
 }
