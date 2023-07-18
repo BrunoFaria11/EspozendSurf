@@ -1,7 +1,7 @@
 {
   "pt": {
     "navbar": {
-      "home": "Iníco2",
+      "home": "Iníco",
       "about": "Sobre nós",
       "services": "O que fazemos",
       "price": "Preços",
@@ -14,18 +14,20 @@
     "banner": {
       "image": "../assets/images_site/banner1.jpg",
       "text1": "O TEU ENCONTRO COM O MAR",
-      "text2": "ESPOZENDE SURF SCHOOL",
-      "text3": "ESPOSENDE",
+      "text2": "APULIA SURF SCHOOL",
+      "text3": "APÚLIA",
       "btn": "Marcar Aula",
       "isToShow": true
     },
     "section1": {
       "title": "Sobre nós",
-      "subTitle": "A nossa história",
+      "subTitle": "A nossa experiência",
       "text": "O que temos para oferecer.",
       "texts": [
-        "A EspoZende Surf School é uma escola oficial da Federação Portuguesa de Surf, que dispõe de excelentes condições para a aprendizagem de Surf e Bodyboard na Praia Suave Mar em Esposende.",
-        "Tal como o nome indica, Espo”Z”ende com “Z”, pretende fazer a ponte entre o desporto já praticado há mais de 20 anos pelo concelho, quando Esposende ainda se escrevia com “Z” e trazer de volta tão grande tradição."
+        "A equipa da Apúlia Surf School conhece cada recanto e segredo das ondas locais, garantindo que os alunos desfrutem das melhores experiências surfando as melhores ondas.",
+        "O programa de ensino da Apúlia Surf School é diversificado e abrangente. Seja o aluno um iniciante ansioso para aprender os fundamentos do surf ou um surfista experiente a procura de aprimorar as suas habilidades, as aulas são adaptadas às suas necessidades específicas. Além disso, a equipa valoriza a segurança em primeiro lugar, assegurando que todos os alunos estejam sempre protegidos e acompanhados durante suas aventuras aquáticas.",
+        "Aqui na Apúlia Surf School, o espírito de comunidade é forte. Mais do que apenas uma escola de surf, somos uma família que partilha a alegria de deslizar sobre as ondas, celebrando cada progresso e conquista junto com nossos alunos. A camaradagem e o companheirismo criam um ambiente descontraído e amigável, tornando a aprendizagem do surf uma jornada inesquecível.",
+        "Junte-se a nós nesta incrível aventura aquática e deixe o surf mudar sua vida para sempre!"
       ],
       "image1": "../assets/images_site/about1.jpg",
       "image2": "../assets/images_site/about1.jpg"

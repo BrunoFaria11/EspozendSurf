@@ -66,12 +66,27 @@
             {
               "type": "string",
               "title": "Texto",
-              "default": "A EspoZende Surf School é uma escola oficial da Federação Portuguesa de Surf, que dispõe de excelentes condições para a aprendizagem de Surf e Bodyboard na Praia Suave Mar em Esposende."
+              "default": "A equipa da Apulia Surf School conhece cada recanto e segredo das ondas locais, garantindo que os alunos desfrutem das melhores experiências surfando as melhores ondas."
             },
             {
               "type": "string",
               "title": "Texto",
-              "default": "Tal como o nome indica, Espo”Z”ende com “Z”, pretende fazer a ponte entre o desporto já praticado há mais de 20 anos pelo concelho, quando Esposende ainda se escrevia com “Z” e trazer de volta tão grande tradição."
+              "default": "O programa de ensino da Apulia Surf School é diversificado e abrangente. Seja o aluno um iniciante ansioso para aprender os fundamentos do surf ou um surfista experiente a procura de aprimorar as suas habilidades, as aulas são adaptadas às suas necessidades específicas. Além disso, a equipa valoriza a segurança em primeiro lugar, assegurando que todos os alunos estejam sempre protegidos e acompanhados durante suas aventuras aquáticas."
+            },
+            {
+              "type": "string",
+              "title": "Texto",
+              "default": "Aqui na Apulia Surf School, o espírito de comunidade é forte. Mais do que apenas uma escola de surf, somos uma família que partilha a alegria de deslizar sobre as ondas, celebrando cada progresso e conquista junto com nossos alunos. A camaradagem e o companheirismo criam um ambiente descontraído e amigável, tornando a aprendizagem do surf uma jornada inesquecível."
+            },
+            {
+              "type": "string",
+              "title": "Texto",
+              "default": "Não perca a oportunidade de se conectar com a natureza, de viver momentos emocionantes e de se apaixonar pelo surf na Apulia Surf School. Venha nos visitar e descubra o verdadeiro significado de surfar, pois aqui, cada onda é uma nova história e cada surfista uma inspiração."
+            },
+            {
+              "type": "string",
+              "title": "Texto",
+              "default": "Junte-se a nós nesta incrível aventura aquática e deixe o surf mudar sua vida para sempre!"
             }
           ]
         },

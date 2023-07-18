@@ -152,7 +152,7 @@
                   class="form-style"
                   type="date"
                   formControlName="classDate"
-                  min="{{minDate}}"
+                  min="{{ minDate }}"
                 />
               </div>
             </div>
@@ -180,7 +180,10 @@
                       "
                       label="{{ type.type }}"
                     >
-                      <option *ngFor="let value of type.values" [value]="convertJSON(value)">
+                      <option
+                        *ngFor="let value of type.values"
+                        [value]="convertJSON(value)"
+                      >
                         {{ value.type }}
                       </option>
                     </optgroup>
@@ -238,7 +241,8 @@
               <button
                 type="submit"
                 class="btn btn-maincolor btn-slider btn-medium"
-                [disabled]="isBtnDisabled" >
+                [disabled]="isBtnDisabled"
+              >
                 {{ languageStoreService.Texts.section9.btn }}
               </button>
             </div>
@@ -248,16 +252,34 @@
     </div>
     <div
       class="col-md-6 col-xl-4"
-      [style]="showResponse == false ? 'display: none;position: fixed;top: 25%;left: 33%;z-index: 9999' : 'position: fixed;top: 25%;left: 33%;z-index: 9999' "
+      [style]="
+        showResponse == false
+          ? 'display: none;position: fixed;top: 25%;left: 33%;z-index: 9999'
+          : 'position: fixed;top: 25%;left: 33%;z-index: 9999'
+      "
     >
-      <div class="card  text-white mb-3" [class]="isError ? 'bg-danger' : 'bg-success'">
+      <div
+        class="card text-white mb-3"
+        [class]="isError ? 'bg-danger' : 'bg-success'"
+      >
         <div class="card-body">
-          <h5 class="card-title text-white">{{isError ? languageStoreService.Texts.config.error.title : languageStoreService.Texts.config.success.title}}</h5>
+          <h5 class="card-title text-white">
+            {{
+              isError
+                ? languageStoreService.Texts.config.error.title
+                : languageStoreService.Texts.config.success.title
+            }}
+          </h5>
           <p class="card-text">
-            {{isError ? languageStoreService.Texts.config.error.text : languageStoreService.Texts.config.success.text}}          </p>
+            {{
+              isError
+                ? languageStoreService.Texts.config.error.text
+                : languageStoreService.Texts.config.success.text
+            }}
+          </p>
         </div>
       </div>
     </div>
-    <div class="elfsight-app-12db9a4c-de6c-4cd5-ba4b-1c61ea93796c"></div>
+ 
   </div>
 </div>

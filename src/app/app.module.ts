@@ -1,4 +1,4 @@
-import { LOCALE_ID, NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -102,6 +102,7 @@ import { UpdateReservationComponent } from './components/back-end/update-reserva
     { provide: LOCALE_ID, useValue: 'en-US' },
     { provide: MOMENT, useValue: MOMENT },
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
