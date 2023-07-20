@@ -67,8 +67,8 @@
       "title": "Serviços",
       "subTitle1": "Vamos começar!",
       "subTitle2": "",
-      "text1": "Queremos que nossos clientes se sintam incríveis",
-      "text2": "e únicos.",
+      "text1": "Preparado para apanharmos umas ondas",
+      "text2": "juntos?",
       "services": [
         {
           "image": "../assets/images_site/services/surf.jpg",
@@ -117,8 +117,8 @@
     "section4": {
       "title": "Preços",
       "subTitle": "Os programas da nossa escola",
-      "text1": "Queremos que nossos clientes se sintam incríveis",
-      "text2": "e únicos.",
+      "text1": "A nossa missão é proporcionar uma experiência única e empolgante.",
+      "text2": "",
       "prices": [
         {
           "title": "Aulas Avulso",
@@ -182,8 +182,8 @@
       "title": "Aluguer",
       "subTitle1": "Estás a procura",
       "subTitle2": "de equipamento?",
-      "text1": "Queremos que nossos clientes se sintam incríveis",
-      "text2": "e únicos.",
+      "text1": "Convidamos-te a embarcar nesta jornada conosco!",
+      "text2": "",
       "btn": "Ver mais",
       "equipments": [
         {
