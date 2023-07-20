@@ -8,7 +8,7 @@
       "classes": "Aulas/Aluguer",
       "contact": "Contactos",
       "logo": "../assets/images_site/logo.png",
-      "insta": "https://www.instagram.com/espozendesurfschool/"
+      "insta": "https://www.instagram.com/apuliasurfschool/"
     },
     "banner": {
       "image": "../assets/images_site/banner1.jpg",
@@ -235,12 +235,20 @@
           "btn": "Alugar"
         },
         {
+          "image": "../assets/images_site/equipments/equip.jpeg",
+          "title": "Equipamento completamento",
+          "text": "Qualidade",
+          "rate": 100,
+          "price": "20€",
+          "btn": "Alugar"
+        },
+        {
           "image": "../assets/images_site/equipments/fato_azul.jpeg",
           "title": "Fato Janga Azul",
           "text": "Qualidade",
           "rate": 100,
           "price": "",
-          "btn": "Alugar"
+          "btn": ""
         },
         {
           "image": "../assets/images_site/equipments/fato_laranja.jpeg",
@@ -248,7 +256,7 @@
           "text": "Qualidade",
           "rate": 100,
           "price": "",
-          "btn": "Alugar"
+          "btn": ""
         },
         {
           "image": "../assets/images_site/equipments/fato_rosa.jpeg",
@@ -256,7 +264,7 @@
           "text": "Qualidade",
           "rate": 100,
           "price": "",
-          "btn": "Alugar"
+          "btn": ""
         },
         {
           "image": "../assets/images_site/equipments/fato_performance_amarelo.jpeg",
