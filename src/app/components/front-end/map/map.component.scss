@@ -23,6 +23,7 @@
     // background-size: 30px 21px;
     // background-repeat: no-repeat;
     &:hover {
+      z-index: 9999;
       animation: none;
       transform:  translate(-50%, -50%) scale3D(1.35, 1.35 ,1);
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);

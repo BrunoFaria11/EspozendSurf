@@ -7,7 +7,6 @@
       "price": "Preços",
       "classes": "Aulas/Aluguer",
       "contact": "Contactos",
-      "phoneNumber": "+351961410360",
       "logo": "../assets/images_site/logo.png",
       "insta": "https://www.instagram.com/espozendesurfschool/"
     },
@@ -25,9 +24,9 @@
       "text": "O que temos para oferecer.",
       "texts": [
         "A equipa da Apúlia Surf School conhece cada recanto e segredo das ondas locais, garantindo que os alunos desfrutem das melhores experiências surfando as melhores ondas.",
-        "O programa de ensino da Apúlia Surf School é diversificado e abrangente. Seja o aluno um iniciante ansioso para aprender os fundamentos do surf ou um surfista experiente a procura de aprimorar as suas habilidades, as aulas são adaptadas às suas necessidades específicas. Além disso, a equipa valoriza a segurança em primeiro lugar, assegurando que todos os alunos estejam sempre protegidos e acompanhados durante suas aventuras aquáticas.",
-        "Aqui na Apúlia Surf School, o espírito de comunidade é forte. Mais do que apenas uma escola de surf, somos uma família que partilha a alegria de deslizar sobre as ondas, celebrando cada progresso e conquista junto com nossos alunos. A camaradagem e o companheirismo criam um ambiente descontraído e amigável, tornando a aprendizagem do surf uma jornada inesquecível.",
-        "Junte-se a nós nesta incrível aventura aquática e deixe o surf mudar sua vida para sempre!"
+        "O programa de ensino da Apúlia Surf School é diversificado e abrangente. Seja o aluno um iniciante ansioso para aprender os fundamentos do surf ou um surfista experiente à procura de aprimorar as suas habilidades, as aulas são adaptadas às suas necessidades específicas. Além disso, a equipa valoriza a segurança em primeiro lugar, assegurando que todos os alunos estejam sempre protegidos e acompanhados durante as suas aventuras aquáticas.",
+        "Aqui na Apúlia Surf School, o espírito de comunidade é forte. Mais do que apenas uma escola de surf, somos uma família que partilha a alegria de deslizar sobre as ondas, celebrando cada progresso e conquista junto com os nossos alunos. A camaradagem e o companheirismo criam um ambiente descontraído e amigável, tornando a aprendizagem do surf uma jornada inesquecível.",
+        "Junte-se a nós nesta incrível aventura aquática e deixe o surf mudar a sua vida para sempre!"
       ],
       "image1": "../assets/images_site/about1.jpg",
       "image2": "../assets/images_site/about1.jpg"
@@ -36,15 +35,15 @@
       "title": "Vantagens",
       "subTitle1": "Por que aprender",
       "subTitle2": "conosco?",
-      "text1": "Queremos que nossos clientes se sintam incríveis",
+      "text1": "Queremos que os nossos clientes se sintam incríveis",
       "text2": "e únicos.",
       "image1": "../assets/images_site/ben.jpg",
       "lines": [
         [
           {
             "icon": "ico ico-wave",
-            "total": 10,
-            "text": "Lugares seguros"
+            "total": 6,
+            "text": "Professores certificados"
           },
           {
             "icon": "ico ico-surfboard",
@@ -58,7 +57,7 @@
           },
           {
             "icon": "ico ico-calm",
-            "total": 12,
+            "total": 70,
             "text": "Fatos"
           }
         ]
@@ -66,8 +65,8 @@
     },
     "section3": {
       "title": "Serviços",
-      "subTitle1": "Vamos",
-      "subTitle2": "começar!",
+      "subTitle1": "Vamos começar!",
+      "subTitle2": "",
       "text1": "Queremos que nossos clientes se sintam incríveis",
       "text2": "e únicos.",
       "services": [
@@ -103,6 +102,13 @@
           "image": "../assets/images_site/services/paddleboard.jpg",
           "title": "Aluguer",
           "subTitle": "Paddle Surf",
+          "text": "",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/services/paddleboard.jpg",
+          "title": "Aluguer",
+          "subTitle": "Equipamento completo",
           "text": "",
           "btn": "Alugar"
         }
@@ -203,16 +209,94 @@
       "subTitle": "O nosso orgulho",
       "countries": [
         {
-          "top": "35.5%",
+          "top": "36.5%",
           "left": "43.2%",
           "title": "PT",
           "image": "../assets/images_site/flags/pt.png"
         },
         {
-          "top": "35.5%",
-          "left": "50.2%",
-          "title": "PT",
+          "top": "36.5%",
+          "left": "44.9%",
+          "title": "ES",
+          "image": "../assets/images_site/flags/es.png"
+        },
+        {
+          "top": "33.6%",
+          "left": "47.6%",
+          "title": "CH",
+          "image": "../assets/images_site/flags/ch.png"
+        },
+        {
+          "top": "32.5%",
+          "left": "45.9%",
+          "title": "FR",
+          "image": "../assets/images_site/flags/fr.png"
+        },
+        {
+          "top": "26.5%",
+          "left": "45.2%",
+          "title": "UK",
+          "image": "../assets/images_site/flags/gb-eng.png"
+        },
+        {
+          "top": "28%",
+          "left": "48.2%",
+          "title": "DK",
+          "image": "../assets/images_site/flags/dk.png"
+        },
+        {
+          "top": "31.3%",
+          "left": "48.2%",
+          "title": "DE",
+          "image": "../assets/images_site/flags/de.png"
+        },
+        {
+          "top": "36.5%",
+          "left": "49.2%",
+          "title": "IT",
           "image": "../assets/images_site/flags/it.png"
+        },
+        {
+          "top": "23%",
+          "left": "48.2%",
+          "title": "NO",
+          "image": "../assets/images_site/flags/no.png"
+        },
+        {
+          "top": "30.3%",
+          "left": "46.8%",
+          "title": "NL",
+          "image": "../assets/images_site/flags/nl.png"
+        },
+        {
+          "top": "37.3%",
+          "left": "20.8%",
+          "title": "USA",
+          "image": "../assets/images_site/flags/us.png"
+        },
+        {
+          "top": "66.3%",
+          "left": "34.8%",
+          "title": "BR",
+          "image": "../assets/images_site/flags/br.png"
+        },
+        {
+          "top": "31.3%",
+          "left": "50%",
+          "title": "CZ",
+          "image": "../assets/images_site/flags/cz.png"
+        },
+        {
+          "top": "33.3%",
+          "left": "50%",
+          "title": "AT",
+          "image": "../assets/images_site/flags/at.png"
+        },
+        {
+          "top": "30.3%",
+          "left": "45.8%",
+          "title": "DE",
+          "image": "../assets/images_site/flags/de.png"
         }
       ]
     },
@@ -239,17 +323,17 @@
         {
           "icon": "fa fa-map-pin",
           "title": "Morada",
-          "value": "Praça 15 de Maio, 4740-287 Esposende, Portugal"
+          "value": "4740 080, R. da Marginal 10, Braga, Portugal"
         },
         {
           "icon": "fa fa-at",
           "title": "Email",
-          "value": "info@espozendesurfschool.com"
+          "value": "apuliasurfschool@gmail.com"
         },
         {
           "icon": "fa fa-phone",
           "title": "Tel",
-          "value": "(+351) 961410360"
+          "value": "(+351) 913 999 593"
         }
       ]
     },
@@ -360,7 +444,8 @@
       "error": {
         "title": "Erro",
         "text": "O seu pedido não foi enviado, pode contactar-nos por telefone ou por whatsapp"
-      }
+      },
+      "phoneNumber": "913999593"
     }
   },
   "eng": {
