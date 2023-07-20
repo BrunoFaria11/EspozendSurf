@@ -37,12 +37,17 @@
               <div class="product">
                 <div class="product-inner">
                   <span>
-                    <img [src]="equipment.image" alt="img" />
+                    <div
+                      class="product-image"
+                      style="background: url('{{equipment.image}}') no-repeat center/cover;"
+                    ></div>
                   </span>
 
                   <div class="product-wrap">
                     <h2 class="woocommerce-loop-product__title">
-                      <span href="shop-product-left.html">{{ equipment.title }}</span>
+                      <span href="shop-product-left.html">{{
+                        equipment.title
+                      }}</span>
                     </h2>
                     <div class="rate">
                       <span>{{ equipment.text }}</span>
@@ -60,7 +65,7 @@
                           <span>{{ equipment.price }}</span>
                         </span>
                       </span>
-                      <div class="plan-button">
+                      <div class="plan-button" *ngIf="equipment.btn != ''">
                         <a
                           href="#open-modal"
                           class="btn btn-maincolor btn-slider btn-medium"

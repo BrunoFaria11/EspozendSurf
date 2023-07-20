@@ -217,6 +217,7 @@
 .product .product-inner .product-wrap {
 	background-color: #fff;
 	padding: 50px 30px;
+	height: 266px;
 }
 
 .product .product-inner .product-wrap .category {
@@ -232,7 +233,7 @@
 	font-size: 16px;
 	font-weight: 300;
 	margin-bottom: 25px;
-	margin-top: 0;
+	margin-top: 15px;
 	opacity: 1;
 }
 

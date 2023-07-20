@@ -187,20 +187,92 @@
       "btn": "Ver mais",
       "equipments": [
         {
-          "image": "../assets/images_site/equipments/longboard.png",
-          "title": "Longboard",
+          "image": "../assets/images_site/equipments/8_0.jpeg",
+          "title": "8.0",
           "text": "Dificuldade",
           "rate": 20,
           "price": "15€",
           "btn": "Alugar"
         },
         {
-          "image": "../assets/images_site/equipments/gun.png",
-          "title": "Gun",
+          "image": "../assets/images_site/equipments/8_0_blue.jpeg",
+          "title": "8.0 Azul",
+          "text": "Dificuldade",
+          "rate": 20,
+          "price": "15€",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/equipments/8_0_wide.jpeg",
+          "title": "8.0 Wide",
+          "text": "Dificuldade",
+          "rate": 10,
+          "price": "15€",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/equipments/7_4.jpeg",
+          "title": "7.4",
           "text": "Dificuldade",
           "rate": 35,
           "price": "15€",
           "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/equipments/6_4.jpeg",
+          "title": "6.4",
+          "text": "Dificuldade",
+          "rate": 50,
+          "price": "15€",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/equipments/bodyboard_found.jpeg",
+          "title": "Bodyboard Found",
+          "text": "Dificuldade",
+          "rate": 50,
+          "price": "15€",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/equipments/fato_azul.jpeg",
+          "title": "Fato Janga Azul",
+          "text": "Qualidade",
+          "rate": 100,
+          "price": "",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/equipments/fato_laranja.jpeg",
+          "title": "Fato Janga Laranja",
+          "text": "Qualidade",
+          "rate": 100,
+          "price": "",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/equipments/fato_rosa.jpeg",
+          "title": "Fato Janga Rosa",
+          "text": "Qualidade",
+          "rate": 100,
+          "price": "",
+          "btn": "Alugar"
+        },
+        {
+          "image": "../assets/images_site/equipments/fato_performance_amarelo.jpeg",
+          "title": "Fato Janga Performance",
+          "text": "Qualidade",
+          "rate": 100,
+          "price": "Revenda",
+          "btn": ""
+        },
+        {
+          "image": "../assets/images_site/equipments/fato_performance_preto.jpeg",
+          "title": "Fato Janga Performance",
+          "text": "Qualidade",
+          "rate": 100,
+          "price": "Revenda",
+          "btn": ""
         }
       ]
     },
