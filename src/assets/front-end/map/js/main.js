@@ -54,8 +54,8 @@ function loadMapMobile(markers) {
       zoomButtons: false,
       zoomOnScroll: false,
       zoomOnScrollSpeed: 3,
-      zoomMax: 12,
-      zoomMin: 12,
+      zoomMax: 4,
+      zoomMin: 4,
       zoomAnimate: true,
       showTooltip: false,
       zoomStep: 1.5,
@@ -68,7 +68,7 @@ function loadMapMobile(markers) {
         strokeLinecap: "round",
       },
       focusOn: {
-          region: "BE",
+          region: "PT",
           scale: 0.3
       },
       regionStyle: {
