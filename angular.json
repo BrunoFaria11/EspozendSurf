@@ -49,7 +49,12 @@
               "src/assets/front-end/js/vendor/modernizr-2.6.2.min.js",
               "src/assets/front-end/js/compressed.js",
               "src/assets/front-end/js/main.js",
-              "src/assets/front-end/js/whatsapp.js"
+              "src/assets/front-end/js/whatsapp.js",
+              "src/assets/front-end/map/js/jsvectormap.js",
+              "src/assets/front-end/map/maps/world.js",
+              "src/assets/front-end/map/maps/world-merc.js",
+              "src/assets/front-end/map/js/main.js"
+
             ]
           },
           "configurations": {

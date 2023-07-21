@@ -34,14 +34,14 @@
     "section2": {
       "title": "Vantagens",
       "subTitle1": "Por que aprender",
-      "subTitle2": "conosco?",
+      "subTitle2": "connosco?",
       "text1": "Queremos que os nossos clientes se sintam incríveis",
       "text2": "e únicos.",
       "image1": "../assets/images_site/ben.jpg",
       "lines": [
         [
           {
-            "icon": "ico ico-wave",
+            "icon": "ico ico-surfer",
             "total": 6,
             "text": "Professores certificados"
           },
@@ -51,7 +51,7 @@
             "text": "Pranchas de surf"
           },
           {
-            "icon": "ico ico-surfer",
+            "icon": "ico ico-wave",
             "total": 12,
             "text": "Aulas por semana"
           },
@@ -180,9 +180,9 @@
     },
     "section5": {
       "title": "Aluguer",
-      "subTitle1": "Estás a procura",
+      "subTitle1": "Estás à procura",
       "subTitle2": "de equipamento?",
-      "text1": "Convidamos-te a embarcar nesta jornada conosco!",
+      "text1": "Convidamos-te a embarcar nesta jornada connosco!",
       "text2": "",
       "btn": "Ver mais",
       "equipments": [
@@ -289,94 +289,11 @@
       "subTitle": "O nosso orgulho",
       "countries": [
         {
-          "top": "36.5%",
-          "left": "43.2%",
-          "title": "PT",
-          "image": "../assets/images_site/flags/pt.png"
-        },
-        {
-          "top": "36.5%",
-          "left": "44.9%",
-          "title": "ES",
-          "image": "../assets/images_site/flags/es.png"
-        },
-        {
-          "top": "33.6%",
-          "left": "47.6%",
-          "title": "CH",
-          "image": "../assets/images_site/flags/ch.png"
-        },
-        {
-          "top": "32.5%",
-          "left": "45.9%",
-          "title": "FR",
-          "image": "../assets/images_site/flags/fr.png"
-        },
-        {
-          "top": "26.5%",
-          "left": "45.2%",
-          "title": "UK",
-          "image": "../assets/images_site/flags/gb-eng.png"
-        },
-        {
-          "top": "28%",
-          "left": "48.2%",
-          "title": "DK",
-          "image": "../assets/images_site/flags/dk.png"
-        },
-        {
-          "top": "31.3%",
-          "left": "48.2%",
-          "title": "DE",
-          "image": "../assets/images_site/flags/de.png"
-        },
-        {
-          "top": "36.5%",
-          "left": "49.2%",
-          "title": "IT",
-          "image": "../assets/images_site/flags/it.png"
-        },
-        {
-          "top": "23%",
-          "left": "48.2%",
-          "title": "NO",
-          "image": "../assets/images_site/flags/no.png"
-        },
-        {
-          "top": "30.3%",
-          "left": "46.8%",
-          "title": "NL",
-          "image": "../assets/images_site/flags/nl.png"
-        },
-        {
-          "top": "37.3%",
-          "left": "20.8%",
-          "title": "USA",
-          "image": "../assets/images_site/flags/us.png"
-        },
-        {
-          "top": "66.3%",
-          "left": "34.8%",
-          "title": "BR",
-          "image": "../assets/images_site/flags/br.png"
-        },
-        {
-          "top": "31.3%",
-          "left": "50%",
-          "title": "CZ",
-          "image": "../assets/images_site/flags/cz.png"
-        },
-        {
-          "top": "33.3%",
-          "left": "50%",
-          "title": "AT",
-          "image": "../assets/images_site/flags/at.png"
-        },
-        {
-          "top": "30.3%",
-          "left": "45.8%",
-          "title": "DE",
-          "image": "../assets/images_site/flags/de.png"
+          "name": "Portugal",
+          "coords": [40, -10],
+          "style": {
+            "image": "../assets/images_site/flags/pt.png"
+          }
         }
       ]
     },
@@ -444,7 +361,7 @@
               "isPack": false
             },
             {
-              "type":  "Aula Avulso Bodyboard (15€)",
+              "type": "Aula Avulso Bodyboard (15€)",
               "isPack": false
             }
           ]
@@ -562,7 +479,7 @@
     "section2": {
       "title": "Vantagens",
       "subTitle1": "Por que aprender",
-      "subTitle2": "conosco?",
+      "subTitle2": "connosco?",
       "text1": "Queremos que nossos clientes se sintam incríveis",
       "text2": "e únicos.",
       "image1": "../assets/images_site/ben.jpg",

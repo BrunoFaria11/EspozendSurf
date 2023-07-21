@@ -1,8 +1,8 @@
 <!-- Section Price -->
-<section id="map" class="ls s-pb-90 s-pt-85 s-pb-xl-160 s-pt-xl-155">
+<section id="mapSection" class="ls s-pb-90 s-pt-85 s-pb-xl-160 s-pt-xl-155">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 ">
         <p class="text-center color-darkgrey mb-1">
           <span class="line-left">{{
             languageStoreService.Texts.section6.title
@@ -16,9 +16,35 @@
       <div class="col-lg-1 col-md-1"></div>
       <div class="col-lg-10 col-md-10">
         <div class="container">
+
+          <div id="map" style="height:400px"></div>
+
+          <!-- <div class="map-container">
+            <img
+              src="../../../../assets/images_site/map.png"
+            />
+            <div
+              *ngFor="
+                let country of languageStoreService.Texts.section6.countries
+              "
+              [style.Top]="country.top"
+              [style.Left]="country.left"
+              class="point tippy"
+              title="{{ country.title }}"
+              style="
+                  background: url('{{ country.image }}') no-repeat center/cover;
+                "
+            ></div>
+          </div> -->
+        </div>
+        <div class="divider-60 divider-lg-0"></div>
+      </div>
+      
+      <!-- <div class="col-lg-10 col-md-10 hidden-xl hidden-lg hidden-md ">
+        <div class="container">
           <div class="map-container">
             <img
-              src="https://athillyer.org/wordpress/wp-content/uploads/2020/11/world-map-1.png"
+              src="../../../../assets/images_site/europe_map.png"
             />
             <div
               *ngFor="
@@ -35,7 +61,14 @@
           </div>
         </div>
         <div class="divider-60 divider-lg-0"></div>
-      </div>
+      </div> -->
     </div>
   </div>
+  
 </section>
+<script>
+   const map = new jsVectorMap({
+      map: 'world', // 'canada', ...
+      selector: '#map',
+    });
+</script>
