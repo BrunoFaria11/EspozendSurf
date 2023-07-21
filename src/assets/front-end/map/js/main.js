@@ -1,4 +1,4 @@
-function loadMap(markers){
+function loadMap(markers) {
   const map = new jsVectorMap({
     map: "world", // 'canada', ...
     selector: "#map",
@@ -15,6 +15,15 @@ function loadMap(markers){
     regionsSelectable: false,
     regionsSelectableOne: false,
     bindTouchEvents: true,
+    lineStyle: {
+      stroke: "#808080",
+      strokeWidth: 1,
+      strokeLinecap: "round",
+    },
+    focusOn: {
+        region: "MA",
+        scale: 0.3
+    },
     regionStyle: {
       // Region style
       initial: {
@@ -35,4 +44,4 @@ function loadMap(markers){
     },
     markers: markers,
   });
-};
+}
