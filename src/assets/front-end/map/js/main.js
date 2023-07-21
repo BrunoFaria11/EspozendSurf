@@ -8,12 +8,13 @@ function loadMap(markers){
     zoomOnScroll: true,
     zoomOnScrollSpeed: 3,
     zoomMax: 12,
-    zoomMin: 1,
+    zoomMin: 2,
     zoomAnimate: true,
     showTooltip: false,
     zoomStep: 1.5,
     regionsSelectable: false,
     regionsSelectableOne: false,
+    bindTouchEvents: true,
     regionStyle: {
       // Region style
       initial: {

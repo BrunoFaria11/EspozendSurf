@@ -289,10 +289,108 @@
       "subTitle": "O nosso orgulho",
       "countries": [
         {
-          "name": "Portugal",
-          "coords": [40, -10],
+          "name": "PT",
+          "coords": [40, -8],
           "style": {
             "image": "../assets/images_site/flags/pt.png"
+          }
+        },
+        {
+          "name": "ES",
+          "coords": [40, -4],
+          "style": {
+            "image": "../assets/images_site/flags/es.png"
+          }
+        },
+        {
+          "name": "FR",
+          "coords": [47, 3],
+          "style": {
+            "image": "../assets/images_site/flags/fr.png"
+          }
+        },
+        {
+          "name": "UK",
+          "coords": [53, -1],
+          "style": {
+            "image": "../assets/images_site/flags/gb-eng.png"
+          }
+        },
+        {
+          "name": "CH",
+          "coords": [46.8, 8.5],
+          "style": {
+            "image": "../assets/images_site/flags/ch.png"
+          }
+        },
+        {
+          "name": "DK",
+          "coords": [56, 9],
+          "style": {
+            "image": "../assets/images_site/flags/dk.png"
+          }
+        },
+        {
+          "name": "DE",
+          "coords": [51.5, 10],
+          "style": {
+            "image": "../assets/images_site/flags/de.png"
+          }
+        },
+        {
+          "name": "IT",
+          "coords": [41.8, 14],
+          "style": {
+            "image": "../assets/images_site/flags/it.png"
+          }
+        },
+        {
+          "name": "NO",
+          "coords": [62, 10],
+          "style": {
+            "image": "../assets/images_site/flags/no.png"
+          }
+        },
+        {
+          "name": "NL",
+          "coords": [52.5, 5.5],
+          "style": {
+            "image": "../assets/images_site/flags/nl.png"
+          }
+        },
+        {
+          "name": "CZ",
+          "coords": [50, 16],
+          "style": {
+            "image": "../assets/images_site/flags/cz.png"
+          }
+        },
+        {
+          "name": "AT",
+          "coords": [47.5, 15],
+          "style": {
+            "image": "../assets/images_site/flags/at.png"
+          }
+        },
+        {
+          "name": "BE",
+          "coords": [50.5, 5],
+          "style": {
+            "image": "../assets/images_site/flags/be.png"
+          }
+        },
+        {
+          "name": "BR",
+          "coords": [-8.5, -40],
+          "style": {
+            "image": "../assets/images_site/flags/br.png"
+          }
+        },
+        {
+          "name": "USA",
+          "coords": [37, -90],
+          "style": {
+            "image": "../assets/images_site/flags/us.png"
           }
         }
       ]

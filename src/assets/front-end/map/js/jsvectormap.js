@@ -343,7 +343,7 @@
         var offsetY = event.pageY - rect.top - window.pageYOffset;
         var zoomStep = Math.pow(1 + map.params.zoomOnScrollSpeed / 1000, -1.5 * deltaY);
         if (map.tooltip) {
-          map.tooltip.hide();
+          
         }
         map._setScale(map.scale * zoomStep, offsetX, offsetY);
         event.preventDefault();
@@ -413,7 +413,6 @@
       } else {
         data.element.hover(false);
         if (showTooltip) {
-          map._tooltip.hide();
         }
       }
     });
@@ -488,7 +487,7 @@
           transYOld = map.transY;
           map.transX -= (touchX - touches[0].pageX) / map.scale;
           map.transY -= (touchY - touches[0].pageY) / map.scale;
-          map.tooltip.hide();
+          
           map._applyTransform();
           if (transXOld != map.transX || transYOld != map.transY) {
             e.preventDefault();
@@ -500,7 +499,7 @@
         if (lastTouchesLength == 2) {
           scale = Math.sqrt(Math.pow(touches[0].pageX - touches[1].pageX, 2) + Math.pow(touches[0].pageY - touches[1].pageY, 2)) / touchStartDistance;
           map._setScale(touchStartScale * scale, centerTouchX, centerTouchY);
-          map.tooltip.hide();
+          
           e.preventDefault();
         } else {
           var rect = map.container.getBoundingClientRect();
@@ -1697,8 +1696,8 @@ debugger;
         this.node.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
 
         // Set width and height then call this `applyAttr` again
-        this.width = 23;
-        this.height = 23;
+        this.width = 15;
+        this.height = 15;
         this.applyAttr('width', this.width);
         this.applyAttr('height', this.height);
         this.applyAttr('clip-path', 'inset(20% round 100%)');
@@ -2004,7 +2003,7 @@ debugger;
       this._defaultHeight = this._mapData.height;
       this._height = 0;
       this._width = 0;
-      this._baseScale = 1;
+      this._baseScale = 0.5;
       this._baseTransX = 0;
       this._baseTransY = 0;
 
