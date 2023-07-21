@@ -16,58 +16,12 @@
       <div class="col-lg-12 col-md-10">
         <div class="container">
 
-          <div id="map" style="height:600px;width: 100%;"></div>
-
-          <!-- <div class="map-container">
-            <img
-              src="../../../../assets/images_site/map.png"
-            />
-            <div
-              *ngFor="
-                let country of languageStoreService.Texts.section6.countries
-              "
-              [style.Top]="country.top"
-              [style.Left]="country.left"
-              class="point tippy"
-              title="{{ country.title }}"
-              style="
-                  background: url('{{ country.image }}') no-repeat center/cover;
-                "
-            ></div>
-          </div> -->
+          <div id="map" style="height:600px;width: 100%;" class="hidden-sm hidden-xs"></div>
+          <div id="map_mobile" class="hidden-xl hidden-lg hidden-md" style="height:600px;width: 100%;"></div>
         </div>
         <div class="divider-60 divider-lg-0"></div>
       </div>
-      
-      <!-- <div class="col-lg-10 col-md-10 hidden-xl hidden-lg hidden-md ">
-        <div class="container">
-          <div class="map-container">
-            <img
-              src="../../../../assets/images_site/europe_map.png"
-            />
-            <div
-              *ngFor="
-                let country of languageStoreService.Texts.section6.countries
-              "
-              [style.Top]="country.top"
-              [style.Left]="country.left"
-              class="point tippy"
-              title="{{ country.title }}"
-              style="
-                  background: url('{{ country.image }}') no-repeat center/cover;
-                "
-            ></div>
-          </div>
-        </div>
-        <div class="divider-60 divider-lg-0"></div>
-      </div> -->
     </div>
   </div>
   
 </section>
-<script>
-   const map = new jsVectorMap({
-      map: 'world', // 'canada', ...
-      selector: '#map',
-    });
-</script>

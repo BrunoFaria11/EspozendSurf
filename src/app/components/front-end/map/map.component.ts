@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { LanguageStoreService } from 'src/core/services/stores/language-store.service';
 
 declare function loadMap(markers): any;
+declare function loadMapMobile(markers): any;
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -12,5 +14,6 @@ export class MapComponent implements OnInit {
 
   ngOnInit(): void {
     loadMap(this.languageStoreService.Texts.section6.countries);
+    loadMapMobile(this.languageStoreService.Texts.section6.countries);
   }
 }

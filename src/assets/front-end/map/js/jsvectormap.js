@@ -2269,7 +2269,7 @@
         );
       }
       this.regions = {};
-      this.scale = 2;
+      this.scale = 1;
       this.transX = 0;
       this.transY = 0;
       this._mapData = Map.maps[this.params.map];
