@@ -14,13 +14,15 @@
                 </div>
             </div>
             <div class="col-lg-12">
+                <div class="scroll-container" id="my-scroll-container">
                 <div class="row isotope-wrapper masonry-layout c-gutter-30 c-mb-30" data-filters=".gallery-filters">
-                    <div class="col-xl-4 col-sm-6 kites"  *ngFor="let image of languageStoreService.Texts.section7.images">
-                        <div class="vertical-item item-gallery content-absolute ds">
-                            <div class="item-media">
-                                <img [src]="image" alt="img">
+                        <div class="col-xl-4 col-sm-6 kites"  *ngFor="let image of languageStoreService.Texts.section7.images">
+                            <div class="vertical-item item-gallery content-absolute ds">
+                                <div class="item-media">
+                                    <img [src]="image" alt="img">
+                                </div>
                             </div>
-                        </div>
+                        </div>                     
                     </div>
                 </div>
             </div>

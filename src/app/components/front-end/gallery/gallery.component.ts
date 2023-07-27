@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { LanguageStoreService } from 'src/core/services/stores/language-store.service';
 
 @Component({
@@ -7,10 +7,12 @@ import { LanguageStoreService } from 'src/core/services/stores/language-store.se
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
+  myScrollContainer!: HTMLElement;
 
-  constructor(public languageStoreService: LanguageStoreService) { }
+  constructor(private elmRef: ElementRef,public languageStoreService: LanguageStoreService) { }
 
   ngOnInit(): void {
+    this.myScrollContainer = this.elmRef.nativeElement.querySelector('#my-scroll-container');
   }
 
 }
