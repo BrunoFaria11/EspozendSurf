@@ -46,7 +46,7 @@ export class DailyCalendarComponent {
 
   events: CalendarEvent[] = [];
 
-  activeDayIsOpen: boolean = false;
+  activeDayIsOpen = false;
 
   closeResult = '';
 
@@ -59,21 +59,21 @@ export class DailyCalendarComponent {
 
   getReservations() {
     this.appService.getModel('reservation').subscribe((response: any) => {
-      var x = response.data.sort((a, b) => {
+      const x = response.data.sort((a, b) => {
         return JSON.parse(a.value).time <= JSON.parse(b.value).time ? 1 : -1;
       });
       x.forEach((element: any) => {
-        var model = JSON.parse(element.value);
+        const model = JSON.parse(element.value);
         model.id = element.id;
         this.array.push(model);
-        let startDate = new Date(model.classDate);
+        const startDate = new Date(model.classDate);
         if (model.time == 'morning') {
           startDate.setHours(0);
         } else {
           startDate.setHours(13);
         }
 
-        let endDate = new Date(model.classDate);
+        const endDate = new Date(model.classDate);
 
         if (model.time == 'morning') {
           endDate.setHours(13);
@@ -81,7 +81,7 @@ export class DailyCalendarComponent {
           endDate.setHours(23);
         }
 
-        let item = {
+        const item = {
           id: element.id,
           start: startDate,
           end: endDate,
@@ -106,7 +106,7 @@ export class DailyCalendarComponent {
         this.events.push(item);
       });
 
-      var date = new Date();
+      const date = new Date();
       this.dayClicked({ date: date, events: this.events });
       this.dayClicked({ date: date, events: this.events });
     });

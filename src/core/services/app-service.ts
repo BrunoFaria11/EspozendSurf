@@ -24,7 +24,7 @@ export class AppService {
   }
 
   addModel(name: string, value: string) {
-    let feature = new Feature(environment.applicationId, name, value);
+    const feature = new Feature(environment.applicationId, name, value);
     return this.http.post(environment.cm + '/api/Model', feature);
   }
 

@@ -27,7 +27,7 @@
                   {{ languageStoreService.Texts.section9.field1 }}
                   <span
                     [ngClass]="[
-                      angForm.controls?.['name']?.status == 'INVALID' || (
+                      angForm.controls?.['name']?.status === 'INVALID' || (
                       angForm.controls['name'].invalid &&
                       (angForm.controls['name'].dirty ||
                         angForm.controls['name'].touched))
@@ -46,7 +46,7 @@
                   {{ languageStoreService.Texts.section9.field2 }}
                   <span
                     [ngClass]="[
-                    angForm.controls?.['cardNumber']?.status == 'INVALID' || (
+                    angForm.controls?.['cardNumber']?.status === 'INVALID' || (
                       angForm.controls['cardNumber'].invalid &&
                       (angForm.controls['cardNumber'].dirty ||
                         angForm.controls['cardNumber'].touched))
@@ -65,7 +65,7 @@
                   {{ languageStoreService.Texts.section9.field3 }}
                   <span
                     [ngClass]="[
-                    angForm.controls?.['birthDay']?.status == 'INVALID' || (
+                    angForm.controls?.['birthDay']?.status === 'INVALID' || (
                       angForm.controls['birthDay'].invalid &&
                       (angForm.controls['birthDay'].dirty ||
                         angForm.controls['birthDay'].touched))
@@ -90,7 +90,7 @@
                   {{ languageStoreService.Texts.section9.field4 }}
                   <span
                     [ngClass]="[
-                    angForm.controls?.['email']?.status == 'INVALID' || (
+                    angForm.controls?.['email']?.status === 'INVALID' || (
                       angForm.controls['email'].invalid &&
                       (angForm.controls['email'].dirty ||
                         angForm.controls['email'].touched))
@@ -109,7 +109,7 @@
                   {{ languageStoreService.Texts.section9.field5 }}
                   <span
                     [ngClass]="[
-                    angForm.controls?.['phone']?.status == 'INVALID' || (
+                    angForm.controls?.['phone']?.status === 'INVALID' || (
                       angForm.controls['phone'].invalid &&
                       (angForm.controls['phone'].dirty ||
                         angForm.controls['phone'].touched))
@@ -138,7 +138,7 @@
                   {{ languageStoreService.Texts.section9.field7 }}
                   <span
                     [ngClass]="[
-                    angForm.controls?.['classDate']?.status == 'INVALID' || (
+                    angForm.controls?.['classDate']?.status === 'INVALID' || (
                       angForm.controls['classDate'].invalid &&
                       (angForm.controls['classDate'].dirty ||
                         angForm.controls['classDate'].touched))
@@ -162,7 +162,7 @@
                   {{ languageStoreService.Texts.section9.field8 }}
                   <span
                     [ngClass]="[
-                    angForm.controls?.['type']?.status == 'INVALID' || (
+                    angForm.controls?.['type']?.status === 'INVALID' || (
                       angForm.controls['type'].invalid &&
                       (angForm.controls['type'].dirty ||
                         angForm.controls['type'].touched))

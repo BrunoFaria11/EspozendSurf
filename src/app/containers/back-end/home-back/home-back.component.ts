@@ -10,7 +10,7 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class HomeBackComponent {
   myScriptElement: HTMLScriptElement | undefined;
-  menuOpned: boolean = false;
+  menuOpned = false;
   constructor(private auth: AuthService, private router: Router) {
     const scripts = [
       '../../../assets/back-end/vendor/js/helpers.js',

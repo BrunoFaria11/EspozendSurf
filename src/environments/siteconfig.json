@@ -590,7 +590,7 @@
       "subTitle": "Our experience",
       "text": "What we have to offer.",
       "texts": [
-        "The Apúlia Surf School team knows every nook and cranny of the local waves, ensuring that students enjoy the best experiences surfing the best waves.",
+        "The Apúlia Surf School team knows every cranny of the local waves, ensuring that students enjoy the best experiences surfing the best waves.",
         "The teaching program at Apúlia Surf School is diverse and comprehensive. Whether you are a beginner eager to learn the fundamentals of surfing or an experienced surfer looking to improve your skills, lessons are tailored to your specific needs. In addition, the team values ​​safety first, ensuring that all students are always protected and accompanied during their aquatic adventures.",
         "Here at Apúlia Surf School, the community spirit is strong. More than just a surf school, we are a family that shares the joy of riding the waves, celebrating each progress and achievement together with our students. The camaraderie and companionship create a relaxed and friendly atmosphere, making learning to surf an unforgettable journey.",
         "Join us on this incredible water adventure and let surfing change your life forever!"
@@ -602,7 +602,7 @@
       "title": "Benefits",
       "subTitle1": "Why learn with us?",
       "subTitle2": "",
-      "text1": "We want our customers to feel amazing and unique.",
+      "text1": "We want our students to feel amazing and unique.",
       "text2": "",
       "image1": "../assets/images_site/ben.jpg",
       "lines": [
@@ -718,14 +718,14 @@
         {
           "title": "Private Lesson",
           "subTitle": "SURF",
-          "priceList": ["1 Class – 30€"],
+          "priceList": ["1 Lesson – 30€"],
           "btn": "Book Lesson",
           "image": "../assets/images_site/price/surf_private.jpg"
         },
         {
           "title": "Private Lesson",
           "subTitle": "BODYBOARD",
-          "priceList": ["1 Class – 30€"],
+          "priceList": ["1 Lesson – 30€"],
           "btn": "Book Lesson",
           "image": "../assets/images_site/price/bodyboard_private.jpg"
         },
@@ -853,7 +853,7 @@
     },
     "section6": {
       "title": "Who visited us",
-      "subTitle": "We are so proud",
+      "subTitle": "We are incredibly overjoyed",
       "countries": [
         {
           "name": "PT",

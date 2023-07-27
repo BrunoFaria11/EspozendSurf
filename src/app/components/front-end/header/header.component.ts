@@ -8,8 +8,8 @@ import { LanguageStoreService } from 'src/core/services/stores/language-store.se
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  value: string = 'pt';
-  selectImage: string = '../../../assets/images_site/flags/pt.png';
+  value = 'pt';
+  selectImage = '../../../assets/images_site/flags/pt.png';
   constructor(
     private route: ActivatedRoute,
     private router: Router,

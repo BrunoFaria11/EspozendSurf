@@ -12,9 +12,9 @@ import { environment } from 'src/environments/environment';
 })
 export class ContactComponent implements OnInit {
   angForm!: FormGroup;
-  showResponse: boolean = false;
-  isError: boolean = false;
-  isBtnDisabled: boolean = false;
+  showResponse = false;
+  isError = false;
+  isBtnDisabled = false;
   
   constructor(
     private fb: FormBuilder,

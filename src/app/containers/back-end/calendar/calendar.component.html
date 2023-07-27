@@ -30,7 +30,7 @@
             >Nome
             <span
               [ngClass]="[
-              angForm.controls?.['name']?.status == 'INVALID' || (
+              angForm.controls?.['name']?.status === 'INVALID' || (
               angForm.controls['name'].invalid &&
               (angForm.controls['name'].dirty ||
                 angForm.controls['name'].touched))
@@ -53,7 +53,7 @@
             >E-mail
             <span
               [ngClass]="[
-              angForm.controls?.['email']?.status == 'INVALID' || (
+              angForm.controls?.['email']?.status === 'INVALID' || (
               angForm.controls['email'].invalid &&
               (angForm.controls['email'].dirty ||
                 angForm.controls['email'].touched))
@@ -76,7 +76,7 @@
             >Contacto Telefónico
             <span
               [ngClass]="[
-            angForm.controls?.['phone']?.status == 'INVALID' || (
+            angForm.controls?.['phone']?.status === 'INVALID' || (
             angForm.controls['phone'].invalid &&
             (angForm.controls['phone'].dirty ||
               angForm.controls['phone'].touched))
@@ -99,7 +99,7 @@
             >Tipo
             <span
               [ngClass]="[
-            angForm.controls?.['type']?.status == 'INVALID' || (
+            angForm.controls?.['type']?.status === 'INVALID' || (
             angForm.controls['type'].invalid &&
             (angForm.controls['type'].dirty ||
               angForm.controls['type'].touched))
@@ -134,7 +134,7 @@
             >Data da Aula ou Aluguer
             <span
               [ngClass]="[
-            angForm.controls?.['classDate']?.status == 'INVALID' || (
+            angForm.controls?.['classDate']?.status === 'INVALID' || (
             angForm.controls['classDate'].invalid &&
             (angForm.controls['classDate'].dirty ||
               angForm.controls['classDate'].touched))
