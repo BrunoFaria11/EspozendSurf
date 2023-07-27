@@ -1,15 +1,14 @@
-import { AppService } from 'src/core/services/app-service';
 import { Component } from '@angular/core';
-import { isSameDay, isSameMonth } from 'date-fns';
-import { Subject } from 'rxjs';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import {
   CalendarEvent,
   CalendarEventTimesChangedEvent,
   CalendarView,
 } from 'angular-calendar';
 import { EventColor } from 'calendar-utils';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { FormControl, FormGroup } from '@angular/forms';
+import { isSameDay, isSameMonth } from 'date-fns';
+import { Subject } from 'rxjs';
+import { AppService } from 'src/core/services/app-service';
 
 const colors: Record<string, EventColor> = {
   red: {

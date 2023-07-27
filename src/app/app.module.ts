@@ -41,6 +41,7 @@ import { ReservationsComponent } from './containers/back-end/reservations/reserv
 import { ReservationHeaderComponent } from './components/back-end/reservation-header/reservation-header.component';
 import { ResponseComponent } from './components/back-end/response/response.component';
 import { UpdateReservationComponent } from './components/back-end/update-reservation/update-reservation.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { UpdateReservationComponent } from './components/back-end/update-reserva
       },
       useRefreshTokens: true
     }),
+    LazyLoadImageModule
   ],
   providers: [
     AppService,
