@@ -10,7 +10,7 @@ export class EmailService {
   constructor(private http: HttpClient) {}
 
   sendEmail(subject: string, fromEmail: string, toEmail: string, body: string) {
-    let email = new Email(
+    const email = new Email(
       fromEmail,
       fromEmail,
       subject,

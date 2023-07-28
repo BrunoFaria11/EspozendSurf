@@ -15,8 +15,8 @@ export class ReservationsComponent {
   item: any;
   responseModal: any;
   hours: string[] = [];
-  time: string = 'morning';
-  isBtnDisabled: boolean = false;
+  time = 'morning';
+  isBtnDisabled = false;
   minDate: string = this.formatDate(new Date());
 
   angForm = new FormGroup({
@@ -42,14 +42,14 @@ export class ReservationsComponent {
 
   getReservations() {
     this.appService.getModel('reservation-pack').subscribe((response: any) => {
-      var x = response.data.sort((a, b) => {
+      const x = response.data.sort((a, b) => {
         return JSON.parse(a.value).classDate <= JSON.parse(b.value).classDate
           ? 1
           : -1;
       });
 
       x.forEach((element: any) => {
-        var model = JSON.parse(element.value);
+        const model = JSON.parse(element.value);
         model.id = element.id;
         model.creationDate = this.formatDate(new Date(element.creationDate));
 
@@ -65,7 +65,7 @@ export class ReservationsComponent {
 
   onSubmit(event: any) {
     this.isBtnDisabled = true;
-    let model: any = {};
+    const model: any = {};
     this.item.classDate = event.target.date.value;
     this.item.confirmed = true;
     this.item.time = this.time;

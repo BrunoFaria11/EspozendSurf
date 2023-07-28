@@ -29,7 +29,7 @@
           id="inlineRadio1"
           value="morning"
           (change)="changeTime($event)"
-          [checked]="time == 'morning'"
+          [checked]="time === 'morning'"
         />
         <label class="form-check-label" for="inlineRadio1">Manhã</label>
       </div>
@@ -40,7 +40,7 @@
           name="time"
           id="inlineRadio2"
           value="afternoon"
-          [checked]="time != 'morning'"
+          [checked]="time !== 'morning'"
           (change)="changeTime($event)"
         />
         <label class="form-check-label" for="inlineRadio2">Tarde</label>
