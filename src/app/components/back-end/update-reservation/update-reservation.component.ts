@@ -16,9 +16,9 @@ export class UpdateReservationComponent {
 
   responseModal: any;
   minDate: string = this.formatDate(new Date());
-  time: string = 'morning';
+  time = 'morning';
   hours: string[] = [];
-  isBtnDisabled: boolean = false;
+  isBtnDisabled = false;
 
   angForm = new FormGroup({
     date: new FormControl(''),
@@ -40,7 +40,7 @@ export class UpdateReservationComponent {
 
   onSubmit(event: any) {
     this.isBtnDisabled = true;
-    let model: any = {};
+    const model: any = {};
     this.item.classDate = event.target.date.value;
     if (!this.item.confirmed) {
       this.item.confirmed = event.target.confirmed.value;

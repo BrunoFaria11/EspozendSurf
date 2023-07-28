@@ -20,7 +20,7 @@
                   </label>
                   <input
                     [ngClass]="[
-                                    angForm.controls?.['name']?.status == 'INVALID' || (
+                                    angForm.controls?.['name']?.status === 'INVALID' || (
                                     angForm.controls['name'].invalid &&
                                     (angForm.controls['name'].dirty ||
                                       angForm.controls['name'].touched))
@@ -43,7 +43,7 @@
                   }}</label>
                   <input
                     [ngClass]="[
-                                    angForm.controls?.['email']?.status == 'INVALID' || (
+                                    angForm.controls?.['email']?.status === 'INVALID' || (
                                       angForm.controls['email'].invalid &&
                                       (angForm.controls['email'].dirty ||
                                         angForm.controls['email'].touched))
@@ -66,7 +66,7 @@
                   }}</label>
                   <textarea
                     [ngClass]="[
-                                    angForm.controls?.['message']?.status == 'INVALID' || (
+                                    angForm.controls?.['message']?.status === 'INVALID' || (
                                       angForm.controls['message'].invalid &&
                                       (angForm.controls['message'].dirty ||
                                         angForm.controls['message'].touched))

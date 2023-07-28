@@ -12,7 +12,7 @@ import { LanguageStoreService } from 'src/core/services/stores/language-store.se
 })
 export class CalendarBackComponent {
   angForm!: FormGroup;
-  time: string = 'morning';
+  time = 'morning';
   responseModal: any;
   hours: string[] = [];
 
@@ -47,10 +47,10 @@ export class CalendarBackComponent {
       data.classDate != '' &&
       data.type != ''
     ) {
-      let model = this.angForm.value;
+      const model = this.angForm.value;
       model.confirmed = true;
-      let _type = JSON.parse(model.type);
-      let isPack = _type.isPack;
+      const _type = JSON.parse(model.type);
+      const isPack = _type.isPack;
       model.time = this.time;
       if (isPack) {
         model.max = _type.max;

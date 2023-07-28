@@ -26,7 +26,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "allowedCommonJsDependencies": ["lodash","ajv","ajv-formats"],
+            "allowedCommonJsDependencies": [
+              "lodash",
+              "ajv",
+              "ajv-formats"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets",
@@ -38,10 +42,8 @@
               "src/assets/front-end/css/animations.css",
               "src/assets/front-end/css/font-awesome.css",
               "src/assets/front-end/css/icomoon.css",
-
               "src/assets/back-end/css/calendar/dx-common.css",
               "src/assets/back-end/css/calendar/dx-light.css",
-
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css"
             ],
@@ -54,7 +56,6 @@
               "src/assets/front-end/map/maps/world.js",
               "src/assets/front-end/map/maps/world-merc.js",
               "src/assets/front-end/map/js/main.js"
-
             ]
           },
           "configurations": {
@@ -125,11 +126,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "13548e8a-f76e-49cd-ace6-fc0c98370053"
+    "analytics": "13548e8a-f76e-49cd-ace6-fc0c98370053",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

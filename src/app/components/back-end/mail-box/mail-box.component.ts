@@ -13,7 +13,7 @@ export class MailBoxComponent {
   constructor(public appService: AppService) {
     this.appService.getModel('emails').subscribe((response: any) => {
       response.data.forEach(element => {
-        var model = JSON.parse(element.value);
+        const model = JSON.parse(element.value);
         this.emails.push(model);
       });
     })

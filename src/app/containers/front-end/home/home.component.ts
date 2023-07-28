@@ -14,11 +14,11 @@ import { EmailService } from 'src/core/services/email-service';
 export class HomeComponent implements OnInit {
   myScriptElement: HTMLScriptElement | undefined;
   angForm!: FormGroup;
-  showResponse: boolean = false;
-  isError: boolean = false;
+  showResponse = false;
+  isError = false;
   minDate: string = this.formatDate(new Date());
-  time: string = 'morning';
-  isBtnDisabled: boolean = false;
+  time = 'morning';
+  isBtnDisabled = false;
 
   constructor(
     public languageStoreService: LanguageStoreService,
@@ -77,10 +77,10 @@ export class HomeComponent implements OnInit {
       data.classDate != '' &&
       data.type != ''
     ) {
-      let model = this.angForm.value;
+      const model = this.angForm.value;
       model.confirmed = false;
-      let _type = JSON.parse(model.type);
-      let isPack = _type.isPack;
+      const _type = JSON.parse(model.type);
+      const isPack = _type.isPack;
       model.type = _type.type;
       model.time = this.time;
       if (isPack) {
