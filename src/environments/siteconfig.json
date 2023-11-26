@@ -451,7 +451,7 @@
         {
           "icon": "fa fa-phone",
           "title": "Tel",
-          "value": "(+351) 913 999 593"
+          "value": "(+351) 961 410 360"
         }
       ]
     },
@@ -1018,7 +1018,7 @@
         {
           "icon": "fa fa-phone",
           "title": "Phone",
-          "value": "(+351) 913 999 593"
+          "value": "(+351) 961 410 360"
         }
       ]
     },
@@ -1130,7 +1130,7 @@
         "title": "Error",
         "text": "Your lesson has not been booked, you can contact us by phone or whatsapp"
       },
-      "phoneNumber": "913999593"
+      "phoneNumber": "961410360"
     }
   }
 }
