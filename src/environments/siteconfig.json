@@ -130,35 +130,35 @@
         {
           "title": "Aulas Avulso",
           "subTitle": "BODYBOARD",
-          "priceList": ["15€/Aula"],
+          "priceList": ["20€/Aula"],
           "btn": "Marcar Aulas",
           "image": "../assets/images_site/price/bodyboard_class.jpg"
         },
         {
           "title": "Pack de Aulas",
           "subTitle": "SURF",
-          "priceList": ["3 Aulas – 50€", "5 Aulas – 70€", "10 Aulas – 100€"],
+          "priceList": ["3 Aulas – 55€", "5 Aulas – 75€", "10 Aulas – 110€"],
           "btn": "Marcar Aulas",
           "image": "../assets/images_site/price/pack_surf.jpg"
         },
         {
           "title": "Pack de Aulas",
           "subTitle": "BODYBOARD",
-          "priceList": ["3 Aulas – 40€", "5 Aulas – 60€", "10 Aulas – 100€"],
+          "priceList": ["3 Aulas – 55€", "5 Aulas – 75€", "10 Aulas – 110€"],
           "btn": "Marcar Aulas",
           "image": "../assets/images_site/price/pack_bodyboard.jpg"
         },
         {
           "title": "Aula Particular",
           "subTitle": "SURF",
-          "priceList": ["1 Aula – 30€"],
+          "priceList": ["1 Pessoa – 40€", "2 Pessoas - 70€","3 Pessoas - 100€"],
           "btn": "Marcar Aulas",
           "image": "../assets/images_site/price/surf_private.jpg"
         },
         {
           "title": "Aula Particular",
           "subTitle": "BODYBOARD",
-          "priceList": ["1 Aula – 30€"],
+          "priceList": ["1 Pessoa – 40€", "2 Pessoas - 70€","3 Pessoas - 100€"],
           "btn": "Marcar Aulas",
           "image": "../assets/images_site/price/bodyboard_private.jpg"
         },
@@ -171,10 +171,17 @@
         },
         {
           "title": "Aluguer",
-          "subTitle": "PADDLE SURF",
+          "subTitle": "Fato",
+          "priceList": ["10€"],
+          "btn": "Alugar",
+          "image": "../assets/images_site/price/rent_surf.jpg"
+        },
+         {
+          "title": "Aluguer",
+          "subTitle": "Material completo",
           "priceList": ["20€"],
           "btn": "Alugar",
-          "image": "../assets/images_site/price/paddle.jpg"
+          "image": "../assets/images_site/price/rent_surf.jpg"
         }
       ]
     },
@@ -482,7 +489,7 @@
               "isPack": false
             },
             {
-              "type": "Aula Avulso Bodyboard (15€)",
+              "type": "Aula Avulso Bodyboard (20€)",
               "isPack": false
             }
           ]
@@ -491,32 +498,32 @@
           "type": "Packs de Aulas (Sujeito a um mínimo de 3 pessoas. Validade: 2 meses.)",
           "values": [
             {
-              "type": "Pack 3 aulas Surf (50€)",
+              "type": "Pack 3 aulas Surf (55€)",
               "isPack": true,
               "max": 3
             },
             {
-              "type": "Pack 3 aulas Bodyboard (40€)",
+              "type": "Pack 3 aulas Bodyboard (55€)",
               "isPack": true,
               "max": 3
             },
             {
-              "type": "Pack 5 aulas Surf (70€)",
+              "type": "Pack 5 aulas Surf (75€)",
               "isPack": true,
               "max": 5
             },
             {
-              "type": "Pack 5 aulas Bodyboard (60€)",
+              "type": "Pack 5 aulas Bodyboard (75€)",
               "isPack": true,
               "max": 5
             },
             {
-              "type": "Pack 10 aulas Surf (100€)",
+              "type": "Pack 10 aulas Surf (110€)",
               "isPack": true,
               "max": 10
             },
             {
-              "type": "Pack 10 aulas Bodyboard (100€)",
+              "type": "Pack 10 aulas Bodyboard (110€)",
               "isPack": true,
               "max": 10
             }
@@ -526,13 +533,17 @@
           "type": "Aulas Particulares (Aguardar resposta de disponibilidade da escola.)",
           "values": [
             {
-              "type": "1 aula Surf (30€)",
+              "type": "1 Pessoa (40€)",
               "isPack": false
             },
             {
-              "type": "1 aula Bodyboard (30€)",
+              "type": "2 Pessoas (70€)",
               "isPack": false
-            }
+            },
+            {
+              "type": "1 Pessoas (100€)",
+              "isPack": false
+            },
           ]
         },
         {
@@ -540,10 +551,6 @@
           "values": [
             {
               "type": "Surf (15€)",
-              "isPack": false
-            },
-            {
-              "type": "Paddle Surf (20€)",
               "isPack": false
             },
             {
@@ -697,35 +704,35 @@
         {
           "title": "Single Lesson",
           "subTitle": "BODYBOARD",
-          "priceList": ["15€/Lesson"],
+          "priceList": ["20€/Lesson"],
           "btn": "Book Lesson",
           "image": "../assets/images_site/price/bodyboard_class.jpg"
         },
         {
           "title": "Lesson Pack",
           "subTitle": "SURF",
-          "priceList": ["3 Lessons – 50€", "5 Lessons – 70€", "10 Lessons – 100€"],
+          "priceList": ["3 Lessons – 55€", "5 Lessons – 75€", "10 Lessons – 110€"],
           "btn": "Book Lesson",
           "image": "../assets/images_site/price/pack_surf.jpg"
         },
         {
           "title": "Lesson Pack",
           "subTitle": "BODYBOARD",
-          "priceList": ["3 Lessons – 40€", "5 Lessons – 60€", "10 Lessons – 100€"],
+          "priceList": ["3 Lessons – 55€", "5 Lessons – 75€", "10 Lessons – 110€"],
           "btn": "Book Lesson",
           "image": "../assets/images_site/price/pack_bodyboard.jpg"
         },
         {
           "title": "Private Lesson",
           "subTitle": "SURF",
-          "priceList": ["1 Lesson – 30€"],
+          "priceList": ["1 Person – 40€", "2 People – 70€", "3 People – 100€"],
           "btn": "Book Lesson",
           "image": "../assets/images_site/price/surf_private.jpg"
         },
         {
           "title": "Private Lesson",
           "subTitle": "BODYBOARD",
-          "priceList": ["1 Lesson – 30€"],
+          "priceList": ["1 Person – 40€", "2 People – 70€", "3 People – 100€"],
           "btn": "Book Lesson",
           "image": "../assets/images_site/price/bodyboard_private.jpg"
         },
@@ -735,13 +742,6 @@
           "priceList": ["15€"],
           "btn": "Rent",
           "image": "../assets/images_site/price/rent_surf.jpg"
-        },
-        {
-          "title": "Rental",
-          "subTitle": "PADDLE SURF",
-          "priceList": ["20€"],
-          "btn": "Rent",
-          "image": "../assets/images_site/price/paddle.jpg"
         }
       ]
     },
@@ -1058,32 +1058,32 @@
           "type": "Lesson Packs (A minimum of 3 people. Validity: 2 months.)",
           "values": [
             {
-              "type": "Pack 3 Surf Lessons (50€)",
+              "type": "Pack 3 Surf Lessons (55€)",
               "isPack": true,
               "max": 3
             },
             {
-              "type": "Pack 3 Bodyboard Lessons (40€)",
+              "type": "Pack 3 Bodyboard Lessons (55€)",
               "isPack": true,
               "max": 3
             },
             {
-              "type": "Pack 5 Surf Lessons (70€)",
+              "type": "Pack 5 Surf Lessons (75€)",
               "isPack": true,
               "max": 5
             },
             {
-              "type": "Pack 5 Bodyboard Lessons (60€)",
+              "type": "Pack 5 Bodyboard Lessons (75€)",
               "isPack": true,
               "max": 5
             },
             {
-              "type": "Pack 10 Surf Lessons (100€)",
+              "type": "Pack 10 Surf Lessons (110€)",
               "isPack": true,
               "max": 10
             },
             {
-              "type": "Pack 10 Bodyboard Lessons (100€)",
+              "type": "Pack 10 Bodyboard Lessons (110€)",
               "isPack": true,
               "max": 10
             }
@@ -1093,11 +1093,11 @@
           "type": "Private Lesson (Wait for the school's response.)",
           "values": [
             {
-              "type": "1 Surf Lesson (30€)",
+              "type": "1 Surf Lesson (40€)",
               "isPack": false
             },
             {
-              "type": "1 Bodyboard Lesson (30€)",
+              "type": "1 Bodyboard Lesson (40€)",
               "isPack": false
             }
           ]
