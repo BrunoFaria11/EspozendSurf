@@ -1,1136 +1,1274 @@
 {
-  "pt": {
-    "navbar": {
-      "home": "Iníco",
-      "about": "Sobre nós",
-      "services": "O que fazemos",
-      "price": "Preços",
-      "classes": "Aulas/Aluguer",
-      "contact": "Contactos",
-      "logo": "../assets/images_site/logo.png",
-      "insta": "https://www.instagram.com/apuliasurfschool/"
-    },
-    "banner": {
-      "image": "../assets/images_site/banner1.jpg",
-      "text1": "O TEU ENCONTRO COM O MAR",
-      "text2": "APULIA SURF SCHOOL",
-      "text3": "APÚLIA",
-      "btn": "Marcar Aula",
-      "isToShow": true
-    },
-    "section1": {
-      "title": "Sobre nós",
-      "subTitle": "A nossa experiência",
-      "text": "O que temos para oferecer.",
-      "texts": [
-        "A equipa da Apúlia Surf School conhece cada recanto e segredo das ondas locais, garantindo que os alunos desfrutem das melhores experiências surfando as melhores ondas.",
-        "O programa de ensino da Apúlia Surf School é diversificado e abrangente. Seja o aluno um iniciante ansioso para aprender os fundamentos do surf ou um surfista experiente à procura de aprimorar as suas habilidades, as aulas são adaptadas às suas necessidades específicas. Além disso, a equipa valoriza a segurança em primeiro lugar, assegurando que todos os alunos estejam sempre protegidos e acompanhados durante as suas aventuras aquáticas.",
-        "Aqui na Apúlia Surf School, o espírito de comunidade é forte. Mais do que apenas uma escola de surf, somos uma família que partilha a alegria de deslizar sobre as ondas, celebrando cada progresso e conquista junto com os nossos alunos. A camaradagem e o companheirismo criam um ambiente descontraído e amigável, tornando a aprendizagem do surf uma jornada inesquecível.",
-        "Junte-se a nós nesta incrível aventura aquática e deixe o surf mudar a sua vida para sempre!"
-      ],
-      "image1": "../assets/images_site/about2.jpg",
-      "image2": "../assets/images_site/about1.jpg"
-    },
-    "section2": {
-      "title": "Vantagens",
-      "subTitle1": "Por que aprender",
-      "subTitle2": "connosco?",
-      "text1": "Queremos que os nossos clientes se sintam incríveis",
-      "text2": "e únicos.",
-      "image1": "../assets/images_site/ben.jpg",
-      "lines": [
-        [
-          {
-            "icon": "ico ico-surfer",
-            "total": 6,
-            "text": "Professores certificados"
-          },
-          {
-            "icon": "ico ico-surfboard",
-            "total": 30,
-            "text": "Pranchas de surf"
-          },
-          {
-            "icon": "ico ico-wave",
-            "total": 12,
-            "text": "Aulas por semana"
-          },
-          {
-            "icon": "ico ico-calm",
-            "total": 70,
-            "text": "Fatos"
-          }
-        ]
-      ]
-    },
-    "section3": {
-      "title": "Serviços",
-      "subTitle1": "Vamos começar!",
-      "subTitle2": "",
-      "text1": "Preparado para apanharmos umas ondas",
-      "text2": "juntos?",
-      "services": [
-        {
-          "image": "../assets/images_site/services/surf.jpg",
-          "title": "Aulas",
-          "subTitle": "Surf",
-          "text": "",
-          "btn": "Marcar Aulas"
+    "pt": {
+        "navbar": {
+            "home": "Iníco",
+            "about": "Sobre nós",
+            "services": "O que fazemos",
+            "price": "Preços",
+            "classes": "Aulas/Aluguer",
+            "contact": "Contactos",
+            "logo": "../assets/images_site/logo.png",
+            "insta": "https://www.instagram.com/apuliasurfschool/"
         },
-        {
-          "image": "../assets/images_site/services/bodyboard_len.jpg",
-          "title": "Aulas",
-          "subTitle": "Bodyboard",
-          "text": "",
-          "btn": "Marcar Aulas"
+        "banner": {
+            "image": "../assets/images_site/banner1.jpg",
+            "text1": "O TEU ENCONTRO COM O MAR",
+            "text2": "APULIA SURF SCHOOL",
+            "text3": "APÚLIA",
+            "btn": "Marcar Aula",
+            "isToShow": true
         },
-        {
-          "image": "../assets/images_site/services/surf_board.jpg",
-          "title": "Aluguer",
-          "subTitle": "Prancha Surf",
-          "text": "",
-          "btn": "Alugar"
+        "section1": {
+            "title": "Sobre nós",
+            "subTitle": "A nossa experiência",
+            "text": "O que temos para oferecer.",
+            "texts": [
+                "A equipa da Apúlia Surf School conhece cada recanto e segredo das ondas locais, garantindo que os alunos desfrutem das melhores experiências surfando as melhores ondas.",
+                "O programa de ensino da Apúlia Surf School é diversificado e abrangente. Seja o aluno um iniciante ansioso para aprender os fundamentos do surf ou um surfista experiente à procura de aprimorar as suas habilidades, as aulas são adaptadas às suas necessidades específicas. Além disso, a equipa valoriza a segurança em primeiro lugar, assegurando que todos os alunos estejam sempre protegidos e acompanhados durante as suas aventuras aquáticas.",
+                "Aqui na Apúlia Surf School, o espírito de comunidade é forte. Mais do que apenas uma escola de surf, somos uma família que partilha a alegria de deslizar sobre as ondas, celebrando cada progresso e conquista junto com os nossos alunos. A camaradagem e o companheirismo criam um ambiente descontraído e amigável, tornando a aprendizagem do surf uma jornada inesquecível.",
+                "Junte-se a nós nesta incrível aventura aquática e deixe o surf mudar a sua vida para sempre!"
+            ],
+            "image1": "../assets/images_site/about2.jpg",
+            "image2": "../assets/images_site/about1.jpg"
         },
-        {
-          "image": "../assets/images_site/services/bodyboard.jpg",
-          "title": "Aluguer",
-          "subTitle": "Prancha Bodyboard",
-          "text": "",
-          "btn": "Alugar"
+        "section2": {
+            "title": "Vantagens",
+            "subTitle1": "Por que aprender",
+            "subTitle2": "connosco?",
+            "text1": "Queremos que os nossos clientes se sintam incríveis",
+            "text2": "e únicos.",
+            "image1": "../assets/images_site/ben.jpg",
+            "lines": [
+                [
+                    {
+                        "icon": "ico ico-surfer",
+                        "total": 6,
+                        "text": "Professores certificados"
+                    },
+                    {
+                        "icon": "ico ico-surfboard",
+                        "total": 30,
+                        "text": "Pranchas de surf"
+                    },
+                    {
+                        "icon": "ico ico-wave",
+                        "total": 12,
+                        "text": "Aulas por semana"
+                    },
+                    {
+                        "icon": "ico ico-calm",
+                        "total": 70,
+                        "text": "Fatos"
+                    }
+                ]
+            ]
         },
-        {
-          "image": "../assets/images_site/services/paddleboard.jpg",
-          "title": "Aluguer",
-          "subTitle": "Paddle Surf",
-          "text": "",
-          "btn": "Alugar"
+        "section3": {
+            "title": "Serviços",
+            "subTitle1": "Vamos começar!",
+            "subTitle2": "",
+            "text1": "Preparado para apanharmos umas ondas",
+            "text2": "juntos?",
+            "services": [
+                {
+                    "image": "../assets/images_site/services/surf.jpg",
+                    "title": "Aulas",
+                    "subTitle": "Surf",
+                    "text": "",
+                    "btn": "Marcar Aulas"
+                },
+                {
+                    "image": "../assets/images_site/services/bodyboard_len.jpg",
+                    "title": "Aulas",
+                    "subTitle": "Bodyboard",
+                    "text": "",
+                    "btn": "Marcar Aulas"
+                },
+                {
+                    "image": "../assets/images_site/services/surf_board.jpg",
+                    "title": "Aluguer",
+                    "subTitle": "Prancha Surf",
+                    "text": "",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/services/bodyboard.jpg",
+                    "title": "Aluguer",
+                    "subTitle": "Prancha Bodyboard",
+                    "text": "",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/services/paddleboard.jpg",
+                    "title": "Aluguer",
+                    "subTitle": "Paddle Surf",
+                    "text": "",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/services/equipment.jpg",
+                    "title": "Aluguer",
+                    "subTitle": "Equipamento completo",
+                    "text": "",
+                    "btn": "Alugar"
+                }
+            ]
         },
-        {
-          "image": "../assets/images_site/services/equipment.jpg",
-          "title": "Aluguer",
-          "subTitle": "Equipamento completo",
-          "text": "",
-          "btn": "Alugar"
+        "section4": {
+            "title": "Preços",
+            "subTitle": "Os programas da nossa escola",
+            "text1": "A nossa missão é proporcionar uma experiência única e empolgante.",
+            "text2": "",
+            "prices": [
+                {
+                    "title": "Aulas Avulso",
+                    "subTitle": "SURF",
+                    "priceList": [
+                        "20€/Aula"
+                    ],
+                    "btn": "Marcar Aulas",
+                    "image": "../assets/images_site/price/surf_class.jpg"
+                },
+                {
+                    "title": "Aulas Avulso",
+                    "subTitle": "BODYBOARD",
+                    "priceList": [
+                        "20€/Aula"
+                    ],
+                    "btn": "Marcar Aulas",
+                    "image": "../assets/images_site/price/bodyboard_class.jpg"
+                },
+                {
+                    "title": "Pack de Aulas",
+                    "subTitle": "SURF",
+                    "priceList": [
+                        "3 Aulas – 55€",
+                        "5 Aulas – 75€",
+                        "10 Aulas – 110€"
+                    ],
+                    "btn": "Marcar Aulas",
+                    "image": "../assets/images_site/price/pack_surf.jpg"
+                },
+                {
+                    "title": "Pack de Aulas",
+                    "subTitle": "BODYBOARD",
+                    "priceList": [
+                        "3 Aulas – 55€",
+                        "5 Aulas – 75€",
+                        "10 Aulas – 110€"
+                    ],
+                    "btn": "Marcar Aulas",
+                    "image": "../assets/images_site/price/pack_bodyboard.jpg"
+                },
+                {
+                    "title": "Aula Particular",
+                    "subTitle": "SURF",
+                    "priceList": [
+                        "1 Pessoa – 40€",
+                        "2 Pessoas - 70€",
+                        "3 Pessoas - 100€"
+                    ],
+                    "btn": "Marcar Aulas",
+                    "image": "../assets/images_site/price/surf_private.jpg"
+                },
+                {
+                    "title": "Aula Particular",
+                    "subTitle": "BODYBOARD",
+                    "priceList": [
+                        "1 Pessoa – 40€",
+                        "2 Pessoas - 70€",
+                        "3 Pessoas - 100€"
+                    ],
+                    "btn": "Marcar Aulas",
+                    "image": "../assets/images_site/price/bodyboard_private.jpg"
+                },
+                {
+                    "title": "Aluguer",
+                    "subTitle": "SURF/BODYBOARD",
+                    "priceList": [
+                        "15€"
+                    ],
+                    "btn": "Alugar",
+                    "image": "../assets/images_site/price/rent_surf.jpg"
+                },
+                {
+                    "title": "Aluguer",
+                    "subTitle": "Fato",
+                    "priceList": [
+                        "10€"
+                    ],
+                    "btn": "Alugar",
+                    "image": "../assets/images_site/price/rent_surf.jpg"
+                },
+                {
+                    "title": "Aluguer",
+                    "subTitle": "Material completo",
+                    "priceList": [
+                        "20€"
+                    ],
+                    "btn": "Alugar",
+                    "image": "../assets/images_site/price/rent_surf.jpg"
+                }
+            ]
+        },
+        "section5": {
+            "title": "Aluguer",
+            "subTitle1": "Estás à procura",
+            "subTitle2": "de equipamento?",
+            "text1": "Convidamos-te a embarcar nesta jornada connosco!",
+            "text2": "",
+            "btn": "Ver mais",
+            "equipments": [
+                {
+                    "image": "../assets/images_site/equipments/8_0.jpeg",
+                    "title": "8.0",
+                    "text": "Dificuldade",
+                    "rate": 20,
+                    "price": "15€",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/equipments/8_0_blue.jpeg",
+                    "title": "8.0 Azul",
+                    "text": "Dificuldade",
+                    "rate": 20,
+                    "price": "15€",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/equipments/8_0_wide.jpeg",
+                    "title": "8.0 Wide",
+                    "text": "Dificuldade",
+                    "rate": 10,
+                    "price": "15€",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/equipments/7_4.jpeg",
+                    "title": "7.4",
+                    "text": "Dificuldade",
+                    "rate": 35,
+                    "price": "15€",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/equipments/6_4.jpeg",
+                    "title": "6.4",
+                    "text": "Dificuldade",
+                    "rate": 50,
+                    "price": "15€",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/equipments/bodyboard_found.jpeg",
+                    "title": "Bodyboard Found",
+                    "text": "Dificuldade",
+                    "rate": 50,
+                    "price": "15€",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/equipments/equip.jpeg",
+                    "title": "Equipamento completo",
+                    "text": "Qualidade",
+                    "rate": 100,
+                    "price": "20€",
+                    "btn": "Alugar"
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_azul.jpeg",
+                    "title": "Fato Janga Azul",
+                    "text": "Qualidade",
+                    "rate": 100,
+                    "price": "",
+                    "btn": ""
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_laranja.jpeg",
+                    "title": "Fato Janga Laranja",
+                    "text": "Qualidade",
+                    "rate": 100,
+                    "price": "",
+                    "btn": ""
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_rosa.jpeg",
+                    "title": "Fato Janga Rosa",
+                    "text": "Qualidade",
+                    "rate": 100,
+                    "price": "",
+                    "btn": ""
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_performance_amarelo.jpeg",
+                    "title": "Fato Janga Performance",
+                    "text": "Qualidade",
+                    "rate": 100,
+                    "price": "Revenda",
+                    "btn": ""
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_performance_preto.jpeg",
+                    "title": "Fato Janga Performance",
+                    "text": "Qualidade",
+                    "rate": 100,
+                    "price": "Revenda",
+                    "btn": ""
+                }
+            ]
+        },
+        "section6": {
+            "title": "Quem nos visitou",
+            "subTitle": "O nosso orgulho",
+            "countries": [
+                {
+                    "name": "PT",
+                    "coords": [
+                        40,
+                        -8
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/pt.png"
+                    }
+                },
+                {
+                    "name": "ES",
+                    "coords": [
+                        40,
+                        -4
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/es.png"
+                    }
+                },
+                {
+                    "name": "FR",
+                    "coords": [
+                        47,
+                        3
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/fr.png"
+                    }
+                },
+                {
+                    "name": "UK",
+                    "coords": [
+                        53,
+                        -1
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/gb-eng.png"
+                    }
+                },
+                {
+                    "name": "CH",
+                    "coords": [
+                        46.8,
+                        8.5
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/ch.png"
+                    }
+                },
+                {
+                    "name": "DK",
+                    "coords": [
+                        56,
+                        9
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/dk.png"
+                    }
+                },
+                {
+                    "name": "DE",
+                    "coords": [
+                        51.5,
+                        10
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/de.png"
+                    }
+                },
+                {
+                    "name": "IT",
+                    "coords": [
+                        41.8,
+                        14
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/it.png"
+                    }
+                },
+                {
+                    "name": "NO",
+                    "coords": [
+                        62,
+                        10
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/no.png"
+                    }
+                },
+                {
+                    "name": "NL",
+                    "coords": [
+                        52.5,
+                        5.5
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/nl.png"
+                    }
+                },
+                {
+                    "name": "CZ",
+                    "coords": [
+                        50,
+                        16
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/cz.png"
+                    }
+                },
+                {
+                    "name": "AT",
+                    "coords": [
+                        47.5,
+                        15
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/at.png"
+                    }
+                },
+                {
+                    "name": "BE",
+                    "coords": [
+                        50.5,
+                        5
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/be.png"
+                    }
+                },
+                {
+                    "name": "BR",
+                    "coords": [
+                        -8.5,
+                        -40
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/br.png"
+                    }
+                },
+                {
+                    "name": "USA",
+                    "coords": [
+                        37,
+                        -90
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/us.png"
+                    }
+                }
+            ]
+        },
+        "section7": {
+            "title": "Galeria",
+            "subTitle": "Nossas fotos",
+            "images": [
+                "../assets/images_site/gallery/23-7-23__3.jpg",
+                "../assets/images_site/gallery/23-7-23__4.jpg",
+                "../assets/images_site/gallery/23-7-23__6.jpg",
+                "../assets/images_site/gallery/23-7-23__7.jpg",
+                "../assets/images_site/gallery/23-7-23__9.jpg",
+                "../assets/images_site/gallery/23-7-23__11.jpg",
+                "../assets/images_site/gallery/23-7-23__12.jpg",
+                "../assets/images_site/gallery/23-7-23__13.jpg",
+                "../assets/images_site/gallery/23-7-23__15.jpg",
+                "../assets/images_site/gallery/23-7-23__16.jpg",
+                "../assets/images_site/gallery/23-7-23__17.jpg",
+                "../assets/images_site/gallery/23-7-23__19.jpg",
+                "../assets/images_site/gallery/23-7-23__20.jpg",
+                "../assets/images_site/gallery/23-7-23__21.jpg",
+                "../assets/images_site/gallery/23-7-23__22.jpg",
+                "../assets/images_site/gallery/23-7-23__23.jpg",
+                "../assets/images_site/gallery/23-7-23__24.jpg",
+                "../assets/images_site/gallery/23-7-23__25.jpg",
+                "../assets/images_site/gallery/23-7-23__26.jpg",
+                "../assets/images_site/gallery/23-7-23__27.jpg",
+                "../assets/images_site/gallery/23-7-23__29.jpg",
+                "../assets/images_site/gallery/23-7-23__30.jpg",
+                "../assets/images_site/gallery/23-7-23__31.jpg",
+                "../assets/images_site/gallery/23-7-23__33.jpg",
+                "../assets/images_site/gallery/23-7-23__35.jpg",
+                "../assets/images_site/gallery/23-7-23__36.jpg",
+                "../assets/images_site/gallery/23-7-23__37.jpg",
+                "../assets/images_site/gallery/23-7-23__38.jpg",
+                "../assets/images_site/gallery/23-7-23__39.jpg"
+            ]
+        },
+        "section8": {
+            "title": "Contacte-nos",
+            "field1": "Nome",
+            "field2": "Email",
+            "field3": "Mensagem",
+            "btn": "Enviar",
+            "title2": "Info",
+            "values": [
+                {
+                    "icon": "fa fa-map-pin",
+                    "title": "Morada",
+                    "value": "4740 080, R. da Marginal 10, Braga, Portugal"
+                },
+                {
+                    "icon": "fa fa-at",
+                    "title": "Email",
+                    "value": "apuliasurfschool@gmail.com"
+                },
+                {
+                    "icon": "fa fa-phone",
+                    "title": "Tel",
+                    "value": "(+351) 961 410 360"
+                }
+            ]
+        },
+        "section9": {
+            "closeBtn": "X",
+            "title": "Aulas/Alugar",
+            "field1": "Nome",
+            "field2": "Número de CC/BI",
+            "field3": "Data de Nascimento",
+            "field4": "E-mail",
+            "field5": "Contacto Telefónico (Indicador)",
+            "field6": "Localidade",
+            "field7": "Data da Aula ou Aluguer",
+            "field8": "Tipo",
+            "field9": "Horário da Aula ou Aluguer",
+            "field10": "Observações",
+            "btn": "Enviar",
+            "time": {
+                "morning": "Manhã",
+                "afternoon": "Tarde"
+            },
+            "types": [
+                {
+                    "type": "Aulas Avulso",
+                    "values": [
+                        {
+                            "type": "Aula Avulso Surf (20€)",
+                            "isPack": false
+                        },
+                        {
+                            "type": "Aula Avulso Bodyboard (20€)",
+                            "isPack": false
+                        }
+                    ]
+                },
+                {
+                    "type": "Packs de Aulas (Sujeito a um mínimo de 3 pessoas. Validade: 2 meses.)",
+                    "values": [
+                        {
+                            "type": "Pack 3 aulas Surf (55€)",
+                            "isPack": true,
+                            "max": 3
+                        },
+                        {
+                            "type": "Pack 3 aulas Bodyboard (55€)",
+                            "isPack": true,
+                            "max": 3
+                        },
+                        {
+                            "type": "Pack 5 aulas Surf (75€)",
+                            "isPack": true,
+                            "max": 5
+                        },
+                        {
+                            "type": "Pack 5 aulas Bodyboard (75€)",
+                            "isPack": true,
+                            "max": 5
+                        },
+                        {
+                            "type": "Pack 10 aulas Surf (110€)",
+                            "isPack": true,
+                            "max": 10
+                        },
+                        {
+                            "type": "Pack 10 aulas Bodyboard (110€)",
+                            "isPack": true,
+                            "max": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Aulas Particulares (Aguardar resposta de disponibilidade da escola.)",
+                    "values": [
+                        {
+                            "type": "1 Pessoa (40€)",
+                            "isPack": false
+                        },
+                        {
+                            "type": "2 Pessoas (70€)",
+                            "isPack": false
+                        },
+                        {
+                            "type": "1 Pessoas (100€)",
+                            "isPack": false
+                        }
+                    ]
+                },
+                {
+                    "type": "Aluguer (Aguardar resposta de disponibilidade da escola.)",
+                    "values": [
+                        {
+                            "type": "Surf (15€)",
+                            "isPack": false
+                        },
+                        {
+                            "type": "Bodyboard (15€)",
+                            "isPack": false
+                        }
+                    ]
+                }
+            ]
+        },
+        "config": {
+            "success": {
+                "title": "Sucesso",
+                "text": "O seu pedido foi enviado com sucesso, por favor aguarde por uma resposta"
+            },
+            "error": {
+                "title": "Erro",
+                "text": "O seu pedido não foi enviado, pode contactar-nos por telefone ou por whatsapp"
+            },
+            "phoneNumber": "961410360"
         }
-      ]
     },
-    "section4": {
-      "title": "Preços",
-      "subTitle": "Os programas da nossa escola",
-      "text1": "A nossa missão é proporcionar uma experiência única e empolgante.",
-      "text2": "",
-      "prices": [
-        {
-          "title": "Aulas Avulso",
-          "subTitle": "SURF",
-          "priceList": ["20€/Aula"],
-          "btn": "Marcar Aulas",
-          "image": "../assets/images_site/price/surf_class.jpg"
+    "eng": {
+        "navbar": {
+            "home": "Home",
+            "about": "About us",
+            "services": "What we do",
+            "price": "Prices",
+            "classes": "Lesson/Rental",
+            "contact": "Contacts",
+            "logo": "../assets/images_site/logo.png",
+            "insta": "https://www.instagram.com/apuliasurfschool/"
         },
-        {
-          "title": "Aulas Avulso",
-          "subTitle": "BODYBOARD",
-          "priceList": ["20€/Aula"],
-          "btn": "Marcar Aulas",
-          "image": "../assets/images_site/price/bodyboard_class.jpg"
+        "banner": {
+            "image": "../assets/images_site/banner1.jpg",
+            "text1": "Your connection WITH THE SEA",
+            "text2": "APULIA SURF SCHOOL",
+            "text3": "APÚLIA",
+            "btn": "Book Lesson",
+            "isToShow": true
         },
-        {
-          "title": "Pack de Aulas",
-          "subTitle": "SURF",
-          "priceList": ["3 Aulas – 55€", "5 Aulas – 75€", "10 Aulas – 110€"],
-          "btn": "Marcar Aulas",
-          "image": "../assets/images_site/price/pack_surf.jpg"
+        "section1": {
+            "title": "About us",
+            "subTitle": "Our experience",
+            "text": "What we have to offer.",
+            "texts": [
+                "The team at Apúlia Surf School knows every cranny and the secrets of the local waves, ensuring that students enjoy the best surfing experiences.",
+                "The teaching program at Apúlia Surf School is diverse and comprehensive. Whether you're an eager beginner wanting to learn the fundamentals of surfing or an experienced surfer looking to enhance your skills, our classes are tailored to your specific needs. Safety is our top priority, ensuring all students are always protected and accompanied during their aquatic adventures.",
+                "At Apúlia Surf School, we foster a strong sense of community. More than just a surf school, we are a family that shares the joy of surfing, celebrating every progress and achievement with our students. Camaraderie and companionship create a relaxed and friendly environment, making the journey of learning to surf an unforgettable experience.",
+                "Join us in this incredible aquatic adventure and let surfing change your life forever!"
+            ],
+            "image1": "../assets/images_site/about2.jpg",
+            "image2": "../assets/images_site/about1.jpg"
         },
-        {
-          "title": "Pack de Aulas",
-          "subTitle": "BODYBOARD",
-          "priceList": ["3 Aulas – 55€", "5 Aulas – 75€", "10 Aulas – 110€"],
-          "btn": "Marcar Aulas",
-          "image": "../assets/images_site/price/pack_bodyboard.jpg"
+        "section2": {
+            "title": "Benefits",
+            "subTitle1": "Why learn with us?",
+            "subTitle2": "",
+            "text1": "We want our students to feel amazing and unique.",
+            "text2": "",
+            "image1": "../assets/images_site/ben.jpg",
+            "lines": [
+                [
+                    {
+                        "icon": "ico ico-surfer",
+                        "total": 6,
+                        "text": "Certified teachers"
+                    },
+                    {
+                        "icon": "ico ico-surfboard",
+                        "total": 30,
+                        "text": "Surfboards"
+                    },
+                    {
+                        "icon": "ico ico-wave",
+                        "total": 12,
+                        "text": "Lessons per week"
+                    },
+                    {
+                        "icon": "ico ico-calm",
+                        "total": 70,
+                        "text": "Suits"
+                    }
+                ]
+            ]
         },
-        {
-          "title": "Aula Particular",
-          "subTitle": "SURF",
-          "priceList": ["1 Pessoa – 40€", "2 Pessoas - 70€","3 Pessoas - 100€"],
-          "btn": "Marcar Aulas",
-          "image": "../assets/images_site/price/surf_private.jpg"
+        "section3": {
+            "title": "Services",
+            "subTitle1": "Let's start!",
+            "subTitle2": "",
+            "text1": "Ready to catch some waves",
+            "text2": "together?",
+            "services": [
+                {
+                    "image": "../assets/images_site/services/surf.jpg",
+                    "title": "Lessons",
+                    "subTitle": "Surf",
+                    "text": "",
+                    "btn": "Book Lesson"
+                },
+                {
+                    "image": "../assets/images_site/services/bodyboard_len.jpg",
+                    "title": "Lesson",
+                    "subTitle": "Bodyboard",
+                    "text": "",
+                    "btn": "Book Lesson"
+                },
+                {
+                    "image": "../assets/images_site/services/surf_board.jpg",
+                    "title": "Rental",
+                    "subTitle": "Surf Board",
+                    "text": "",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/services/bodyboard.jpg",
+                    "title": "Rental",
+                    "subTitle": "Bodyboard",
+                    "text": "",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/services/paddleboard.jpg",
+                    "title": "Rental",
+                    "subTitle": "Paddle Surf",
+                    "text": "",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/services/equipment.jpg",
+                    "title": "Rental",
+                    "subTitle": "Complete Equipment",
+                    "text": "",
+                    "btn": "Rent"
+                }
+            ]
         },
-        {
-          "title": "Aula Particular",
-          "subTitle": "BODYBOARD",
-          "priceList": ["1 Pessoa – 40€", "2 Pessoas - 70€","3 Pessoas - 100€"],
-          "btn": "Marcar Aulas",
-          "image": "../assets/images_site/price/bodyboard_private.jpg"
+        "section4": {
+            "title": "Prices",
+            "subTitle": "Our school programs",
+            "text1": "Our mission is to provide a unique and exciting experience.",
+            "text2": "",
+            "prices": [
+                {
+                    "title": "Single Lesson",
+                    "subTitle": "SURF",
+                    "priceList": [
+                        "20€/Lesson"
+                    ],
+                    "btn": "Book Lesson",
+                    "image": "../assets/images_site/price/surf_class.jpg"
+                },
+                {
+                    "title": "Single Lesson",
+                    "subTitle": "BODYBOARD",
+                    "priceList": [
+                        "20€/Lesson"
+                    ],
+                    "btn": "Book Lesson",
+                    "image": "../assets/images_site/price/bodyboard_class.jpg"
+                },
+                {
+                    "title": "Lesson Pack",
+                    "subTitle": "SURF",
+                    "priceList": [
+                        "3 Lessons – 55€",
+                        "5 Lessons – 75€",
+                        "10 Lessons – 110€"
+                    ],
+                    "btn": "Book Lesson",
+                    "image": "../assets/images_site/price/pack_surf.jpg"
+                },
+                {
+                    "title": "Lesson Pack",
+                    "subTitle": "BODYBOARD",
+                    "priceList": [
+                        "3 Lessons – 55€",
+                        "5 Lessons – 75€",
+                        "10 Lessons – 110€"
+                    ],
+                    "btn": "Book Lesson",
+                    "image": "../assets/images_site/price/pack_bodyboard.jpg"
+                },
+                {
+                    "title": "Private Lesson",
+                    "subTitle": "SURF",
+                    "priceList": [
+                        "1 Person – 40€",
+                        "2 People – 70€",
+                        "3 People – 100€"
+                    ],
+                    "btn": "Book Lesson",
+                    "image": "../assets/images_site/price/surf_private.jpg"
+                },
+                {
+                    "title": "Private Lesson",
+                    "subTitle": "BODYBOARD",
+                    "priceList": [
+                        "1 Person – 40€",
+                        "2 People – 70€",
+                        "3 People – 100€"
+                    ],
+                    "btn": "Book Lesson",
+                    "image": "../assets/images_site/price/bodyboard_private.jpg"
+                },
+                {
+                    "title": "Rental",
+                    "subTitle": "SURF/BODYBOARD",
+                    "priceList": [
+                        "15€"
+                    ],
+                    "btn": "Rent",
+                    "image": "../assets/images_site/price/rent_surf.jpg"
+                }
+            ]
         },
-        {
-          "title": "Aluguer",
-          "subTitle": "SURF/BODYBOARD",
-          "priceList": ["15€"],
-          "btn": "Alugar",
-          "image": "../assets/images_site/price/rent_surf.jpg"
+        "section5": {
+            "title": "Rental",
+            "subTitle1": "Are you looking",
+            "subTitle2": "for equipment?",
+            "text1": "We invite you to embark on this journey with us!",
+            "text2": "",
+            "btn": "See more",
+            "equipments": [
+                {
+                    "image": "../assets/images_site/equipments/8_0.jpeg",
+                    "title": "8.0",
+                    "text": "Difficulty",
+                    "rate": 20,
+                    "price": "15€",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/equipments/8_0_blue.jpeg",
+                    "title": "8.0 Blue",
+                    "text": "Difficulty",
+                    "rate": 20,
+                    "price": "15€",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/equipments/8_0_wide.jpeg",
+                    "title": "8.0 Wide",
+                    "text": "Difficulty",
+                    "rate": 10,
+                    "price": "15€",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/equipments/7_4.jpeg",
+                    "title": "7.4",
+                    "text": "Difficulty",
+                    "rate": 35,
+                    "price": "15€",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/equipments/6_4.jpeg",
+                    "title": "6.4",
+                    "text": "Difficulty",
+                    "rate": 50,
+                    "price": "15€",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/equipments/bodyboard_found.jpeg",
+                    "title": "Bodyboard Found",
+                    "text": "Difficulty",
+                    "rate": 50,
+                    "price": "15€",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/equipments/equip.jpeg",
+                    "title": "Complete Equipment",
+                    "text": "Quality",
+                    "rate": 100,
+                    "price": "20€",
+                    "btn": "Rent"
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_azul.jpeg",
+                    "title": "Blue Janga Suit",
+                    "text": "Quality",
+                    "rate": 100,
+                    "price": "",
+                    "btn": ""
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_laranja.jpeg",
+                    "title": "Orange Janga Suit",
+                    "text": "Quality",
+                    "rate": 100,
+                    "price": "",
+                    "btn": ""
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_rosa.jpeg",
+                    "title": "Pink Janga Suit",
+                    "text": "Quality",
+                    "rate": 100,
+                    "price": "",
+                    "btn": ""
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_performance_amarelo.jpeg",
+                    "title": "Janga Performance Suit",
+                    "text": "Quality",
+                    "rate": 100,
+                    "price": "Resale",
+                    "btn": ""
+                },
+                {
+                    "image": "../assets/images_site/equipments/fato_performance_preto.jpeg",
+                    "title": "Janga Performance Suit",
+                    "text": "Quality",
+                    "rate": 100,
+                    "price": "Resale",
+                    "btn": ""
+                }
+            ]
         },
-        {
-          "title": "Aluguer",
-          "subTitle": "Fato",
-          "priceList": ["10€"],
-          "btn": "Alugar",
-          "image": "../assets/images_site/price/rent_surf.jpg"
+        "section6": {
+            "title": "Who visited us",
+            "subTitle": "We are incredibly overjoyed",
+            "countries": [
+                {
+                    "name": "PT",
+                    "coords": [
+                        40,
+                        -8
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/pt.png"
+                    }
+                },
+                {
+                    "name": "ES",
+                    "coords": [
+                        40,
+                        -4
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/es.png"
+                    }
+                },
+                {
+                    "name": "FR",
+                    "coords": [
+                        47,
+                        3
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/fr.png"
+                    }
+                },
+                {
+                    "name": "UK",
+                    "coords": [
+                        53,
+                        -1
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/gb-eng.png"
+                    }
+                },
+                {
+                    "name": "CH",
+                    "coords": [
+                        46.8,
+                        8.5
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/ch.png"
+                    }
+                },
+                {
+                    "name": "DK",
+                    "coords": [
+                        56,
+                        9
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/dk.png"
+                    }
+                },
+                {
+                    "name": "DE",
+                    "coords": [
+                        51.5,
+                        10
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/de.png"
+                    }
+                },
+                {
+                    "name": "IT",
+                    "coords": [
+                        41.8,
+                        14
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/it.png"
+                    }
+                },
+                {
+                    "name": "NO",
+                    "coords": [
+                        62,
+                        10
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/no.png"
+                    }
+                },
+                {
+                    "name": "NL",
+                    "coords": [
+                        52.5,
+                        5.5
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/nl.png"
+                    }
+                },
+                {
+                    "name": "CZ",
+                    "coords": [
+                        50,
+                        16
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/cz.png"
+                    }
+                },
+                {
+                    "name": "AT",
+                    "coords": [
+                        47.5,
+                        15
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/at.png"
+                    }
+                },
+                {
+                    "name": "BE",
+                    "coords": [
+                        50.5,
+                        5
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/be.png"
+                    }
+                },
+                {
+                    "name": "BR",
+                    "coords": [
+                        -8.5,
+                        -40
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/br.png"
+                    }
+                },
+                {
+                    "name": "USA",
+                    "coords": [
+                        37,
+                        -90
+                    ],
+                    "style": {
+                        "image": "../assets/images_site/flags/us.png"
+                    }
+                }
+            ]
         },
-         {
-          "title": "Aluguer",
-          "subTitle": "Material completo",
-          "priceList": ["20€"],
-          "btn": "Alugar",
-          "image": "../assets/images_site/price/rent_surf.jpg"
+        "section7": {
+            "title": "Gallery",
+            "subTitle": "Our pictures",
+            "images": [
+                "../assets/images_site/gallery/23-7-23__3.jpg",
+                "../assets/images_site/gallery/23-7-23__4.jpg",
+                "../assets/images_site/gallery/23-7-23__6.jpg",
+                "../assets/images_site/gallery/23-7-23__7.jpg",
+                "../assets/images_site/gallery/23-7-23__9.jpg",
+                "../assets/images_site/gallery/23-7-23__11.jpg",
+                "../assets/images_site/gallery/23-7-23__12.jpg",
+                "../assets/images_site/gallery/23-7-23__13.jpg",
+                "../assets/images_site/gallery/23-7-23__15.jpg",
+                "../assets/images_site/gallery/23-7-23__16.jpg",
+                "../assets/images_site/gallery/23-7-23__17.jpg",
+                "../assets/images_site/gallery/23-7-23__19.jpg",
+                "../assets/images_site/gallery/23-7-23__20.jpg",
+                "../assets/images_site/gallery/23-7-23__21.jpg",
+                "../assets/images_site/gallery/23-7-23__22.jpg",
+                "../assets/images_site/gallery/23-7-23__23.jpg",
+                "../assets/images_site/gallery/23-7-23__24.jpg",
+                "../assets/images_site/gallery/23-7-23__25.jpg",
+                "../assets/images_site/gallery/23-7-23__26.jpg",
+                "../assets/images_site/gallery/23-7-23__27.jpg",
+                "../assets/images_site/gallery/23-7-23__29.jpg",
+                "../assets/images_site/gallery/23-7-23__30.jpg",
+                "../assets/images_site/gallery/23-7-23__31.jpg",
+                "../assets/images_site/gallery/23-7-23__33.jpg",
+                "../assets/images_site/gallery/23-7-23__35.jpg",
+                "../assets/images_site/gallery/23-7-23__36.jpg",
+                "../assets/images_site/gallery/23-7-23__37.jpg",
+                "../assets/images_site/gallery/23-7-23__38.jpg",
+                "../assets/images_site/gallery/23-7-23__39.jpg"
+            ]
+        },
+        "section8": {
+            "title": "Contact us",
+            "field1": "Name",
+            "field2": "Email",
+            "field3": "Message",
+            "btn": "Send",
+            "title2": "Info",
+            "values": [
+                {
+                    "icon": "fa fa-map-pin",
+                    "title": "Address",
+                    "value": "4740 080, R. da Marginal 10, Braga, Portugal"
+                },
+                {
+                    "icon": "fa fa-at",
+                    "title": "Email",
+                    "value": "apuliasurfschool@gmail.com"
+                },
+                {
+                    "icon": "fa fa-phone",
+                    "title": "Phone",
+                    "value": "(+351) 961 410 360"
+                }
+            ]
+        },
+        "section9": {
+            "closeBtn": "X",
+            "title": "Lesson/Rental",
+            "field1": "Name",
+            "field2": "Card Number",
+            "field3": "Birthday",
+            "field4": "Email",
+            "field5": "Phone Number (Indicator)",
+            "field6": "Address",
+            "field7": "Lesson or Rental Date",
+            "field8": "Type",
+            "field9": "Lesson Schedule or Rental",
+            "field10": "Comments",
+            "btn": "Send",
+            "time": {
+                "morning": "Morning",
+                "afternoon": "Afternoon"
+            },
+            "types": [
+                {
+                    "type": "Single Lesson",
+                    "values": [
+                        {
+                            "type": "Single Lesson Surf (20€)",
+                            "isPack": false
+                        },
+                        {
+                            "type": "Single Lesson Bodyboard (15€)",
+                            "isPack": false
+                        }
+                    ]
+                },
+                {
+                    "type": "Lesson Packs (A minimum of 3 people. Validity: 2 months.)",
+                    "values": [
+                        {
+                            "type": "Pack 3 Surf Lessons (55€)",
+                            "isPack": true,
+                            "max": 3
+                        },
+                        {
+                            "type": "Pack 3 Bodyboard Lessons (55€)",
+                            "isPack": true,
+                            "max": 3
+                        },
+                        {
+                            "type": "Pack 5 Surf Lessons (75€)",
+                            "isPack": true,
+                            "max": 5
+                        },
+                        {
+                            "type": "Pack 5 Bodyboard Lessons (75€)",
+                            "isPack": true,
+                            "max": 5
+                        },
+                        {
+                            "type": "Pack 10 Surf Lessons (110€)",
+                            "isPack": true,
+                            "max": 10
+                        },
+                        {
+                            "type": "Pack 10 Bodyboard Lessons (110€)",
+                            "isPack": true,
+                            "max": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Private Lesson (Wait for the school's response.)",
+                    "values": [
+                        {
+                            "type": "1 Surf Lesson (40€)",
+                            "isPack": false
+                        },
+                        {
+                            "type": "1 Bodyboard Lesson (40€)",
+                            "isPack": false
+                        }
+                    ]
+                },
+                {
+                    "type": "Rental (Wait for the school's response.)",
+                    "values": [
+                        {
+                            "type": "Surf (15€)",
+                            "isPack": false
+                        },
+                        {
+                            "type": "Paddle Surf (20€)",
+                            "isPack": false
+                        },
+                        {
+                            "type": "Bodyboard (15€)",
+                            "isPack": false
+                        }
+                    ]
+                }
+            ]
+        },
+        "config": {
+            "success": {
+                "title": "Success",
+                "text": "Your request has been sent successfully, please wait for a response."
+            },
+            "error": {
+                "title": "Error",
+                "text": "Your lesson has not been booked, you can contact us by phone or whatsapp"
+            },
+            "phoneNumber": "961410360"
         }
-      ]
-    },
-    "section5": {
-      "title": "Aluguer",
-      "subTitle1": "Estás à procura",
-      "subTitle2": "de equipamento?",
-      "text1": "Convidamos-te a embarcar nesta jornada connosco!",
-      "text2": "",
-      "btn": "Ver mais",
-      "equipments": [
-        {
-          "image": "../assets/images_site/equipments/8_0.jpeg",
-          "title": "8.0",
-          "text": "Dificuldade",
-          "rate": 20,
-          "price": "15€",
-          "btn": "Alugar"
-        },
-        {
-          "image": "../assets/images_site/equipments/8_0_blue.jpeg",
-          "title": "8.0 Azul",
-          "text": "Dificuldade",
-          "rate": 20,
-          "price": "15€",
-          "btn": "Alugar"
-        },
-        {
-          "image": "../assets/images_site/equipments/8_0_wide.jpeg",
-          "title": "8.0 Wide",
-          "text": "Dificuldade",
-          "rate": 10,
-          "price": "15€",
-          "btn": "Alugar"
-        },
-        {
-          "image": "../assets/images_site/equipments/7_4.jpeg",
-          "title": "7.4",
-          "text": "Dificuldade",
-          "rate": 35,
-          "price": "15€",
-          "btn": "Alugar"
-        },
-        {
-          "image": "../assets/images_site/equipments/6_4.jpeg",
-          "title": "6.4",
-          "text": "Dificuldade",
-          "rate": 50,
-          "price": "15€",
-          "btn": "Alugar"
-        },
-        {
-          "image": "../assets/images_site/equipments/bodyboard_found.jpeg",
-          "title": "Bodyboard Found",
-          "text": "Dificuldade",
-          "rate": 50,
-          "price": "15€",
-          "btn": "Alugar"
-        },
-        {
-          "image": "../assets/images_site/equipments/equip.jpeg",
-          "title": "Equipamento completo",
-          "text": "Qualidade",
-          "rate": 100,
-          "price": "20€",
-          "btn": "Alugar"
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_azul.jpeg",
-          "title": "Fato Janga Azul",
-          "text": "Qualidade",
-          "rate": 100,
-          "price": "",
-          "btn": ""
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_laranja.jpeg",
-          "title": "Fato Janga Laranja",
-          "text": "Qualidade",
-          "rate": 100,
-          "price": "",
-          "btn": ""
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_rosa.jpeg",
-          "title": "Fato Janga Rosa",
-          "text": "Qualidade",
-          "rate": 100,
-          "price": "",
-          "btn": ""
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_performance_amarelo.jpeg",
-          "title": "Fato Janga Performance",
-          "text": "Qualidade",
-          "rate": 100,
-          "price": "Revenda",
-          "btn": ""
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_performance_preto.jpeg",
-          "title": "Fato Janga Performance",
-          "text": "Qualidade",
-          "rate": 100,
-          "price": "Revenda",
-          "btn": ""
-        }
-      ]
-    },
-    "section6": {
-      "title": "Quem nos visitou",
-      "subTitle": "O nosso orgulho",
-      "countries": [
-        {
-          "name": "PT",
-          "coords": [40, -8],
-          "style": {
-            "image": "../assets/images_site/flags/pt.png"
-          }
-        },
-        {
-          "name": "ES",
-          "coords": [40, -4],
-          "style": {
-            "image": "../assets/images_site/flags/es.png"
-          }
-        },
-        {
-          "name": "FR",
-          "coords": [47, 3],
-          "style": {
-            "image": "../assets/images_site/flags/fr.png"
-          }
-        },
-        {
-          "name": "UK",
-          "coords": [53, -1],
-          "style": {
-            "image": "../assets/images_site/flags/gb-eng.png"
-          }
-        },
-        {
-          "name": "CH",
-          "coords": [46.8, 8.5],
-          "style": {
-            "image": "../assets/images_site/flags/ch.png"
-          }
-        },
-        {
-          "name": "DK",
-          "coords": [56, 9],
-          "style": {
-            "image": "../assets/images_site/flags/dk.png"
-          }
-        },
-        {
-          "name": "DE",
-          "coords": [51.5, 10],
-          "style": {
-            "image": "../assets/images_site/flags/de.png"
-          }
-        },
-        {
-          "name": "IT",
-          "coords": [41.8, 14],
-          "style": {
-            "image": "../assets/images_site/flags/it.png"
-          }
-        },
-        {
-          "name": "NO",
-          "coords": [62, 10],
-          "style": {
-            "image": "../assets/images_site/flags/no.png"
-          }
-        },
-        {
-          "name": "NL",
-          "coords": [52.5, 5.5],
-          "style": {
-            "image": "../assets/images_site/flags/nl.png"
-          }
-        },
-        {
-          "name": "CZ",
-          "coords": [50, 16],
-          "style": {
-            "image": "../assets/images_site/flags/cz.png"
-          }
-        },
-        {
-          "name": "AT",
-          "coords": [47.5, 15],
-          "style": {
-            "image": "../assets/images_site/flags/at.png"
-          }
-        },
-        {
-          "name": "BE",
-          "coords": [50.5, 5],
-          "style": {
-            "image": "../assets/images_site/flags/be.png"
-          }
-        },
-        {
-          "name": "BR",
-          "coords": [-8.5, -40],
-          "style": {
-            "image": "../assets/images_site/flags/br.png"
-          }
-        },
-        {
-          "name": "USA",
-          "coords": [37, -90],
-          "style": {
-            "image": "../assets/images_site/flags/us.png"
-          }
-        }
-      ]
-    },
-    "section7": {
-      "title": "Galeria",
-      "subTitle": "Nossas fotos",
-      "images": [
-        "../assets/images_site/gallery/23-7-23__3.jpg",
-        "../assets/images_site/gallery/23-7-23__4.jpg",
-        "../assets/images_site/gallery/23-7-23__6.jpg",
-        "../assets/images_site/gallery/23-7-23__7.jpg",
-        "../assets/images_site/gallery/23-7-23__9.jpg",
-        "../assets/images_site/gallery/23-7-23__11.jpg",
-        "../assets/images_site/gallery/23-7-23__12.jpg",
-        "../assets/images_site/gallery/23-7-23__13.jpg",
-        "../assets/images_site/gallery/23-7-23__15.jpg",
-        "../assets/images_site/gallery/23-7-23__16.jpg",
-        "../assets/images_site/gallery/23-7-23__17.jpg",
-        "../assets/images_site/gallery/23-7-23__19.jpg",
-        "../assets/images_site/gallery/23-7-23__20.jpg",
-        "../assets/images_site/gallery/23-7-23__21.jpg",
-        "../assets/images_site/gallery/23-7-23__22.jpg",
-        "../assets/images_site/gallery/23-7-23__23.jpg",
-        "../assets/images_site/gallery/23-7-23__24.jpg",
-        "../assets/images_site/gallery/23-7-23__25.jpg",
-        "../assets/images_site/gallery/23-7-23__26.jpg",
-        "../assets/images_site/gallery/23-7-23__27.jpg",
-        "../assets/images_site/gallery/23-7-23__29.jpg",
-        "../assets/images_site/gallery/23-7-23__30.jpg",
-        "../assets/images_site/gallery/23-7-23__31.jpg",
-        "../assets/images_site/gallery/23-7-23__33.jpg",
-        "../assets/images_site/gallery/23-7-23__35.jpg",
-        "../assets/images_site/gallery/23-7-23__36.jpg",
-        "../assets/images_site/gallery/23-7-23__37.jpg",
-        "../assets/images_site/gallery/23-7-23__38.jpg",
-        "../assets/images_site/gallery/23-7-23__39.jpg"
-      ]
-    },
-    "section8": {
-      "title": "Contacte-nos",
-      "field1": "Nome",
-      "field2": "Email",
-      "field3": "Mensagem",
-      "btn": "Enviar",
-      "title2": "Info",
-      "values": [
-        {
-          "icon": "fa fa-map-pin",
-          "title": "Morada",
-          "value": "4740 080, R. da Marginal 10, Braga, Portugal"
-        },
-        {
-          "icon": "fa fa-at",
-          "title": "Email",
-          "value": "apuliasurfschool@gmail.com"
-        },
-        {
-          "icon": "fa fa-phone",
-          "title": "Tel",
-          "value": "(+351) 961 410 360"
-        }
-      ]
-    },
-    "section9": {
-      "closeBtn": "X",
-      "title": "Aulas/Alugar",
-      "field1": "Nome",
-      "field2": "Número de CC/BI",
-      "field3": "Data de Nascimento",
-      "field4": "E-mail",
-      "field5": "Contacto Telefónico (Indicador)",
-      "field6": "Localidade",
-      "field7": "Data da Aula ou Aluguer",
-      "field8": "Tipo",
-      "field9": "Horário da Aula ou Aluguer",
-      "field10": "Observações",
-      "btn": "Enviar",
-      "time": {
-        "morning": "Manhã",
-        "afternoon": "Tarde"
-      },
-      "types": [
-        {
-          "type": "Aulas Avulso",
-          "values": [
-            {
-              "type": "Aula Avulso Surf (20€)",
-              "isPack": false
-            },
-            {
-              "type": "Aula Avulso Bodyboard (20€)",
-              "isPack": false
-            }
-          ]
-        },
-        {
-          "type": "Packs de Aulas (Sujeito a um mínimo de 3 pessoas. Validade: 2 meses.)",
-          "values": [
-            {
-              "type": "Pack 3 aulas Surf (55€)",
-              "isPack": true,
-              "max": 3
-            },
-            {
-              "type": "Pack 3 aulas Bodyboard (55€)",
-              "isPack": true,
-              "max": 3
-            },
-            {
-              "type": "Pack 5 aulas Surf (75€)",
-              "isPack": true,
-              "max": 5
-            },
-            {
-              "type": "Pack 5 aulas Bodyboard (75€)",
-              "isPack": true,
-              "max": 5
-            },
-            {
-              "type": "Pack 10 aulas Surf (110€)",
-              "isPack": true,
-              "max": 10
-            },
-            {
-              "type": "Pack 10 aulas Bodyboard (110€)",
-              "isPack": true,
-              "max": 10
-            }
-          ]
-        },
-        {
-          "type": "Aulas Particulares (Aguardar resposta de disponibilidade da escola.)",
-          "values": [
-            {
-              "type": "1 Pessoa (40€)",
-              "isPack": false
-            },
-            {
-              "type": "2 Pessoas (70€)",
-              "isPack": false
-            },
-            {
-              "type": "1 Pessoas (100€)",
-              "isPack": false
-            },
-          ]
-        },
-        {
-          "type": "Aluguer (Aguardar resposta de disponibilidade da escola.)",
-          "values": [
-            {
-              "type": "Surf (15€)",
-              "isPack": false
-            },
-            {
-              "type": "Bodyboard (15€)",
-              "isPack": false
-            }
-          ]
-        }
-      ]
-    },
-    "config": {
-      "success": {
-        "title": "Sucesso",
-        "text": "O seu pedido foi enviado com sucesso, por favor aguarde por uma resposta"
-      },
-      "error": {
-        "title": "Erro",
-        "text": "O seu pedido não foi enviado, pode contactar-nos por telefone ou por whatsapp"
-      },
-      "phoneNumber": "961410360"
     }
-  },
-  "eng": {
-    "navbar": {
-      "home": "Home",
-      "about": "About us",
-      "services": "What we do",
-      "price": "Prices",
-      "classes": "Lesson/Rental",
-      "contact": "Contacts",
-      "logo": "../assets/images_site/logo.png",
-      "insta": "https://www.instagram.com/apuliasurfschool/"
-    },
-    "banner": {
-      "image": "../assets/images_site/banner1.jpg",
-      "text1": "Your connection WITH THE SEA",
-      "text2": "APULIA SURF SCHOOL",
-      "text3": "APÚLIA",
-      "btn": "Book Lesson",
-      "isToShow": true
-    },
-    "section1": {
-      "title": "About us",
-      "subTitle": "Our experience",
-      "text": "What we have to offer.",
-      "texts": [
-        "The team at Apúlia Surf School knows every cranny and the secrets of the local waves, ensuring that students enjoy the best surfing experiences.",
-        "The teaching program at Apúlia Surf School is diverse and comprehensive. Whether you're an eager beginner wanting to learn the fundamentals of surfing or an experienced surfer looking to enhance your skills, our classes are tailored to your specific needs. Safety is our top priority, ensuring all students are always protected and accompanied during their aquatic adventures.",
-        "At Apúlia Surf School, we foster a strong sense of community. More than just a surf school, we are a family that shares the joy of surfing, celebrating every progress and achievement with our students. Camaraderie and companionship create a relaxed and friendly environment, making the journey of learning to surf an unforgettable experience.",
-        "Join us in this incredible aquatic adventure and let surfing change your life forever!"
-      ],
-      "image1": "../assets/images_site/about2.jpg",
-      "image2": "../assets/images_site/about1.jpg"
-    },
-    "section2": {
-      "title": "Benefits",
-      "subTitle1": "Why learn with us?",
-      "subTitle2": "",
-      "text1": "We want our students to feel amazing and unique.",
-      "text2": "",
-      "image1": "../assets/images_site/ben.jpg",
-      "lines": [
-        [
-          {
-            "icon": "ico ico-surfer",
-            "total": 6,
-            "text": "Certified teachers"
-          },
-          {
-            "icon": "ico ico-surfboard",
-            "total": 30,
-            "text": "Surfboards"
-          },
-          {
-            "icon": "ico ico-wave",
-            "total": 12,
-            "text": "Lessons per week"
-          },
-          {
-            "icon": "ico ico-calm",
-            "total": 70,
-            "text": "Suits"
-          }
-        ]
-      ]
-    },
-    "section3": {
-      "title": "Services",
-      "subTitle1": "Let's start!",
-      "subTitle2": "",
-      "text1": "Ready to catch some waves",
-      "text2": "together?",
-      "services": [
-        {
-          "image": "../assets/images_site/services/surf.jpg",
-          "title": "Lessons",
-          "subTitle": "Surf",
-          "text": "",
-          "btn": "Book Lesson"
-        },
-        {
-          "image": "../assets/images_site/services/bodyboard_len.jpg",
-          "title": "Lesson",
-          "subTitle": "Bodyboard",
-          "text": "",
-          "btn": "Book Lesson"
-        },
-        {
-          "image": "../assets/images_site/services/surf_board.jpg",
-          "title": "Rental",
-          "subTitle": "Surf Board",
-          "text": "",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/services/bodyboard.jpg",
-          "title": "Rental",
-          "subTitle": "Bodyboard",
-          "text": "",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/services/paddleboard.jpg",
-          "title": "Rental",
-          "subTitle": "Paddle Surf",
-          "text": "",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/services/equipment.jpg",
-          "title": "Rental",
-          "subTitle": "Complete Equipment",
-          "text": "",
-          "btn": "Rent"
-        }
-      ]
-    },
-    "section4": {
-      "title": "Prices",
-      "subTitle": "Our school programs",
-      "text1": "Our mission is to provide a unique and exciting experience.",
-      "text2": "",
-      "prices": [
-        {
-          "title": "Single Lesson",
-          "subTitle": "SURF",
-          "priceList": ["20€/Lesson"],
-          "btn": "Book Lesson",
-          "image": "../assets/images_site/price/surf_class.jpg"
-        },
-        {
-          "title": "Single Lesson",
-          "subTitle": "BODYBOARD",
-          "priceList": ["20€/Lesson"],
-          "btn": "Book Lesson",
-          "image": "../assets/images_site/price/bodyboard_class.jpg"
-        },
-        {
-          "title": "Lesson Pack",
-          "subTitle": "SURF",
-          "priceList": ["3 Lessons – 55€", "5 Lessons – 75€", "10 Lessons – 110€"],
-          "btn": "Book Lesson",
-          "image": "../assets/images_site/price/pack_surf.jpg"
-        },
-        {
-          "title": "Lesson Pack",
-          "subTitle": "BODYBOARD",
-          "priceList": ["3 Lessons – 55€", "5 Lessons – 75€", "10 Lessons – 110€"],
-          "btn": "Book Lesson",
-          "image": "../assets/images_site/price/pack_bodyboard.jpg"
-        },
-        {
-          "title": "Private Lesson",
-          "subTitle": "SURF",
-          "priceList": ["1 Person – 40€", "2 People – 70€", "3 People – 100€"],
-          "btn": "Book Lesson",
-          "image": "../assets/images_site/price/surf_private.jpg"
-        },
-        {
-          "title": "Private Lesson",
-          "subTitle": "BODYBOARD",
-          "priceList": ["1 Person – 40€", "2 People – 70€", "3 People – 100€"],
-          "btn": "Book Lesson",
-          "image": "../assets/images_site/price/bodyboard_private.jpg"
-        },
-        {
-          "title": "Rental",
-          "subTitle": "SURF/BODYBOARD",
-          "priceList": ["15€"],
-          "btn": "Rent",
-          "image": "../assets/images_site/price/rent_surf.jpg"
-        }
-      ]
-    },
-    "section5": {
-      "title": "Rental",
-      "subTitle1": "Are you looking",
-      "subTitle2": "for equipment?",
-      "text1": "We invite you to embark on this journey with us!",
-      "text2": "",
-      "btn": "See more",
-      "equipments": [
-        {
-          "image": "../assets/images_site/equipments/8_0.jpeg",
-          "title": "8.0",
-          "text": "Difficulty",
-          "rate": 20,
-          "price": "15€",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/equipments/8_0_blue.jpeg",
-          "title": "8.0 Blue",
-          "text": "Difficulty",
-          "rate": 20,
-          "price": "15€",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/equipments/8_0_wide.jpeg",
-          "title": "8.0 Wide",
-          "text": "Difficulty",
-          "rate": 10,
-          "price": "15€",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/equipments/7_4.jpeg",
-          "title": "7.4",
-          "text": "Difficulty",
-          "rate": 35,
-          "price": "15€",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/equipments/6_4.jpeg",
-          "title": "6.4",
-          "text": "Difficulty",
-          "rate": 50,
-          "price": "15€",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/equipments/bodyboard_found.jpeg",
-          "title": "Bodyboard Found",
-          "text": "Difficulty",
-          "rate": 50,
-          "price": "15€",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/equipments/equip.jpeg",
-          "title": "Complete Equipment",
-          "text": "Quality",
-          "rate": 100,
-          "price": "20€",
-          "btn": "Rent"
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_azul.jpeg",
-          "title": "Blue Janga Suit",
-          "text": "Quality",
-          "rate": 100,
-          "price": "",
-          "btn": ""
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_laranja.jpeg",
-          "title": "Orange Janga Suit",
-          "text": "Quality",
-          "rate": 100,
-          "price": "",
-          "btn": ""
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_rosa.jpeg",
-          "title": "Pink Janga Suit",
-          "text": "Quality",
-          "rate": 100,
-          "price": "",
-          "btn": ""
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_performance_amarelo.jpeg",
-          "title": "Janga Performance Suit",
-          "text": "Quality",
-          "rate": 100,
-          "price": "Resale",
-          "btn": ""
-        },
-        {
-          "image": "../assets/images_site/equipments/fato_performance_preto.jpeg",
-          "title": "Janga Performance Suit",
-          "text": "Quality",
-          "rate": 100,
-          "price": "Resale",
-          "btn": ""
-        }
-      ]
-    },
-    "section6": {
-      "title": "Who visited us",
-      "subTitle": "We are incredibly overjoyed",
-      "countries": [
-        {
-          "name": "PT",
-          "coords": [40, -8],
-          "style": {
-            "image": "../assets/images_site/flags/pt.png"
-          }
-        },
-        {
-          "name": "ES",
-          "coords": [40, -4],
-          "style": {
-            "image": "../assets/images_site/flags/es.png"
-          }
-        },
-        {
-          "name": "FR",
-          "coords": [47, 3],
-          "style": {
-            "image": "../assets/images_site/flags/fr.png"
-          }
-        },
-        {
-          "name": "UK",
-          "coords": [53, -1],
-          "style": {
-            "image": "../assets/images_site/flags/gb-eng.png"
-          }
-        },
-        {
-          "name": "CH",
-          "coords": [46.8, 8.5],
-          "style": {
-            "image": "../assets/images_site/flags/ch.png"
-          }
-        },
-        {
-          "name": "DK",
-          "coords": [56, 9],
-          "style": {
-            "image": "../assets/images_site/flags/dk.png"
-          }
-        },
-        {
-          "name": "DE",
-          "coords": [51.5, 10],
-          "style": {
-            "image": "../assets/images_site/flags/de.png"
-          }
-        },
-        {
-          "name": "IT",
-          "coords": [41.8, 14],
-          "style": {
-            "image": "../assets/images_site/flags/it.png"
-          }
-        },
-        {
-          "name": "NO",
-          "coords": [62, 10],
-          "style": {
-            "image": "../assets/images_site/flags/no.png"
-          }
-        },
-        {
-          "name": "NL",
-          "coords": [52.5, 5.5],
-          "style": {
-            "image": "../assets/images_site/flags/nl.png"
-          }
-        },
-        {
-          "name": "CZ",
-          "coords": [50, 16],
-          "style": {
-            "image": "../assets/images_site/flags/cz.png"
-          }
-        },
-        {
-          "name": "AT",
-          "coords": [47.5, 15],
-          "style": {
-            "image": "../assets/images_site/flags/at.png"
-          }
-        },
-        {
-          "name": "BE",
-          "coords": [50.5, 5],
-          "style": {
-            "image": "../assets/images_site/flags/be.png"
-          }
-        },
-        {
-          "name": "BR",
-          "coords": [-8.5, -40],
-          "style": {
-            "image": "../assets/images_site/flags/br.png"
-          }
-        },
-        {
-          "name": "USA",
-          "coords": [37, -90],
-          "style": {
-            "image": "../assets/images_site/flags/us.png"
-          }
-        }
-      ]
-    },
-    "section7": {
-      "title": "Gallery",
-      "subTitle": "Our pictures",
-      "images": [
-        "../assets/images_site/gallery/23-7-23__3.jpg",
-        "../assets/images_site/gallery/23-7-23__4.jpg",
-        "../assets/images_site/gallery/23-7-23__6.jpg",
-        "../assets/images_site/gallery/23-7-23__7.jpg",
-        "../assets/images_site/gallery/23-7-23__9.jpg",
-        "../assets/images_site/gallery/23-7-23__11.jpg",
-        "../assets/images_site/gallery/23-7-23__12.jpg",
-        "../assets/images_site/gallery/23-7-23__13.jpg",
-        "../assets/images_site/gallery/23-7-23__15.jpg",
-        "../assets/images_site/gallery/23-7-23__16.jpg",
-        "../assets/images_site/gallery/23-7-23__17.jpg",
-        "../assets/images_site/gallery/23-7-23__19.jpg",
-        "../assets/images_site/gallery/23-7-23__20.jpg",
-        "../assets/images_site/gallery/23-7-23__21.jpg",
-        "../assets/images_site/gallery/23-7-23__22.jpg",
-        "../assets/images_site/gallery/23-7-23__23.jpg",
-        "../assets/images_site/gallery/23-7-23__24.jpg",
-        "../assets/images_site/gallery/23-7-23__25.jpg",
-        "../assets/images_site/gallery/23-7-23__26.jpg",
-        "../assets/images_site/gallery/23-7-23__27.jpg",
-        "../assets/images_site/gallery/23-7-23__29.jpg",
-        "../assets/images_site/gallery/23-7-23__30.jpg",
-        "../assets/images_site/gallery/23-7-23__31.jpg",
-        "../assets/images_site/gallery/23-7-23__33.jpg",
-        "../assets/images_site/gallery/23-7-23__35.jpg",
-        "../assets/images_site/gallery/23-7-23__36.jpg",
-        "../assets/images_site/gallery/23-7-23__37.jpg",
-        "../assets/images_site/gallery/23-7-23__38.jpg",
-        "../assets/images_site/gallery/23-7-23__39.jpg"
-      ]
-    },
-    "section8": {
-      "title": "Contact us",
-      "field1": "Name",
-      "field2": "Email",
-      "field3": "Message",
-      "btn": "Send",
-      "title2": "Info",
-      "values": [
-        {
-          "icon": "fa fa-map-pin",
-          "title": "Address",
-          "value": "4740 080, R. da Marginal 10, Braga, Portugal"
-        },
-        {
-          "icon": "fa fa-at",
-          "title": "Email",
-          "value": "apuliasurfschool@gmail.com"
-        },
-        {
-          "icon": "fa fa-phone",
-          "title": "Phone",
-          "value": "(+351) 961 410 360"
-        }
-      ]
-    },
-    "section9": {
-      "closeBtn": "X",
-      "title": "Lesson/Rental",
-      "field1": "Name",
-      "field2": "Card Number",
-      "field3": "Birthday",
-      "field4": "Email",
-      "field5": "Phone Number (Indicator)",
-      "field6": "Address",
-      "field7": "Lesson or Rental Date",
-      "field8": "Type",
-      "field9": "Lesson Schedule or Rental",
-      "field10": "Comments",
-      "btn": "Send",
-      "time": {
-        "morning": "Morning",
-        "afternoon": "Afternoon"
-      },
-      "types": [
-        {
-          "type": "Single Lesson",
-          "values": [
-            {
-              "type": "Single Lesson Surf (20€)",
-              "isPack": false
-            },
-            {
-              "type": "Single Lesson Bodyboard (15€)",
-              "isPack": false
-            }
-          ]
-        },
-        {
-          "type": "Lesson Packs (A minimum of 3 people. Validity: 2 months.)",
-          "values": [
-            {
-              "type": "Pack 3 Surf Lessons (55€)",
-              "isPack": true,
-              "max": 3
-            },
-            {
-              "type": "Pack 3 Bodyboard Lessons (55€)",
-              "isPack": true,
-              "max": 3
-            },
-            {
-              "type": "Pack 5 Surf Lessons (75€)",
-              "isPack": true,
-              "max": 5
-            },
-            {
-              "type": "Pack 5 Bodyboard Lessons (75€)",
-              "isPack": true,
-              "max": 5
-            },
-            {
-              "type": "Pack 10 Surf Lessons (110€)",
-              "isPack": true,
-              "max": 10
-            },
-            {
-              "type": "Pack 10 Bodyboard Lessons (110€)",
-              "isPack": true,
-              "max": 10
-            }
-          ]
-        },
-        {
-          "type": "Private Lesson (Wait for the school's response.)",
-          "values": [
-            {
-              "type": "1 Surf Lesson (40€)",
-              "isPack": false
-            },
-            {
-              "type": "1 Bodyboard Lesson (40€)",
-              "isPack": false
-            }
-          ]
-        },
-        {
-          "type": "Rental (Wait for the school's response.)",
-          "values": [
-            {
-              "type": "Surf (15€)",
-              "isPack": false
-            },
-            {
-              "type": "Paddle Surf (20€)",
-              "isPack": false
-            },
-            {
-              "type": "Bodyboard (15€)",
-              "isPack": false
-            }
-          ]
-        }
-      ]
-    },
-    "config": {
-      "success": {
-        "title": "Success",
-        "text": "Your request has been sent successfully, please wait for a response."
-      },
-      "error": {
-        "title": "Error",
-        "text": "Your lesson has not been booked, you can contact us by phone or whatsapp"
-      },
-      "phoneNumber": "961410360"
-    }
-  }
 }
